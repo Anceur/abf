@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Les Grands Moulins de Frenda</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <style>
+        /* Custom tooltip styles */
+        .tooltip {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .tooltip .tooltip-inner {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            font-size: 14px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 300px;
+        }
+
+        .tooltip.bs-tooltip-start .tooltip-arrow::before {
+            border-left-color: #fff;
+        }
+
+        .hero-wrap {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .hero-wrap .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+            opacity: .3;
+            background: #000000;
+        }
+        .hero-wrap .slider-text {
+            height: 400px;
+            display: flex;
+            align-items: center;
+        }
+        .hero-wrap .slider-text .breadcrumbs {
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 3px;
+            margin-bottom: 0;
+            z-index: 99;
+        }
+        .hero-wrap .slider-text .breadcrumbs span {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .hero-wrap .slider-text .breadcrumbs span a {
+            color: #fff;
+        }
+        .hero-wrap .slider-text h1 {
+            font-size: 40px;
+            color: #fff;
+            line-height: 1.2;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Add new photo styling */
+        .about-img {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .about-img img {
+            transition: all 0.5s ease;
+            transform: scale(1);
+        }
+
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+
+        .about-img::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .about-img:hover::after {
+            opacity: 1;
+        }
+
+        .about-img-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    </style>
+  </head>
+  <body class="goto-here">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">
+            <img src="images/p2.png" alt="" style="width: 150px;">
+
+		  </a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+	          <li class="nav-item"><a href="shop.html" class="nav-link">Boutique</a></li>
+	          <li class="nav-item"><a href="historique.html" class="nav-link">Historique</a></li>
+	          <li class="nav-item active"><a href="about.html" class="nav-link">À propos</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+    <div class="hero-wrap hero-bread" style="background-image: url('images/gmf/twelve.JPG');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Accueil</a></span> <span>À propos</span></p>
+            <h1 class="mb-0 bread">À propos de nous</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid about bg-light py-5">
+      <div class="container py-5">
+          <div class="row g-5 align-items-center">
+              <div class="col-lg-6 col-xl-5">
+                  <div class="about-img-container">
+                      <div class="about-img">
+                          <img src="images/gmf/eleven.JPG" class="img-fluid w-100" alt="Grains de blé premium">
+                      </div>
+                      <div class="about-img">
+                          <img src="images/gmf/thirteen.JPG" class="img-fluid w-100" alt="Grains de blé premium">
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 col-xl-7">
+                  <h4 class="text-primary">À propos de nous</h4>
+                  <h1 class="display-5 mb-4" style="color: #000;">Leader Mondial dans la Meunerie.</h1>
+                  <p class="mb-4">Avec des décennies d'expérience dans le traitement des céréales, nos installations de pointe produisent des produits de farine de la plus haute qualité. Nous combinons l'expertise traditionnelle de la meunerie avec des technologies innovantes pour offrir une qualité constante qui dépasse les normes de l'industrie et satisfait les clients les plus exigeants.</p>
+                  <div class="row g-4 justify-content-between mb-5">
+                      <div class="col-lg-6 col-xl-5">
+                          <p class="text-dark"><i class="fas fa-check-circle text-primary me-1"></i> Sélection Premium de Blé</p>
+                          <p class="text-dark mb-0"><i class="fas fa-check-circle text-primary me-1"></i> Technologie de Meunerie Avancée</p>
+                      </div>
+                      <div class="col-lg-6 col-xl-7">
+                          <p class="text-dark"><i class="fas fa-check-circle text-primary me-1"></i> Assurance Qualité</p>
+                          <p class="text-dark mb-0"><i class="fas fa-check-circle text-primary me-1"></i> Distribution Mondiale</p>
+                      </div>
+                  </div>
+                  <div class="row g-4 justify-content-between mb-5">
+                      <div class="col-xl-5">
+                          <a href="shop.html" class="btn btn-primary rounded-pill py-3 px-5">Nos Produits</a>
+                      </div>
+                  </div>
+                  <div class="row g-4 text-center align-items-center justify-content-center">
+                      <div class="col-sm-4">
+                          <div class="stats-card bg-primary rounded p-4">
+                              <div class="d-flex align-items-center justify-content-center">
+                                  <span class="counter-value fs-1 fw-bold text-dark">500</span>
+                                  <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px;">k+</h4>
+                              </div>
+                              <div class="w-100 d-flex align-items-center justify-content-center">
+                                  <p class="text-white mb-0">Tonnes Traitées par An</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-4">
+                          <div class="stats-card bg-dark rounded p-4">
+                              <div class="d-flex align-items-center justify-content-center">
+                                  <span class="counter-value fs-1 fw-bold text-white">45</span>
+                                  <h4 class="text-white fs-1 mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                              </div>
+                              <div class="w-100 d-flex align-items-center justify-content-center">
+                                  <p class="mb-0 text-white">Années d'Expérience</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-4">
+                          <div class="stats-card bg-primary rounded p-4">
+                              <div class="d-flex align-items-center justify-content-center">
+                                  <span class="counter-value fs-1 fw-bold text-dark">120</span>
+                                  <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                              </div>
+                              <div class="w-100 d-flex align-items-center justify-content-center">
+                                  <p class="text-white mb-0">Clients dans le Monde</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+<!-- About End -->
+
+
+<!-- Team Start -->
+<div class="container-fluid team py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+            <h4 class="text-primary">Notre Équipe</h4>
+            <h1 class="display-4 mb-4">Les Membres de Notre Équipe Dédiée</h1>
+            <p class="text-muted">Une équipe passionnée et expérimentée dédiée à l'excellence et à l'innovation</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-card team-item rounded shadow">
+                    <div class="team-img position-relative">
+                        <img src="images/team.jfif" class="img-fluid w-100 rounded-top" alt="Yassine Benali">
+                        <div class="social-links">
+                            <a href="mailto:yassine.benali@gmf.com" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-content bg-dark text-center rounded-bottom p-4">
+                        <div class="team-content-inner">
+                            <h4 class="text-white">Yassine Benali</h4>
+                            <p class="text-primary mb-0">Directeur Général</p>
+                            <p class="text-white-50 small mt-2">Expert en gestion et développement d'entreprise</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item rounded shadow">
+                    <div class="team-img position-relative">
+                        <img src="images/team.jfif" class="img-fluid w-100 rounded-top" alt="Mohamed Amine">
+                        <div class="fab-wrapper">
+                            <input id="fabCheckbox2" type="checkbox" class="fab-checkbox" />
+                            <label class="fab" for="fabCheckbox2">
+                                <span class="fab-dots fab-dots-1"></span>
+                                <span class="fab-dots fab-dots-2"></span>
+                                <span class="fab-dots fab-dots-3"></span>
+                            </label>
+                            <div class="fab-wheel">
+                                <a class="fab-action fab-action-1" href="mailto:mohamed.amine@gmf.com" data-bs-toggle="tooltip" data-bs-placement="left" title="mohamed.amine@gmf.com">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <!-- <a class="fab-action fab-action-2" href="https://www.linkedin.com/in/mohamed-amine" target="_blank" data-bs-toggle="tooltip" data-bs-placement="left" title="Voir le profil LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-content bg-dark text-center rounded-bottom p-4">
+                        <div class="team-content-inner">
+                            <h4 class="text-white">Mohamed Amine</h4>
+                            <p class="text-primary mb-0">Responsable Production</p>
+                            <p class="text-white-50 small mt-2">Spécialiste en contrôle qualité et optimisation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item rounded shadow">
+                    <div class="team-img position-relative">
+                        <img src="images/team.jfif" class="img-fluid w-100 rounded-top" alt="Karim Bouzid">
+                        <div class="fab-wrapper">
+                            <input id="fabCheckbox3" type="checkbox" class="fab-checkbox" />
+                            <label class="fab" for="fabCheckbox3">
+                                <span class="fab-dots fab-dots-1"></span>
+                                <span class="fab-dots fab-dots-2"></span>
+                                <span class="fab-dots fab-dots-3"></span>
+                            </label>
+                            <div class="fab-wheel">
+                                <a class="fab-action fab-action-1" href="mailto:karim.bouzid@gmf.com" data-bs-toggle="tooltip" data-bs-placement="left" title="karim.bouzid@gmf.com">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <!-- <a class="fab-action fab-action-2" href="https://www.linkedin.com/in/karim-bouzid" target="_blank" data-bs-toggle="tooltip" data-bs-placement="left" title="Voir le profil LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-content bg-dark text-center rounded-bottom p-4">
+                        <div class="team-content-inner">
+                            <h4 class="text-white">Karim Bouzid</h4>
+                            <p class="text-primary mb-0">Responsable Commercial</p>
+                            <p class="text-white-50 small mt-2">Expert en développement commercial et marketing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item rounded shadow">
+                    <div class="team-img position-relative">
+                        <img src="images/team.jfif" class="img-fluid w-100 rounded-top" alt="Sofia Chenini">
+                        <div class="fab-wrapper">
+                            <input id="fabCheckbox4" type="checkbox" class="fab-checkbox" />
+                            <label class="fab" for="fabCheckbox4">
+                                <span class="fab-dots fab-dots-1"></span>
+                                <span class="fab-dots fab-dots-2"></span>
+                                <span class="fab-dots fab-dots-3"></span>
+                            </label>
+                            <div class="fab-wheel">
+                                <a class="fab-action fab-action-1" href="mailto:sofia.chenini@gmf.com" data-bs-toggle="tooltip" data-bs-placement="left" title="sofia.chenini@gmf.com">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <!-- <a class="fab-action fab-action-2" href="https://www.linkedin.com/in/sofia-chenini" target="_blank" data-bs-toggle="tooltip" data-bs-placement="left" title="Voir le profil LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-content bg-dark text-center rounded-bottom p-4">
+                        <div class="team-content-inner">
+                            <h4 class="text-white">Sofia Chenini</h4>
+                            <p class="text-primary mb-0">Responsable RH</p>
+                            <p class="text-white-50 small mt-2">Spécialiste en gestion des ressources humaines</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Values and Mission Section -->
+<div class="container-fluid values py-5 bg-light">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+            <h4 class="text-primary">Our Values & Mission</h4>
+            <h1 class="display-4 mb-4" style="color: #000;"> We Believe in Quality and Excellence</h1>
+            <p class="text-muted">Always striving to deliver the best products to our customers</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="value-card value-item text-center p-4 bg-white rounded shadow">
+                    <div class="value-icon mb-3">
+                        <i class="fas fa-star text-primary fa-3x"></i>
+                    </div>
+                    <h4 class="mb-3 card-title" style="color: #000;">Quality</h4>
+                    <p class="mb-0">We maintain the highest quality standards in all our products</p>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="value-item text-center p-4 bg-white rounded shadow">
+                    <div class="value-icon mb-3">
+                        <i class="fas fa-handshake text-primary fa-3x"></i>
+                    </div>
+                    <h4 class="mb-3" style="color: #000;">Partnership</h4>
+                    <p class="mb-0">Working with our partners to achieve mutual success</p>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="value-item text-center p-4 bg-white rounded shadow">
+                    <div class="value-icon mb-3">
+                        <i class="fas fa-leaf text-primary fa-3x"></i>
+                    </div>
+                    <h4 class="mb-3" style="color: #000;">Sustainability</h4>
+                    <p class="mb-0">Environmental responsibility in all our operations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+	  <footer class="ftco-footer ftco-section bg-white text-black pt-5">
+		<div class="container">
+		  <!-- Scroll-to-top -->
+		  <div class="row mb-3">
+		  <div class="mouse mx-auto">
+			<a href="#" class="mouse-icon">
+			<div class="mouse-wheel"><span class="ion-ios-arrow-up text-black hover-green"></span></div>
+			</a>
+		  </div>
+		  </div>
+		
+		  <!-- Footer content -->
+		  <div class="row mb-5">
+		  <div class="col-md">
+			<div class="ftco-footer-widget mb-4">
+			<img src="images/logoGM.png" alt="Logo" style="max-width: 150px;" class="mb-3">
+			<p>Les Grands Moulins de Frenda, spécialistes de la meunerie, vous offrent des produits moulus avec passion et expertise.</p>
+			<ul class="ftco-footer-social list-unstyled mt-4">
+			  <li class="ftco-animate d-inline-block me-3">
+			  <a href="#" class="text-black hover-green"><span class="icon-twitter"></span></a>
+			  </li>
+			  <li class="ftco-animate d-inline-block me-3">
+			  <a href="#" class="text-black hover-green"><span class="icon-facebook"></span></a>
+			  </li>
+			  <li class="ftco-animate d-inline-block">
+			  <a href="#" class="text-black hover-green"><span class="icon-instagram"></span></a>
+			  </li>
+			</ul>
+			</div>
+		  </div>
+		
+		  <!-- Menu -->
+		  <div class="col-md">
+			<div class="ftco-footer-widget mb-4 ml-md-5">
+			<h2 class="ftco-heading-2 hover-green">Menu</h2>
+			<ul class="list-unstyled">
+			  <li><a href="#" class="py-2 d-block text-black hover-green">Shop</a></li>
+			  <li><a href="#" class="py-2 d-block text-black hover-green">About</a></li>
+			  <li><a href="#" class="py-2 d-block text-black hover-green">Journal</a></li>
+			  <li><a href="#" class="py-2 d-block text-black hover-green">Contact Us</a></li>
+			</ul>
+			</div>
+		  </div>
+	 
+		
+		  <!-- Contact -->
+		  <div class="col-md">
+			<div class="ftco-footer-widget mb-4">
+			<h2 class="ftco-heading-2 hover-green">Une question ?</h2>
+			<div class="block-23 mb-3">
+			  <ul class="list-unstyled">
+			  <li>
+				<span class="icon icon-map-marker icon-social"></span>
+				<span class="text ms-2 text-black hover-green">3368+QXX, Frenda</span>
+			  </li>
+			  <li>
+				<a href="#" class="text-black hover-green">
+				<span class="icon icon-phone icon-social"></span>
+				<span class="text ms-2">+213 559180536</span>
+				</a>
+			  </li>
+			  <li>
+				<a href="#" class="text-black hover-green">
+				<span class="icon icon-envelope icon-social"></span>
+				<span class="text ms-2">gmf@gmail.com</span>
+				</a>
+			  </li>
+			  </ul>
+			</div>
+			</div>
+		  </div>
+		  </div>
+		
+		  <!-- Copyright -->
+		 <!-- Copyright -->
+  <div class="row mt-4">
+	<div class="col-md-12 text-center text-black">
+	  <p>
+		&copy; <script>document.write(new Date().getFullYear());</script> Tous droits réservés | Réalisé avec
+		<i class="icon-heart text-green-600" aria-hidden="true"></i> par
+		<a href="#" class="text-green-600" target="_blank">Les Grands Moulins de Frenda</a>
+	  </p>
+	</div>
+  </div>
+  
+		</div>
+		</footer>
+  
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+    
+  <!-- Initialize tooltips -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl, {
+              trigger: 'click hover', // Will show on both click and hover
+              html: true
+          });
+      });
+
+      // Hide tooltip when clicking outside
+      document.addEventListener('click', function(e) {
+          if (!e.target.closest('[data-bs-toggle="tooltip"]')) {
+              tooltipList.forEach(function(tooltip) {
+                  tooltip.hide();
+              });
+          }
+      });
+  });
+  </script>
+    
+  </body>
+</html>

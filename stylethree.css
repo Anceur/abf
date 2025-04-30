@@ -1,0 +1,203 @@
+/* Values Section Animations */
+.values-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.values-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="%23f8f9fa" d="M0,0 L100,0 L100,100 L0,100 Z"/></svg>');
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.value-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.value-card .icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.value-card:hover .icon {
+    transform: scale(1.1);
+}
+
+.value-card .icon span {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.value-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.value-card p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/* General Improvements */
+.ftco-section {
+    padding: 100px 0;
+}
+
+.heading-section {
+    margin-bottom: 50px;
+}
+
+.heading-section .subheading {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #28a745;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.heading-section h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.heading-section p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Animation Effects */
+.ftco-animate {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+    .values-section {
+        padding: 70px 0;
+    }
+    
+    .value-card {
+        padding: 30px 20px;
+    }
+    
+    .heading-section h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .values-section {
+        padding: 50px 0;
+    }
+    
+    .value-card {
+        margin-bottom: 20px;
+    }
+    
+    .heading-section h2 {
+        font-size: 28px;
+    }
+}
+
+.materials-section {
+    padding: 7em 0;
+    background-color: #f8f9fa;
+}
+
+.material-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.material-card:hover {
+    transform: translateY(-5px);
+}
+
+.material-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.material-content h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.material-content p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.material-specs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.material-specs li {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.material-specs i {
+    color: #28a745;
+    margin-right: 10px;
+}
+
+.materials-section .btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.materials-section .btn-primary:hover {
+    background-color: #218838;
+    border-color: #218838;
+    transform: translateY(-2px);
+} 

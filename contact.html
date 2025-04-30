@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Les Grands Moulins de Frenda</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/map-styles.css">
+    <style>
+      /* Modern Card Styling */
+      .modern-card {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+        height: 100%;
+      }
+      
+      .modern-card:hover {
+        transform: translateY(-5px);
+      }
+      
+      .modern-card .icon {
+        font-size: 2.5rem;
+        color: #82ae46;
+        margin-bottom: 20px;
+      }
+      
+      /* Contact Form Styling */
+      .contact-form {
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+      
+      .contact-form .form-control {
+        border-radius: 10px;
+        border: 1px solid #e6e6e6;
+        padding: 12px 15px;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+      }
+      
+      .contact-form .form-control:focus {
+        border-color: #82ae46;
+        box-shadow: 0 0 0 0.2rem rgba(130, 174, 70, 0.25);
+      }
+      
+      .contact-form textarea.form-control {
+        min-height: 200px;
+      }
+      
+      /* Map Container Styling */
+      #map {
+        height: 100%;
+        min-height: 400px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+      
+      /* Section Background */
+      .contact-section {
+        background: #f8f9fa;
+        padding: 5em 0;
+      }
+      
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        .modern-card {
+          margin-bottom: 20px;
+        }
+        
+        #map {
+          min-height: 300px;
+          margin-bottom: 30px;
+        }
+      }
+      
+      /* Button Styling */
+      .btn-primary {
+        background: #82ae46;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 25px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+      
+      .btn-primary:hover {
+        background: #6c9438;
+        transform: translateY(-2px);
+      }
+
+      .hero-wrap {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .hero-wrap .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        opacity: .3;
+        background: #000000;
+      }
+      .hero-wrap .slider-text {
+        height: 400px;
+        display: flex;
+        align-items: center;
+      }
+      .hero-wrap .slider-text .breadcrumbs {
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 3px;
+        margin-bottom: 0;
+        z-index: 99;
+      }
+      .hero-wrap .slider-text .breadcrumbs span {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .hero-wrap .slider-text .breadcrumbs span a {
+        color: #fff;
+      }
+      .hero-wrap .slider-text h1 {
+        font-size: 40px;
+        color: #fff;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+    </style>
+  </head>
+  <body class="goto-here">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">
+          <img src="images/p2.png" alt="" style="width: 150px;">
+
+		  </a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+	          <li class="nav-item"><a href="shop.html" class="nav-link">Boutique</a></li>
+			  <li class="nav-item"><a href="historique.html" class="nav-link">Historique</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li>
+	          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap hero-bread" style="background-image: url('images/gmf/fifteen.jpg');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Accueil</a></span> <span>Contactez-nous</span></p>
+            <h1 class="mb-0 bread">Contactez-nous</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section contact-section bg-light">
+      <div class="container">
+      	<div class="row d-flex mb-5 contact-info contact-section">
+          <div class="w-100"></div>
+        
+          <div class="col-md-3 d-flex">
+            <div class="info modern-card">
+              <i class="fas fa-map-marker-alt icon"></i>
+              <p><span>Adresse:</span> 3368+QXX, Frenda</p>
+            </div>
+          </div>
+        
+          <div class="col-md-3 d-flex">
+            <div class="info modern-card">
+              <i class="fas fa-phone icon"></i>
+              <p><span>Téléphone:</span> <a href="tel://+213559180536">+213 559180536</a></p>
+            </div>
+          </div>
+        
+          <div class="col-md-3 d-flex">
+            <div class="info modern-card">
+              <i class="fas fa-envelope icon"></i>
+              <p><span>Email:</span> <a href="mailto:gmf@gmail.com">GMF@gmail.com</a></p>
+            </div>
+          </div>
+        
+          <div class="col-md-3 d-flex">
+            <div class="info modern-card">
+              <i class="fas fa-globe icon"></i>
+              <p><span>Site Web:</span> <a href="#">gmf.com</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row block-9">
+          <div class="col-md-6 order-md-last d-flex">
+            <form action="#" class="bg-white p-5 contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Votre Nom">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Votre Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Sujet">
+              </div>
+              <div class="form-group">
+                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+              </div>
+              <div class="form-group text-center">
+                <input type="submit" value="Envoyer le Message" class="btn btn-primary py-3 px-5">
+              </div>
+            </form>
+          
+          </div>
+
+          <div class="col-md-6 d-flex">
+            <div id="map" class="map-container">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13063.161816517795!2d1.0490223328244235!3d35.06197770257574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1280d1c55f901b2d%3A0x7dd3faa0156f9ab0!2sEURL%20LES%20GRANDS%20MOULINS%20DE%20FRENDA!5e0!3m2!1sfr!2sdz!4v1745189306418!5m2!1sfr!2sdz" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section bg-white text-black pt-5">
+      <div class="container">
+        <!-- Scroll-to-top -->
+        <div class="row mb-3">
+        <div class="mouse mx-auto">
+          <a href="#" class="mouse-icon">
+          <div class="mouse-wheel"><span class="ion-ios-arrow-up text-black hover-green"></span></div>
+          </a>
+        </div>
+        </div>
+      
+        <!-- Footer content -->
+        <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+          <img src="images/logoGM.png" alt="Logo" style="max-width: 150px;" class="mb-3">
+          <p>Les Grands Moulins de Frenda, spécialistes de la meunerie, vous offrent des produits moulus avec passion et expertise.</p>
+          <ul class="ftco-footer-social list-unstyled mt-4">
+            <li class="ftco-animate d-inline-block me-3">
+            <a href="#" class="text-black hover-green"><span class="icon-twitter"></span></a>
+            </li>
+            <li class="ftco-animate d-inline-block me-3">
+            <a href="#" class="text-black hover-green"><span class="icon-facebook"></span></a>
+            </li>
+            <li class="ftco-animate d-inline-block">
+            <a href="#" class="text-black hover-green"><span class="icon-instagram"></span></a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      
+        <!-- Menu -->
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-5">
+          <h2 class="ftco-heading-2 hover-green">Menu</h2>
+          <ul class="list-unstyled">
+            <li><a href="#" class="py-2 d-block text-black hover-green">Shop</a></li>
+            <li><a href="#" class="py-2 d-block text-black hover-green">About</a></li>
+            <li><a href="#" class="py-2 d-block text-black hover-green">Journal</a></li>
+            <li><a href="#" class="py-2 d-block text-black hover-green">Contact Us</a></li>
+          </ul>
+          </div>
+        </div>
+   
+      
+        <!-- Contact -->
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2 hover-green">Une question ?</h2>
+          <div class="block-23 mb-3">
+            <ul class="list-unstyled">
+            <li>
+              <span class="icon icon-map-marker icon-social"></span>
+              <span class="text ms-2 text-black hover-green">3368+QXX, Frenda</span>
+            </li>
+            <li>
+              <a href="#" class="text-black hover-green">
+              <span class="icon icon-phone icon-social"></span>
+              <span class="text ms-2">+213 559180536</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-black hover-green">
+              <span class="icon icon-envelope icon-social"></span>
+              <span class="text ms-2">gmf@gmail.com</span>
+              </a>
+            </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+        </div>
+      
+        <!-- Copyright -->
+       <!-- Copyright -->
+<div class="row mt-4">
+  <div class="col-md-12 text-center text-black">
+    <p>
+      &copy; <script>document.write(new Date().getFullYear());</script> Tous droits réservés | Réalisé avec
+      <i class="icon-heart text-green-600" aria-hidden="true"></i> par
+      <a href="#" class="text-green-600" target="_blank">Les Grands Moulins de Frenda</a>
+    </p>
+  </div>
+</div>
+
+      </div>
+      </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>

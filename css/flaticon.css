@@ -1,0 +1,144 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 12/08/2018 13:24
+  	*/
+
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon/font/Flaticon.eot");
+  src: url("../fonts/flaticon/font/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/flaticon/font/Flaticon.woff") format("woff"),
+       url("../fonts/flaticon/font/Flaticon.ttf") format("truetype"),
+       url("../fonts/flaticon/font/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/flaticon/font/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-shipped:before { content: "\f100"; }
+.flaticon-box:before { content: "\f101"; }
+.flaticon-award:before { content: "\f102"; }
+.flaticon-customer-service:before { content: "\f103"; }
+.flaticon-salad:before { content: "\f104"; }
+.flaticon-diet:before { content: "\f105"; }
+.flaticon-phone-call:before { content: "\f106"; }
+.flaticon-email:before { content: "\f107"; }
+.flaticon-location:before { content: "\f108"; }
+.flaticon-clock:before { content: "\f109"; }
+.flaticon-user:before { content: "\f10a"; }
+.flaticon-shopping-cart:before { content: "\f10b"; }
+.flaticon-search:before { content: "\f10c"; }
+.flaticon-menu:before { content: "\f10d"; }
+.flaticon-close:before { content: "\f10e"; }
+.flaticon-arrow-up:before { content: "\f10f"; }
+.flaticon-arrow-down:before { content: "\f110"; }
+.flaticon-arrow-left:before { content: "\f111"; }
+.flaticon-arrow-right:before { content: "\f112"; }
+.flaticon-facebook:before { content: "\f113"; }
+.flaticon-twitter:before { content: "\f114"; }
+.flaticon-instagram:before { content: "\f115"; }
+.flaticon-linkedin:before { content: "\f116"; }
+.flaticon-youtube:before { content: "\f117"; }
+.flaticon-pinterest:before { content: "\f118"; }
+.flaticon-whatsapp:before { content: "\f119"; }
+.flaticon-telegram:before { content: "\f11a"; }
+.flaticon-skype:before { content: "\f11b"; }
+.flaticon-viber:before { content: "\f11c"; }
+.flaticon-tiktok:before { content: "\f11d"; }
+.flaticon-snapchat:before { content: "\f11e"; }
+.flaticon-reddit:before { content: "\f11f"; }
+.flaticon-tumblr:before { content: "\f120"; }
+.flaticon-flickr:before { content: "\f121"; }
+.flaticon-vimeo:before { content: "\f122"; }
+.flaticon-dribbble:before { content: "\f123"; }
+.flaticon-behance:before { content: "\f124"; }
+.flaticon-github:before { content: "\f125"; }
+.flaticon-gitlab:before { content: "\f126"; }
+.flaticon-bitbucket:before { content: "\f127"; }
+.flaticon-stack-overflow:before { content: "\f128"; }
+.flaticon-medium:before { content: "\f129"; }
+.flaticon-quora:before { content: "\f12a"; }
+.flaticon-product-hunt:before { content: "\f12b"; }
+.flaticon-hacker-news:before { content: "\f12c"; }
+.flaticon-slack:before { content: "\f12d"; }
+.flaticon-discord:before { content: "\f12e"; }
+.flaticon-messenger:before { content: "\f12f"; }
+.flaticon-line:before { content: "\f130"; }
+.flaticon-wechat:before { content: "\f131"; }
+.flaticon-kakao-talk:before { content: "\f132"; }
+.flaticon-vk:before { content: "\f133"; }
+.flaticon-odnoklassniki:before { content: "\f134"; }
+.flaticon-renren:before { content: "\f135"; }
+.flaticon-weibo:before { content: "\f136"; }
+.flaticon-baidu:before { content: "\f137"; }
+.flaticon-xing:before { content: "\f138"; }
+.flaticon-stumbleupon:before { content: "\f139"; }
+.flaticon-delicious:before { content: "\f13a"; }
+.flaticon-digg:before { content: "\f13b"; }
+.flaticon-mix:before { content: "\f13c"; }
+.flaticon-pocket:before { content: "\f13d"; }
+.flaticon-buffer:before { content: "\f13e"; }
+.flaticon-houzz:before { content: "\f13f"; }
+.flaticon-periscope:before { content: "\f140"; }
+.flaticon-meetup:before { content: "\f141"; }
+.flaticon-goodreads:before { content: "\f142"; }
+.flaticon-500px:before { content: "\f143"; }
+.flaticon-deviantart:before { content: "\f144"; }
+.flaticon-soundcloud:before { content: "\f145"; }
+.flaticon-mixcloud:before { content: "\f146"; }
+.flaticon-lastfm:before { content: "\f147"; }
+.flaticon-spotify:before { content: "\f148"; }
+.flaticon-apple-music:before { content: "\f149"; }
+.flaticon-google-play:before { content: "\f14a"; }
+.flaticon-itunes:before { content: "\f14b"; }
+.flaticon-amazon:before { content: "\f14c"; }
+.flaticon-ebay:before { content: "\f14d"; }
+.flaticon-etsy:before { content: "\f14e"; }
+.flaticon-shopify:before { content: "\f14f"; }
+.flaticon-woocommerce:before { content: "\f150"; }
+.flaticon-magento:before { content: "\f151"; }
+.flaticon-opencart:before { content: "\f152"; }
+.flaticon-prestashop:before { content: "\f153"; }
+.flaticon-bigcommerce:before { content: "\f154"; }
+.flaticon-squarespace:before { content: "\f155"; }
+.flaticon-wix:before { content: "\f156"; }
+.flaticon-weebly:before { content: "\f157"; }
+.flaticon-wordpress:before { content: "\f158"; }
+.flaticon-joomla:before { content: "\f159"; }
+.flaticon-drupal:before { content: "\f15a"; }
+.flaticon-typo3:before { content: "\f15b"; }
+.flaticon-contao:before { content: "\f15c"; }
+.flaticon-umbraco:before { content: "\f15d"; }
+.flaticon-processwire:before { content: "\f15e"; }
+.flaticon-silverstripe:before { content: "\f15f"; }
+.flaticon-craft:before { content: "\f160"; }
+.flaticon-expressionengine:before { content: "\f161"; }
+.flaticon-concrete5:before { content: "\f162"; }
+.flaticon-impresspages:before { content: "\f163"; }
+.flaticon-pico:before { content: "\f164"; }
+.flaticon-getsimple:before { content: "\f165"; }
+.flaticon-grav:before { content: "\f166"; }
+.flaticon-kirby:before { content: "\f167"; }
+.flaticon-pico:before { content: "\f168"; }
+.flaticon-pico:before { content: "\f169"; }

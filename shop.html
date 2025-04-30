@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Les Grands Moulins de Frenda</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <style>
+      .hero-wrap {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .hero-wrap .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        opacity: .3;
+        background: #000000;
+      }
+      .hero-wrap .slider-text {
+        height: 400px;
+        display: flex;
+        align-items: center;
+      }
+      .hero-wrap .slider-text .breadcrumbs {
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 3px;
+        margin-bottom: 0;
+        z-index: 99;
+      }
+      .hero-wrap .slider-text .breadcrumbs span {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .hero-wrap .slider-text .breadcrumbs span a {
+        color: #fff;
+      }
+      .hero-wrap .slider-text h1 {
+        font-size: 40px;
+        color: #fff;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+    </style>
+  </head>
+  <body class="goto-here">
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">
+			<img src="images/p2.png" alt="" style="width: 150px;">
+
+		  </a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+	          <li class="nav-item active"><a href="shop.html" class="nav-link">Boutique</a></li>
+			  <li class="nav-item"><a href="historique.html" class="nav-link">Historique</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap hero-bread" style="background-image: url('images/gmf/fifteen.jpg');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Accueil</a></span> <span>Produits</span></p>
+            <h1 class="mb-0 bread">Nos Produits</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section" style="background-color: #f7f6f2;">
+    	<div class="container">
+    	
+    		<div class="row">
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="product" 
+					data-name="Ovin Engraissement" 
+					data-image="images/4-Photoroom.png" 
+					data-oldprice="12000 DA" 
+					data-newprice="8000 DA"
+					data-description="Aliment complet pour ovins en phase d'engraissement. Riche en protéines et énergie pour une croissance optimale."
+					data-usage="Mélanger avec du fourrage à raison de 1kg par jour. Distribuer en deux repas. Toujours assurer un accès à l'eau propre."
+					data-composition="Protéines brutes: 16%, Matières grasses: 3%, Cellulose brute: 8%, Cendres brutes: 8%"
+					onclick="showProductModal(this)">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="images/hero13.jpg" alt="Produit GMF">
+    						<div class="overlay"></div>
+    					</a>
+    					<div class="text py-3 pb-4 px-3 text-center">
+    						<h3><a href="#">Ovin Engraissement</a></h3>
+    						<div class="d-flex">
+    							<div class="pricing">
+		    						<p class="price"><span class="mr-2 price-dc">12000 DA</span><span class="price-sale">8000 DA</span></p>
+		    					</div>
+	    					</div>
+	    					<div class="bottom-area">
+	    						<a href="#" class="d-flex justify-content-center align-items-center">
+	    							<span><i class="ion-ios-eye"></i></span>
+	    						</a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="product"
+					data-name="Vache laitiere b22" 
+					data-image="images/hero12.jpg" 
+					data-oldprice="120.00 DA" 
+					data-description="Aliment spécifique pour vaches laitières. Formulé pour optimiser la production laitière."
+					data-usage="Distribuer 3-4kg par jour selon la production laitière. Répartir en 2-3 repas. Toujours assurer un accès à l'eau propre."
+					data-composition="Protéines brutes: 18%, Matières grasses: 4%, Cellulose brute: 10%, Cendres brutes: 7%"
+					onclick="showProductModal(this)">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="images/hero12.jpg" alt="Colorlib Template">
+    						<div class="overlay"></div>
+    					</a>
+    					<div class="text py-3 pb-4 px-3 text-center">
+    						<h3><a href="#">Vache laitiere b22</a></h3>
+    						<div class="d-flex">
+    							<div class="pricing">
+		    						<p class="price"><span>120.00 DA</span></p>
+		    					</div>
+	    					</div>
+    						<div class="bottom-area">
+	    						<a href="#" class="d-flex justify-content-center align-items-center">
+	    							<span><i class="ion-ios-eye"></i></span>
+	    						</a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="product" 
+					data-name="Vache laitiere b20" 
+					data-image="images/8-Photoroom.png" 
+					data-oldprice="120.00 DA" 
+					data-description="Aliment complet pour vaches laitières. Formulé pour maintenir une production laitière optimale."
+					data-usage="Distribuer 2-3kg par jour. Répartir en 2 repas. Toujours assurer un accès à l'eau propre."
+					data-composition="Protéines brutes: 17%, Matières grasses: 3.5%, Cellulose brute: 9%, Cendres brutes: 7%"
+					onclick="showProductModal(this)">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="images/hero11.jpg" alt="Colorlib Template">
+	    					<div class="overlay"></div>
+	    				</a>
+    					<div class="text py-3 pb-4 px-3 text-center">
+    						<h3><a href="#">Vache laitiere b20</a></h3>
+    						<div class="d-flex">
+    							<div class="pricing">
+		    						<p class="price"><span>120.00 DA</span></p>
+		    					</div>
+	    					</div>
+    						<div class="bottom-area">
+	    						<a href="#" class="d-flex justify-content-center align-items-center">
+	    							<span><i class="ion-ios-eye"></i></span>
+	    						</a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="product" 
+					data-name="Bovin Engressment" 
+					data-image="images/7-Photoroom.png" 
+					data-oldprice="120.00 DA" 
+					data-description="Aliment complet pour bovins en phase d'engraissement. Optimisé pour une prise de poids rapide."
+					data-usage="Distribuer 4-5kg par jour. Répartir en 2-3 repas. Toujours assurer un accès à l'eau propre."
+					data-composition="Protéines brutes: 15%, Matières grasses: 3%, Cellulose brute: 8%, Cendres brutes: 8%"
+					onclick="showProductModal(this)">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="images/hero10.jpg" alt="Colorlib Template">
+    						<div class="overlay"></div>
+    					</a>
+    					<div class="text py-3 pb-4 px-3 text-center">
+    						<h3><a href="#">Bovin Engressment</a></h3>
+    						<div class="d-flex">
+    							<div class="pricing">
+		    						<p class="price"><span>120.00 DA</span></p>
+		    					</div>
+	    					</div>
+    						<div class="bottom-area">
+	    						<a href="#" class="d-flex justify-content-center align-items-center">
+	    							<span><i class="ion-ios-eye"></i></span>
+	    						</a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+
+
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="product" 
+					data-name="Brebis Serha" 
+					data-image="images/6-Photoroom.png" 
+					data-oldprice="120.00 DA" 
+					data-newprice="80.00 DA"
+					data-description="Aliment complet pour brebis. Formulé pour répondre aux besoins nutritionnels spécifiques des brebis."
+					data-usage="Distribuer 1-1.5kg par jour. Répartir en 2 repas. Toujours assurer un accès à l'eau propre."
+					data-composition="Protéines brutes: 16%, Matières grasses: 3%, Cellulose brute: 8%, Cendres brutes: 8%"
+					onclick="showProductModal(this)">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="images/hero9.jpg" alt="Colorlib Template">
+    						<!-- <span class="status">30%</span> -->
+    						<div class="overlay"></div>
+    					</a>
+    					<div class="text py-3 pb-4 px-3 text-center">
+    						<h3><a href="#">Brebis Serha </a></h3>
+    						<div class="d-flex">
+    							<div class="pricing">
+		    						<p class="price"><span class="mr-2 price-dc">120.00 DA</span><span class="price-sale">$80.00</span></p>
+		    					</div>
+	    					</div>
+	    					<div class="bottom-area">
+	    						<a href="#" class="d-flex justify-content-center align-items-center">
+	    							<span><i class="ion-ios-eye"></i></span>
+	    						</a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="product" 
+					data-name="Brebis serha" 
+					data-image="images/hero8.jpg" 
+					data-oldprice="120.00 DA" 
+					data-description="Aliment complet pour brebis. Formulé pour maintenir une bonne condition corporelle."
+					data-usage="Distribuer 1-1.5kg par jour. Répartir en 2 repas. Toujours assurer un accès à l'eau propre."
+					data-composition="Protéines brutes: 15%, Matières grasses: 3%, Cellulose brute: 9%, Cendres brutes: 8%"
+					onclick="showProductModal(this)">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="images/hero8.jpg" alt="Colorlib Template">
+    						<div class="overlay"></div>
+    					</a>
+    					<div class="text py-3 pb-4 px-3 text-center">
+    						<h3><a href="#">Brebis serha</a></h3>
+    						<div class="d-flex">
+    							<div class="pricing">
+		    						<p class="price"><span>120.00 DA</span></p>
+		    					</div>
+	    					</div>
+    						<div class="bottom-area">
+	    						<a href="#" class="d-flex justify-content-center align-items-center">
+	    							<span><i class="ion-ios-eye"></i></span>
+	    						</a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="product" 
+					data-name="P.CH.Demarrage" 
+					data-image="images/1-Photoroom.png" 
+					data-oldprice="120.00 DA" 
+					data-description="Aliment de démarrage pour poulets. Formulé pour assurer une bonne croissance initiale."
+					data-usage="Distribuer à volonté pendant les 3 premières semaines. Toujours assurer un accès à l'eau propre."
+					data-composition="Protéines brutes: 22%, Matières grasses: 4%, Cellulose brute: 4%, Cendres brutes: 6%"
+					onclick="showProductModal(this)">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="images/hero7.jpg" alt="Colorlib Template">
+	    					<div class="overlay"></div>
+	    				</a>
+    					<div class="text py-3 pb-4 px-3 text-center">
+    						<h3><a href="#">P.CH.Demarrage</a></h3>
+    						<div class="d-flex">
+    							<div class="pricing">
+		    						<p class="price"><span>120.00 DA</span></p>
+		    					</div>
+	    					</div>
+    						<div class="bottom-area">
+	    						<a href="#" class="d-flex justify-content-center align-items-center">
+	    							<span><i class="ion-ios-eye"></i></span>
+	    						</a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="product" 
+					data-name="P.CH.Croissance" 
+					data-image="images/2-Photoroom.png" 
+					data-oldprice="120.00 DA" 
+					data-description="Aliment de croissance pour poulets. Optimisé pour une croissance régulière et saine."
+					data-usage="Distribuer à volonté à partir de la 4ème semaine. Toujours assurer un accès à l'eau propre."
+					data-composition="Protéines brutes: 20%, Matières grasses: 4%, Cellulose brute: 5%, Cendres brutes: 6%"
+					onclick="showProductModal(this)">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="images/hero6.jpg" alt="Colorlib Template">
+    						<div class="overlay"></div>
+    					</a>
+    					<div class="text py-3 pb-4 px-3 text-center">
+    						<h3><a href="#">P.CH.Croissance</a></h3>
+    						<div class="d-flex">
+    							<div class="pricing">
+		    						<p class="price"><span>120.00 DA</span></p>
+		    					</div>
+	    					</div>
+    						<div class="bottom-area">
+	    						<a href="#" class="d-flex justify-content-center align-items-center">
+	    							<span><i class="ion-ios-eye"></i></span>
+	    						</a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+
+   
+    	</div>
+    </section>
+
+
+
+
+	<footer class="ftco-footer ftco-section bg-white text-black pt-5">
+		<div class="container">
+		  <!-- Scroll-to-top -->
+		  <div class="row mb-3">
+		  <div class="mouse mx-auto">
+			<a href="#" class="mouse-icon">
+			<div class="mouse-wheel"><span class="ion-ios-arrow-up text-black hover-green"></span></div>
+			</a>
+		  </div>
+		  </div>
+		
+		  <!-- Footer content -->
+		  <div class="row mb-5">
+		  <div class="col-md">
+			<div class="ftco-footer-widget mb-4">
+			<img src="images/logoGM.png" alt="Logo" style="max-width: 150px;" class="mb-3">
+			<p>Les Grands Moulins de Frenda, spécialistes de la meunerie, vous offrent des produits moulus avec passion et expertise.</p>
+			<ul class="ftco-footer-social list-unstyled mt-4">
+			  <li class="ftco-animate d-inline-block me-3">
+			  <a href="#" class="text-black hover-green"><span class="icon-twitter"></span></a>
+			  </li>
+			  <li class="ftco-animate d-inline-block me-3">
+			  <a href="#" class="text-black hover-green"><span class="icon-facebook"></span></a>
+			  </li>
+			  <li class="ftco-animate d-inline-block">
+			  <a href="#" class="text-black hover-green"><span class="icon-instagram"></span></a>
+			  </li>
+			</ul>
+			</div>
+		  </div>
+		
+		  <!-- Menu -->
+		  <div class="col-md">
+			<div class="ftco-footer-widget mb-4 ml-md-5">
+			<h2 class="ftco-heading-2 hover-green">Menu</h2>
+			<ul class="list-unstyled">
+			  <li><a href="#" class="py-2 d-block text-black hover-green">Shop</a></li>
+			  <li><a href="#" class="py-2 d-block text-black hover-green">About</a></li>
+			  <li><a href="#" class="py-2 d-block text-black hover-green">Journal</a></li>
+			  <li><a href="#" class="py-2 d-block text-black hover-green">Contact Us</a></li>
+			</ul>
+			</div>
+		  </div>
+	 
+		
+		  <!-- Contact -->
+		  <div class="col-md">
+			<div class="ftco-footer-widget mb-4">
+			<h2 class="ftco-heading-2 hover-green">Une question ?</h2>
+			<div class="block-23 mb-3">
+			  <ul class="list-unstyled">
+			  <li>
+				<span class="icon icon-map-marker icon-social"></span>
+				<span class="text ms-2 text-black hover-green">3368+QXX, Frenda</span>
+			  </li>
+			  <li>
+				<a href="#" class="text-black hover-green">
+				<span class="icon icon-phone icon-social"></span>
+				<span class="text ms-2">+213 559180536</span>
+				</a>
+			  </li>
+			  <li>
+				<a href="#" class="text-black hover-green">
+				<span class="icon icon-envelope icon-social"></span>
+				<span class="text ms-2">gmf@gmail.com</span>
+				</a>
+			  </li>
+			  </ul>
+			</div>
+			</div>
+		  </div>
+		  </div>
+		
+		  <!-- Copyright -->
+		 <!-- Copyright -->
+  <div class="row mt-4">
+	<div class="col-md-12 text-center text-black">
+	  <p>
+		&copy; <script>document.write(new Date().getFullYear());</script> Tous droits réservés | Réalisé avec
+		<i class="icon-heart text-green-600" aria-hidden="true"></i> par
+		<a href="#" class="text-green-600" target="_blank">Les Grands Moulins de Frenda</a>
+	  </p>
+	</div>
+  </div>
+  
+		</div>
+		</footer>
+  
+	  
+
+	  <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+		  <div class="modal-content">
+			<div class="modal-header d-flex justify-content-between align-items-center">
+			  <h5 class="modal-title mb-0" id="productModalLabel">Détails du produit</h5>
+			  <button type="button" class="btn p-0 border-0 bg-transparent" data-bs-dismiss="modal" aria-label="Fermer">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg text-danger" viewBox="0 0 16 16">
+				  <path d="M2.146 2.146a.5.5 0 0 1 .708 0L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854a.5.5 0 0 1 0-.708z"/>
+				</svg>
+			  </button>
+			</div>
+	  
+			<div class="modal-body d-flex flex-column align-items-center text-center">
+			  <img id="modalProductImage" src="" class="img-fluid mb-3" alt="Image du produit" style="max-height: 300px;">
+			  <h3 id="modalProductName"></h3>
+			  <p class="price">
+				<span id="modalProductOldPrice" class="text-muted text-decoration-line-through"></span>
+				<span id="modalProductNewPrice" class="fw-bold text-success"></span>
+			  </p>
+	  
+			  <div class="product-details mt-4 px-4" style="max-width: 600px;">
+				<div class="mb-4">
+				  <h5 class="text-dark text-start mb-3">Description</h5>
+				  <p id="modalProductDescription" class="text-secondary"></p>
+				</div>
+				
+				<div class="mb-4">
+				  <h5 class="text-dark text-start mb-3">Mode d'emploi</h5>
+				  <p id="modalProductUsage" class="text-secondary"></p>
+				</div>
+				
+				<div class="mb-4">
+				  <h5 class="text-dark text-start mb-3">Composition</h5>
+				  <p id="modalProductComposition" class="text-secondary"></p>
+				</div>
+			  </div>
+	  
+			  <a href="https://wa.me/213660123456?text=Bonjour%2C%20je%20suis%20intéressé(e)%20par%20le%20produit%20:%20[nom_du_produit].%20Pouvez-vous%20me%20donner%20plus%20d'infos%20ou%20comment%20l'acheter%20?"
+				 target="_blank"
+				 class="btn btn-success mt-4">
+				Réserver maintenant sur WhatsApp 💬
+			  </a>
+			  <div style="height: 20px;"></div>
+			</div>
+	  
+		  </div>
+		</div>
+	  </div>
+	  
+  
+	  
+  
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+	function showProductModal(el) {
+	  const name = el.getAttribute('data-name');
+	  const image = el.getAttribute('data-image');
+	  const oldPrice = el.getAttribute('data-oldprice');
+	  const newPrice = el.getAttribute('data-newprice');
+	  const description = el.getAttribute('data-description');
+	  const usage = el.getAttribute('data-usage');
+	  const composition = el.getAttribute('data-composition');
+  
+	  document.getElementById('modalProductName').textContent = name;
+	  document.getElementById('modalProductImage').src = image;
+	  document.getElementById('modalProductOldPrice').textContent = oldPrice;
+	  document.getElementById('modalProductNewPrice').textContent = newPrice;
+	  document.getElementById('modalProductDescription').textContent = description;
+	  document.getElementById('modalProductUsage').textContent = usage;
+	  document.getElementById('modalProductComposition').textContent = composition;
+  
+	  var modal = new bootstrap.Modal(document.getElementById('productModal'));
+	  modal.show();
+	}
+  </script>
+  
+  </body>
+</html>

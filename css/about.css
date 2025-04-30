@@ -1,0 +1,1003 @@
+/* About Page Animations and Styling */
+
+/* Image Container Animation */
+.about-img-container {
+    perspective: 1000px;
+}
+
+.about-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    transform-style: preserve-3d;
+    animation: fadeInUp 1s ease-out;
+}
+
+.about-img img {
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.about-img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.about-img:hover img {
+    transform: scale(1.1);
+}
+
+/* Stats Cards Animation */
+.bg-primary.rounded, .bg-dark.rounded {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.bg-primary.rounded:hover, .bg-dark.rounded:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Counter Animation */
+.counter-value {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: countUp 1s ease-out forwards;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered Animation Delays */
+.about-img:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.about-img:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.bg-primary.rounded:nth-child(1) {
+    animation-delay: 0.6s;
+}
+
+.bg-dark.rounded {
+    animation-delay: 0.8s;
+}
+
+.bg-primary.rounded:nth-child(3) {
+    animation-delay: 1s;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about-img {
+        margin-bottom: 20px;
+    }
+    
+    .bg-primary.rounded, .bg-dark.rounded {
+        margin-bottom: 20px;
+    }
+}
+
+/* Hover Effects for Feature Items */
+.text-dark i {
+    transition: all 0.3s ease;
+}
+
+.text-dark:hover i {
+    transform: scale(1.2);
+    color: #0d6efd;
+}
+
+/* Button Animation */
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(13, 110, 253, 0.2);
+}
+
+.btn-primary::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+}
+
+.btn-primary:hover::after {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+}
+
+/* Team Member Buttons and Contact Info */
+.team-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.team-item:hover .team-icon {
+    opacity: 1;
+}
+
+.team-icon a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #0d6efd;
+    color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.team-item:hover .team-icon a {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.team-icon a:hover {
+    background: #0b5ed7;
+    transform: scale(1.1) !important;
+}
+
+.team-icon a:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.team-icon a:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+/* Contact Info Tooltip */
+.team-icon a[data-bs-toggle="tooltip"] {
+    position: relative;
+}
+
+.team-icon a[data-bs-toggle="tooltip"]::before {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.team-icon a[data-bs-toggle="tooltip"]:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+/* LinkedIn Button Special Style */
+.team-icon a[href*="linkedin"] {
+    background: #0077b5;
+}
+
+.team-icon a[href*="linkedin"]:hover {
+    background: #005e93;
+}
+
+/* Email Button Special Style */
+.team-icon a[href^="mailto"] {
+    background: #dc3545;
+}
+
+.team-icon a[href^="mailto"]:hover {
+    background: #bb2d3b;
+}
+
+/* Team Item Hover Effect */
+.team-item {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.team-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.team-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.team-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(13, 110, 253, 0.2);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.team-item:hover .team-img::before {
+    opacity: 1;
+}
+
+/* Team Content Animation */
+.team-content {
+    transition: all 0.3s ease;
+}
+
+.team-item:hover .team-content {
+    background: #0d6efd;
+}
+
+.team-item:hover .team-content h4 {
+    color: white;
+}
+
+.team-item:hover .team-content p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Click Animation */
+.team-icon a:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Adjustments for Team Section */
+@media (max-width: 768px) {
+    .team-icon a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+    
+    .team-icon a[data-bs-toggle="tooltip"]::before {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+}
+
+/* Values Section Styling and Animations */
+.value-item {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.value-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: #82ae46;
+}
+
+.value-icon {
+    position: relative;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+.value-icon i {
+    position: relative;
+    z-index: 2;
+    transition: all 0.5s ease;
+}
+
+.value-icon::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: rgba(13, 110, 253, 0.1);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.5s ease;
+}
+
+.value-item:hover .value-icon::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.value-item:hover .value-icon i {
+    transform: scale(1.2) rotate(360deg);
+    color: #0d6efd;
+}
+
+/* Value Item Content Animation */
+.value-item h4 {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.value-item:hover h4 {
+    color: #0d6efd;
+    transform: translateY(-5px);
+}
+
+.value-item p {
+    position: relative;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.value-item:hover p {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+/* Value Item Border Animation */
+.value-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: linear-gradient(#51821d, #537f15) border-box;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    transition: all 0.5s ease;
+}
+
+.value-item:hover::after {
+    border-color: #82ae46;
+}
+
+/* Value Item Background Animation */
+.value-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.1) 0%, rgba(13, 202, 240, 0.1) 100%);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.value-item:hover::before {
+    opacity: 1;
+}
+
+/* Staggered Animation for Value Items */
+.value-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.value-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.value-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Responsive Adjustments for Values Section */
+@media (max-width: 768px) {
+    .value-item {
+        margin-bottom: 20px;
+    }
+    
+    .value-icon::before {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Section Title Animation */
+.text-center h4.text-primary {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.text-center h4.text-primary::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(#51821d, #537f15);
+    transition: all 0.3s ease;
+}
+
+.text-center:hover h4.text-primary::after {
+    width: 100px;
+}
+
+/* Section Description Animation */
+.text-muted {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.text-center:hover .text-muted {
+    transform: translateY(-5px);
+    opacity: 1;
+}
+
+/* FAB Styles */
+.fab-wrapper {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.fab-checkbox {
+    display: none;
+}
+
+.fab {
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: #7ba442;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 1000;
+    cursor: pointer;
+    border: none;
+}
+
+.fab:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.fab-checkbox:checked ~ .fab:before {
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.fab:hover {
+    background: #0b5ed7;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.fab-dots {
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.fab-dots-1 {
+    left: 15px;
+    animation-delay: 0s;
+}
+
+.fab-dots-2 {
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation-delay: 0.2s;
+}
+
+.fab-dots-3 {
+    right: 15px;
+    animation-delay: 0.4s;
+}
+
+.fab-checkbox:checked ~ .fab .fab-dots {
+    height: 6px;
+}
+
+.fab-checkbox:checked ~ .fab .fab-dots-2 {
+    opacity: 0;
+}
+
+.fab-checkbox:checked ~ .fab .fab-dots-1 {
+    width: 20px;
+    border-radius: 3px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.fab-checkbox:checked ~ .fab .fab-dots-3 {
+    width: 20px;
+    border-radius: 3px;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%) rotate(-45deg);
+}
+
+.fab-wheel {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10rem;
+    height: 10rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform-origin: bottom right;
+    transform: scale(0);
+    z-index: 999;
+}
+
+.fab-checkbox:checked ~ .fab-wheel {
+    transform: scale(1);
+}
+
+.fab-action {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #95b668;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    opacity: 0;
+    transform: scale(0);
+}
+
+.fab-checkbox:checked ~ .fab-wheel .fab-action {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.fab-action:hover {
+    background: #0d6efd;
+    color: white;
+    transform: scale(1.1) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.fab-wheel .fab-action-1 {
+    right: 0;
+    top: 1rem;
+    transition-delay: 0s;
+}
+
+.fab-wheel .fab-action-2 {
+    right: 4rem;
+    top: 2rem;
+    transition-delay: 0.1s;
+}
+
+.fab-wheel .fab-action-3 {
+    right: 6rem;
+    top: 5rem;
+    transition-delay: 0.2s;
+}
+
+.fab-wheel .fab-action-4 {
+    right: 5rem;
+    top: 8rem;
+    transition-delay: 0.3s;
+}
+
+/* Team Card Styles */
+.team-item {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.team-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-img img {
+    transition: all 0.3s ease;
+}
+
+.team-item:hover .team-img img {
+    transform: scale(1.1);
+}
+
+.team-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Tooltip Customization */
+.tooltip {
+    font-family: 'Poppins', sans-serif;
+}
+
+.tooltip .tooltip-inner {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 300px;
+}
+
+.tooltip.bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .fab {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .fab-dots {
+        height: 4px;
+        width: 4px;
+    }
+
+    .fab-wheel {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .fab-action {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    .fab-wheel .fab-action-1 {
+        right: 0;
+        top: 0.5rem;
+    }
+
+    .fab-wheel .fab-action-2 {
+        right: 3rem;
+        top: 1.5rem;
+    }
+
+    .fab-wheel .fab-action-3 {
+        right: 4.5rem;
+        top: 4rem;
+    }
+
+    .fab-wheel .fab-action-4 {
+        right: 3.5rem;
+        top: 6.5rem;
+    }
+}
+
+/* Team Social Icons */
+.team-social {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.team-item:hover .team-social {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon.linkedin {
+    background: #0077b5;
+    color: white;
+}
+
+.social-icon.linkedin:hover {
+    background: #005885;
+}
+
+.social-icon.email {
+    background: #dc3545;
+    color: white;
+}
+
+.social-icon.email:hover {
+    background: #bb2d3b;
+}
+
+.team-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.team-item:hover .team-img::before {
+    opacity: 1;
+}
+
+/* Animated Cards Styles */
+.animated-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.animated-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.animated-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.animated-card:hover::before {
+    transform: translateX(100%);
+}
+
+.animated-card .card-icon {
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.animated-card:hover .card-icon {
+    transform: scale(1.1);
+}
+
+.animated-card .card-content {
+    position: relative;
+    z-index: 1;
+}
+
+.animated-card .card-title {
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-card .card-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.animated-card:hover .card-title::after {
+    transform: translateX(0);
+}
+
+/* Stats Cards Animation */
+.stats-card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.stats-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+    transform: translateY(100%);
+    transition: transform 0.6s ease;
+}
+
+.stats-card:hover::before {
+    transform: translateY(0);
+}
+
+.stats-card .counter-value {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.stats-card:hover .counter-value {
+    transform: scale(1.1);
+}
+
+/* Team Cards Animation */
+.team-card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.team-card .team-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-card .team-img img {
+    transition: all 0.5s ease;
+}
+
+.team-card:hover .team-img img {
+    transform: scale(1.1);
+}
+
+.team-card .team-content {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .team-content {
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
+}
+
+.team-card .social-links {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .social-links {
+    bottom: 20px;
+}
+
+.team-card .social-links a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.team-card .social-links a:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Values Cards Animation */
+.value-card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.value-card .value-icon {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.value-card:hover .value-icon {
+    transform: rotateY(180deg);
+}
+
+.value-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover::after {
+    transform: scaleX(1);
+} 
