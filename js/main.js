@@ -357,3 +357,38 @@ root.style.setProperty("--marquee-elements", marqueeContent.children.length);
 for(let i=0; i<marqueeElementsDisplayed; i++) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+	// Setup tab functionality
+	const tabButtons = document.querySelectorAll('.tab-btn');
+	
+	tabButtons.forEach(button => {
+	  button.addEventListener('click', function() {
+		// Remove active class from all buttons
+		tabButtons.forEach(btn => btn.classList.remove('active'));
+		
+		// Add active class to clicked button
+		this.classList.add('active');
+		
+		// Hide all tab panes
+		const tabPanes = document.querySelectorAll('.tab-pane');
+		tabPanes.forEach(pane => pane.classList.remove('active'));
+		
+		// Show the target tab pane
+		const targetTab = this.getAttribute('data-tab');
+		document.getElementById(targetTab).classList.add('active');
+	  });
+	});
+	
+	// Add to cart functionality (placeholder)
+	const addToCartBtn = document.querySelector('.add-to-cart-btn');
+	if (addToCartBtn) {
+	  addToCartBtn.addEventListener('click', function() {
+		const productName = document.getElementById('modalProductName').textContent;
+		alert(`${productName} a été ajouté à votre panier!`);
+	  });
+	}
+  });
+ 
