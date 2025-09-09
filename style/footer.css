@@ -1,0 +1,192 @@
+       .footer {
+            background:#5c3d24;
+            color: white;
+            padding: 60px 0 40px;
+            position: relative;
+            overflow: hidden;
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1.2fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .footer-section h2 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-brand {
+            display: flex;
+            flex-direction: column;
+        }
+
+     
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 12px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8B4513;
+            font-size: 20px;
+        }
+
+        .footer-description {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .email-signup {
+            display: flex;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 350px;
+        }
+
+        .email-input {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            background: transparent;
+            color: white;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .email-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .email-submit {
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            font-size: 18px;
+        }
+
+        .email-submit:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease, padding-left 0.3s ease;
+            display: block;
+            padding: 5px 0;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+            padding-left: 10px;
+        }
+
+        .contact-info {
+            font-size: 16px;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .contact-info div {
+            margin-bottom: 15px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .gallery-item {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.1);
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Gallery background images using gradients to simulate different agricultural scenes */
+        .gallery-item:nth-child(1) {
+            background: linear-gradient(45deg, #DAA520, #B8860B);
+        }
+        .gallery-item:nth-child(2) {
+            background: linear-gradient(45deg, #228B22, #32CD32);
+        }
+        .gallery-item:nth-child(3) {
+            background: linear-gradient(45deg, #D2691E, #CD853F);
+        }
+        .gallery-item:nth-child(4) {
+            background: linear-gradient(45deg, #4682B4, #87CEEB);
+        }
+        .gallery-item:nth-child(5) {
+            background: linear-gradient(45deg, #8B4513, #A0522D);
+        }
+        .gallery-item:nth-child(6) {
+            background: linear-gradient(45deg, #DC143C, #B22222);
+        }
+
+        @media (max-width: 968px) {
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 568px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+            
+            .footer-section h2 {
+                font-size: 24px;
+            }
+            
+            .email-signup {
+                max-width: 100%;
+            }
+        }
+    }

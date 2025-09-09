@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr" style="overflow-x: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABF - ALIMENTATION  Biologique Française</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <!-- <link rel="stylesheet" href="style/team.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="images/logoGM1.png" alt="Logo" href="./index.html" class="logo">
+        </a>
+        
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#" class="active" data-lang="ACCUEIL">ACCUEIL</a></li>
+            <li><a href="services.html" data-lang="SERVICES">SERVICES</a></li>
+            <li><a href="produit.html" data-lang="PRODUITS">PRODUITS</a></li>
+            <li><a href="production.html" data-lang="PRODUCTION">PRODUCTION</a></li>
+            <a href="contact.html" class="cta-button" data-lang="CONTACTEZ-NOUS">CONTACTEZ-NOUS</a>
+        </ul>
+
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <!-- Language Switcher will be inserted here by JavaScript -->
+            <button class="mobile-menu-toggle" id="mobileToggle">☰</button>
+            <div class="mobile-menu-content">
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero-section">
+        <!-- Slide 1 -->
+        <div class="slide slide-1 active">
+            <div class="slide-content">
+            <h1 data-lang="INNOVATION AGRONOMIQUE">Innovation Agronomique</h1>
+            <p data-lang="DÉCOUVREZ L'AVENIR DE L'AGRONOMIE">Découvrez l'avenir de l'agronomie avec   solutions de pointe</p>
+            <a href="#" class="cta-button" data-lang="DÉMARRER">Démarrer</a>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide slide-2">
+            <div class="slide-content">
+            <h1 data-lang="ALIMENTATION  DURABLE">ALIMENTATION  Durable</h1>
+            <p data-lang="TRANSFORMEZ VOS IDÉES EN RÉCOLTES">Transformez vos idées en récoltes grâce à notre plateforme innovante</p>
+            <a href="#" class="cta-button" data-lang="EN SAVOIR PLUS">En savoir plus</a>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide slide-3">
+            <div class="slide-content">
+            <h1 data-lang="COMMUNAUTÉ AGRICOLE">Communauté Agricole</h1>
+            <p data-lang="CONNECTEZ-VOUS AVEC DES AGRONOMES">Connectez-vous avec des agronomes et producteurs du monde entier</p>
+            <a href="#" class="cta-button" data-lang="REJOINDRE MAINTENANT">Rejoindre maintenant</a>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="slider-arrows">
+            <button class="arrow arrow-left" onclick="previousSlide()">‹</button>
+            <button class="arrow arrow-right" onclick="nextSlide()">›</button>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="slider-nav">
+            <div class="nav-dot active" onclick="currentSlide(1)"></div>
+            <div class="nav-dot" onclick="currentSlide(2)"></div>
+            <div class="nav-dot" onclick="currentSlide(3)"></div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar" id="progressBar"></div>
+    </section>
+
+    <section class="about-section special-natural-products-section">
+    <h2 class="section-title-special" data-lang="ALEMENT BETAIL FRENDA">ALEMENT BETAIL FRENDA</h2>
+    <div class="container">
+        <div class="agro-section-wrapper">
+
+            <!-- First column -->
+            <div class="agro-column-item">
+                <h1 class="agro-main-title" data-lang="ABOUT ABF FRENDA">ABOUT US</h1>
+                <h2 class="agro-sub-heading" data-lang="AGRICULTURAL & FEED COMPANY">AGRICULTURAL</h2>
+                <p class="agro-text-content">
+                    <span class="agro-highlight-span" data-lang="ABF Frenda, a proud branch of Les Grands Moulins de Frenda, specializes in producing high-quality animal feed and processing locally sourced grains. With decades of experience, we combine tradition and innovation to support Algeria's agricultural sector.">
+                        ABF Frenda, a proud branch of Les Grands Moulins de Frenda, specializes in producing high-quality animal feed and processing locally sourced grains. With decades of experience, we combine tradition and innovation to support Algeria's agricultural sector.
+                    </span>
+                </p>
+                <a href="services.html" class="agro-action-btn" data-lang="LEARN MORE">LEARN MORE</a>
+            </div>
+    
+                <!-- Third column -->
+            <div class="agro-column-item agro-image-wrapper">
+                <div class="agro-featured-image">
+                    <!-- High-quality image of grain milling or animal feed production -->
+                </div>
+            </div> 
+
+        </div>
+    </div>
+    
+</section>
+
+ <section class="agriculture-section">
+        <!-- Header moved into products-grid as first grid item -->
+        <div class="products-grid">
+            <div class="header-card">
+                <h1 class="agro-main-title" data-lang="ALIMENTATION  TITLE">ALIMENTATION ANIMALE</h1>
+                <h2 class="agro-sub-heading" data-lang="AGRO PRODUCTS">PRODUITS ALIMENTAIRES</h2>
+                <p class="description" data-lang="DESCRIPTION_PARAGRAPH_1">
+                    Dans le secteur agricole, la qualité et la diversité des produits sont essentielles pour répondre aux besoins des éleveurs et des agriculteurs.
+                    Notre gamme comprend des aliments pour volailles, bovins, ovins et caprins, ainsi que des compléments nutritionnels adaptés à chaque étape de la production.
+                </p>
+                <a href="produit.html" class="agro-action-btn" data-lang="ALL PRODUCTS">ALL PRODUCTS</a>
+            </div>
+
+            <div class="product-card wheat-card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-image: url('./images/product/eggs.webp');"></div>
+                    <div class="card-back" style="background-image: url('./images/product/démarrage-01.png');">
+                        <div class="card-overlay">
+                            <div class="product-title">poule pondeuse</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card millet-card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-image: url('./images/product/chicken.png');"></div>
+                    <div class="card-back" style="background-image: url('./images/product/poule-pondeuse.png');">
+                        <div class="card-overlay">
+                            <div class="product-title">poule</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card heat-card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-image: url('./images/product/m-sheep.png');"></div>
+                    <div class="card-back" style="background-image: url('./images/product/brebis-allitante.png');">
+                        <div class="card-overlay">
+                            <div class="product-title">Brebis Allitante</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card rice-card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-image: url('./images/product/goat.jpg');"></div>
+                    <div class="card-back" style="background-image: url('./images/product/SARHA-bleu.png');">
+                        <div class="card-overlay">
+                            <div class="product-title">Sarha</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card leaf-card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-image: url('./images/product/bull.jpg');"></div>
+                    <div class="card-back" style="background-image: url('./images/product/bovin-f-05\ mois.png');">
+                        <div class="card-overlay">
+                            <div class="product-title">Bovin</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card treat-card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-image: url('./images/product/cow.webp');"></div>
+                    <div class="card-back" style="background-image: url('./images/product/vache\ laitière-20.png');">
+                        <div class="card-overlay">
+                            <div class="product-title">Vache</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drawing">
+                <div class="card-inner">
+                    <img src="./images/drawing.png" class="drawing-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="farm-section">
+  <div class="farm-container">
+    <div class="content-left">
+      <h1 class="agro-main-title" data-lang="QUE FAISONS-NOUS ?">QUE FAISONS-NOUS ?</h1>
+      <h2 class="agro-sub-heading" data-lang="DOMAINES D’EXPERTISE">  DOMAINES D’EXPERTISE</h2>
+
+      <p class="description" data-lang="Aliment BETAIL Frenda (ABF) accompagne les éleveurs et agriculteurs grâce à des solutions nutritionnelles complètes, innovantes et fiables. Notre mission est de fournir une nutrition équilibrée et durable, issue de matières premières soigneusement sélectionnées, afin d’améliorer la productivité et le bien-être animal.">
+        Aliment BETAIL Frenda (ABF) accompagne les éleveurs et agriculteurs grâce à des solutions nutritionnelles complètes, innovantes et fiables. <br>
+        Notre mission est de fournir une nutrition équilibrée et durable, issue de matières premières soigneusement sélectionnées, afin d’améliorer la productivité et le bien-être animal.
+      </p>
+
+      <a href="services.html" class="agro-action-btn" data-lang="EN SAVOIR PLUS">EN SAVOIR PLUS</a>
+    </div>
+
+    <div class="services-grid">
+      <!-- Nutrition Animale -->
+      <div class="service-card">
+        <div class="card-header">
+          <!-- SVG 1 -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#e9dfd4" width="50" height="50" viewBox="0 0 20 20" xml:space="preserve">
+            <rect x="0" fill="none" width="20" height="20"/>
+            <g>
+            <path d="M11.9 8.4c1.3 0 2.1-1.9 2.1-3.1 0-1-.5-2.2-1.5-2.2-1.3 0-2.1 1.9-2.1 3.1 0 1 .5 2.2 1.5 2.2zm-3.8 0c1 0 1.5-1.2 1.5-2.2C9.6 4.9 8.8 3 7.5 3 6.5 3 6 4.2 6 5.2c-.1 1.3.7 3.2 2.1 3.2zm7.4-1c-1.3 0-2.2 1.8-2.2 3.1 0 .9.4 1.8 1.3 1.8 1.3 0 2.2-1.8 2.2-3.1 0-.9-.5-1.8-1.3-1.8zm-8.7 3.1c0-1.3-1-3.1-2.2-3.1-.9 0-1.3.9-1.3 1.8 0 1.3 1 3.1 2.2 3.1.9 0 1.3-.9 1.3-1.8zm3.2-.2c-2 0-4.7 3.2-4.7 5.4 0 1 .7 1.3 1.5 1.3 1.2 0 2.1-.8 3.2-.8 1 0 1.9.8 3 .8.8 0 1.7-.2 1.7-1.3 0-2.2-2.7-5.4-4.7-5.4z"/>
+            </g>
+            </svg>
+          <div class="card-category" data-lang="Expertise">Expertise</div>
+          <div class="card-title" data-lang="Nutrition Animale">Nutrition Animale</div>
+        </div>
+        <div class="card-image" style="background-image: url('./images/service3.jpg')"></div>
+      </div>
+
+      <!-- Matières Premières -->
+      <div class="service-card">
+        <div class="card-header">
+          <!-- SVG 2 -->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#e9dfd4" height="50" width="50" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+            <g>
+                <g>
+                    <path d="M456.348,77.913c-27.618,0-50.087,22.469-50.087,50.087v66.786c-18.387-6.57-38.143-2.168-52.112,11.802l-57.003,57.002    c-15.767,15.767-24.45,36.73-24.45,59.028v92.079c-6.219,2.206-11.876,5.603-16.696,9.923c-4.82-4.32-10.476-7.717-16.696-9.923    v-92.079c0-22.298-8.683-43.262-24.45-59.028l-57.002-57.002c-13.254-13.252-33.411-16.787-52.114-9.388V128    c0-27.618-22.469-50.087-50.087-50.087c-27.618,0-50.087,22.469-50.087,50.087v153.126c0,13.379,5.21,25.956,14.67,35.416    l47.223,47.223c3.153,3.153,4.89,7.346,4.89,11.805v39.128c-19.433,6.892-33.391,25.45-33.391,47.215    c0,27.618,22.469,50.087,50.087,50.087h133.565c12.819,0,24.523-4.846,33.391-12.794c8.869,7.949,20.572,12.794,33.391,12.794    h133.565c27.618,0,50.087-22.469,50.087-50.087c0-21.766-13.959-40.323-33.391-47.215V375.57c0-4.459,1.737-8.652,4.891-11.805    l47.222-47.223c9.461-9.461,14.671-22.038,14.671-35.416V128C506.435,100.382,483.966,77.913,456.348,77.913z M43.846,292.931    c-3.153-3.153-4.89-7.346-4.89-11.805V128c0-9.206,7.49-16.696,16.696-16.696c9.206,0,16.696,7.49,16.696,16.696l0.223,113.644    c-1.125,17.175,4.295,31.337,14.417,41.474c0.01,0.01,0.02,0.021,0.03,0.032l57.002,57.002c6.519,6.52,17.091,6.52,23.611,0    s6.52-17.091,0-23.611l-57.002-57.002c-5.532-5.533-4.89-11.392-4.89-16.597c1.495-13.558,20.402-20.843,28.501-12.744    l57.002,57.002c9.461,9.461,14.67,22.038,14.67,35.417v89.208H105.739V375.57c0-13.379-5.21-25.956-14.67-35.416L43.846,292.931z     M222.608,478.609H89.043c-9.22,0-16.696-7.475-16.696-16.696s7.475-16.696,16.696-16.696h133.565    c9.22,0,16.696,7.475,16.696,16.696S231.829,478.609,222.608,478.609z M422.956,478.609H289.391    c-9.22,0-16.696-7.475-16.696-16.696s7.475-16.696,16.696-16.696h133.565c9.22,0,16.696,7.475,16.696,16.696    S432.176,478.609,422.956,478.609z M473.043,281.126c0,4.459-1.737,8.652-4.891,11.805l-47.222,47.223    c-9.461,9.461-14.671,22.038-14.671,35.416v36.256H306.085v-89.207c0.001-13.379,5.211-25.957,14.671-35.417L377.76,230.2    c10.514-10.515,28.501-3.07,28.501,11.805c0,5.414,0.816,11.828-4.891,17.535l-57.002,57.002c-6.52,6.52-6.52,17.091,0,23.611    c6.519,6.52,17.091,6.52,23.611,0c0.545-0.547,57.466-57.466,57.002-57.002c5.321-5.321,9.298-11.629,11.759-18.511    c3.886-10.866,2.912-5.474,2.912-136.639c0-9.206,7.49-16.696,16.696-16.696c9.206,0,16.696,7.49,16.696,16.696V281.126z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M265.307,2.835c-5.629-3.78-12.986-3.78-18.616,0c-3.027,2.035-74.17,50.541-74.17,114.035    c0,51.693,45.779,82.448,66.783,93.837v23.032c0,9.22,7.475,16.696,16.696,16.696s16.696-7.475,16.696-16.696v-23.032    c21.003-11.39,66.783-42.144,66.783-93.837C339.478,53.376,268.336,4.87,265.307,2.835z M272.695,171.224V116.87    c0-9.22-7.475-16.696-16.696-16.696s-16.696,7.475-16.696,16.696v54.352c-15.627-11.486-33.391-29.911-33.391-54.352    c0-34.435,33.476-65.816,50.166-79.32c19.462,15.704,50.008,47.174,50.008,79.32C306.086,141.314,288.318,159.741,272.695,171.224    z"/>
+                </g>
+            </g>
+            </svg>
+          <div class="card-category" data-lang="Qualité">Qualité</div>
+          <div class="card-title" data-lang="Matières Premières">Matières Premières</div>
+        </div>
+        <div class="card-image" style="background-image: url('./images/service2.jpg')"></div>
+      </div>
+
+      <!-- Services & Logistique -->
+      <div class="service-card">
+        <div class="card-header">
+          <!-- SVG 3 -->
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#e9dfd4" version="1.1" id="Capa_1" height="50" width="50" viewBox="0 0 83.328 83.328" xml:space="preserve">
+            <g>
+                <path d="M71.217,69.907l-12.604,7.284L48.86,60.318l12.605-7.284L71.217,69.907z M72.606,72.252l-12.769,7.393   c2.017,3.584,6.496,4.704,10.08,2.688C73.279,80.315,74.623,75.836,72.606,72.252z M64.768,14.685   C56.704,0.573,38.56-4.131,24.448,3.933c-1.12,0.672-2.24,1.344-3.36,2.24c0.224,0,0.224,0,0.448,0.224   c1.344,0.672,2.912,1.344,4.704,2.24c0.224-0.224,0.447-0.224,0.672-0.448c11.647-6.72,26.88-2.688,33.602,8.96   c6.72,11.647,2.688,26.879-8.962,33.601c-11.646,6.722-26.879,2.688-33.6-8.958c-2.464-4.258-3.584-8.961-3.36-13.439   c-1.568-3.809-2.016-8.062-1.344-12.544c-4.704,8.735-4.704,19.487,0.448,28.446c8.063,14.111,26.208,18.815,40.32,10.752   C68.126,46.717,73.055,28.797,64.768,14.685z M34.079,42.236c0.896,0.447-8.736-10.304-8.736-20.832   c2.016,8.959,12.096,17.92,13.888,22.847c6.721-25.312-12.319-32.03-21.056-36.289C10.783,28.797,23.999,37.532,34.079,42.236z    M44.382,42.461c6.496,0.672,15.904,0,18.369-12.993c-5.823-0.225-17.473-2.465-21.505,12.544   c2.464-2.017,10.304-3.584,13.888-7.84C52,39.771,43.935,42.461,44.382,42.461z"/>
+            </g>
+            </svg>
+          <div class="card-category" data-lang="Accompagnement">Accompagnement</div>
+          <div class="card-title" data-lang="Services & Logistique">Services & Logistique</div>
+        </div>
+        <div class="card-image" style="background-image: url('./images/service1.jpg')"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- <section class="ALIMENTATION -section">
+    <h1 class="title" data-lang="Ensemble, Récoltons l'Excellence">
+        <span data-lang="Ensemble, Récoltons l'Excellence">Ensemble, <span class="green">Récoltons</span><br>l'<span class="yellow">Excellence</span></span>
+    </h1>
+    
+    <div class="filter-buttons">
+        <button class="active" onclick="filterProducts('Fruit')" data-lang="Tous">Tous</button>
+        <button onclick="filterProducts('Chicken')" data-lang="Poulet">Poulet</button>
+        <button onclick="filterProducts('Cow')" data-lang="Vache">Vache</button>
+        <button onclick="filterProducts('Sheep')" data-lang="Mouton">Mouton</button>
+    </div>
+
+        <div class="products" id="products"></div>
+
+        
+    </section> -->
+
+
+    <section class="video-section">
+    <div class="video-wrapper">
+        <iframe 
+        src="https://player.vimeo.com/video/1116403471?background=1&autoplay=1&loop=1&byline=0&title=0"
+        class="video-frame"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+        allowfullscreen>
+        </iframe>
+    </div>
+    </section>
+
+
+    <section class="insight-section">
+        <div class="insight-container">
+           <div class="insight-header">
+                <h2 class="insight-title" data-lang="Galerie">Galerie</h2>
+                <p class="insight-description" data-lang="Découvrez ici des photos de notre quotidien et de l’atmosphère qui règne au sein de notre société. Plongez-vous dans notre univers de travail !">
+                    Découvrez ici des photos de notre quotidien et de l’atmosphère qui règne au sein de notre société. 
+                    Plongez-vous dans notre univers de travail !
+                </p>
+            </div>
+
+
+
+            <div class="insight-grid">
+                <div class="insight-item">
+                    <img src="./images/abf/twenty-five.webp" alt="Farmer in overalls sitting on farm" loading="lazy">
+                </div>
+                
+                <div class="insight-item">
+                    <img src="./images/abf/nineteen.webp" alt="Farmer in field" loading="lazy">
+                </div>
+                
+                <div class="insight-item">
+                    <img src="./images/abf/sexteen.webp" alt="Farm equipment and structures" loading="lazy">
+                </div>
+                
+                <div class="insight-item">
+                    <img src="./images/abf/twenty-sex.webp" alt="Sheep in pastoral setting" loading="lazy">
+                </div>
+                
+                <div class="insight-item">
+                    <img src="./images/abf/twenty-four.webp" alt="Sheep grazing in field" loading="lazy">
+                </div>
+                
+                <div class="insight-item">
+                    <img src="./images/abf/ten.webp" alt="Farmer working with sheep" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+<section class="faq-section">
+    <div class="faq-container">
+        <div class="faq-content">
+            <div class="header">
+                <h1 data-lang="VOUS AVEZ ENCORE DES QUESTIONS">VOUS AVEZ ENCORE DES QUESTIONS ?</h1>
+                <p data-lang=" QUESTIONS FRÉQUEMMENT POSÉES SUR ABF"> QUESTIONS FRÉQUEMMENT POSÉES SUR ABF</p>
+            </div>
+            
+            <ul class="faq-list">
+                <li class="faq-item">
+                    <button class="faq-question">
+                        <h3 data-lang="QU EST-CE QUE GMF ABF">QU'EST-CE QUE GMF ABF ?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-lang="GMF ABF est une entreprise spécialisée dans la production, la transformation et la distribution de produits agricoles et avicoles de haute qualité. Nous nous engageons à fournir des produits frais, durables et conformes aux normes internationales.">GMF ABF est une entreprise spécialisée dans la production, la transformation et la distribution de produits agricoles et avicoles de haute qualité. Nous nous engageons à fournir des produits frais, durables et conformes aux normes internationales.</p>
+                    </div>
+                </li>
+                
+                <li class="faq-item">
+                    <button class="faq-question">
+                        <h3 data-lang="QUELS PRODUITS PROPOSEZ-VOUS">QUELS PRODUITS PROPOSEZ-VOUS ?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-lang="Nous proposons une large gamme de produits agricoles et avicoles, notamment des poussins, volailles prêtes à consommer, aliments pour bétail, ainsi que des services d'accompagnement pour les éleveurs partenaires.">Nous proposons une large gamme de produits agricoles et avicoles, notamment des poussins, volailles prêtes à consommer, aliments pour bétail, ainsi que des services d'accompagnement pour les éleveurs partenaires.</p>
+                    </div>
+                </li>
+                
+                <li class="faq-item">
+                    <button class="faq-question">
+                        <h3 data-lang="COMMENT PUIS-JE DEVENIR PARTENAIRE">COMMENT PUIS-JE DEVENIR PARTENAIRE ?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-lang="Pour devenir partenaire, veuillez nous contacter via notre formulaire en ligne ou par email. Notre équipe se fera un plaisir de vous accompagner dans le processus.">Pour devenir partenaire, veuillez nous contacter via notre formulaire en ligne ou par email. Notre équipe se fera un plaisir de vous accompagner dans le processus.</p>
+                    </div>
+                </li>
+
+                <li class="faq-item">
+                    <button class="faq-question">
+                        <h3 data-lang="COMMENT PUIS-JE VOUS CONTACTER">COMMENT PUIS-JE VOUS CONTACTER ?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-lang="Vous pouvez nous contacter par téléphone au +33 1 23 45 67 89 ou par email à contact@abf-france.fr.">Vous pouvez nous contacter par téléphone au +33 1 23 45 67 89 ou par email à contact@abf-france.fr.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="faq-image"></div>
+    </div>
+</section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand Section -->
+                <div class="footer-section footer-brand">
+                    <div>
+                     <a href="#">
+                            <img src="images/logoGM.png" alt="" style="width: 150px; padding-bottom: 20px;" >
+                        </a>
+                    </div>
+                    <p class="footer-description" data-lang="FOOTER_DESCRIPTION">
+                        Une entreprise dynamique et innovante dans le domaine de l'ALIMENTATION  biologique. Nous nous engageons à fournir des produits de qualité supérieure tout en préservant notre environnement.
+                    </p>
+                    <div class="email-signup">
+                        <input type="email" class="email-input" placeholder="Votre adresse email">
+                        <button class="email-submit">→</button>
+                    </div>
+                </div>
+
+                <!-- Explore Section -->
+                <div class="footer-section">
+                    <h2 data-lang="EXPLORE">EXPLORE</h2>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-lang="ACCUEIL FOOTER">Accueil</a></li>
+                        <li><a href="#about" data-lang="À PROPOS">À propos</a></li>
+                        <li><a href="#blog" data-lang="BLOG">Blog</a></li>
+                        <li><a href="#contact" data-lang="CONTACT">Contact</a></li>
+                        <li><a href="#service" data-lang="SERVICES FOOTER">Services</a></li>
+                        <li><a href="#product" data-lang="PRODUITS FOOTER">Produits</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info Section -->
+                <div class="footer-section">
+                    <h2 data-lang="COORDONNÉES">COORDONNÉES</h2>
+                    <div class="contact-info">
+                        <div>123 Rue de l'ALIMENTATION ,<br>75001 Paris, France</div>
+                        <div>contact@abf-france.fr</div>
+                        <div>+33 1 23 45 67 89</div>
+                    </div>
+                </div>
+
+                <!-- Gallery Section -->
+                <div class="footer-section">
+                    <h2 data-lang="NOTRE GALERIE FOOTER">NOTRE GALERIE</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/faq.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/hero_slider.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/language-switcher.js"></script>
+
+</body>
+
+</html>

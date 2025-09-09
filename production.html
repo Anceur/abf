@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Products Section</title>
+    <link rel="stylesheet" href="style/project.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+<body>
+
+<nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logoGM1.png" alt="Logo" href="./index.html" class="logo">
+        </a>
+        
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="active" data-lang="ACCUEIL">ACCUEIL</a></li>
+            <li><a href="services.html" data-lang="SERVICES">SERVICES</a></li>
+            <li><a href="produit.html" data-lang="PRODUITS">PRODUITS</a></li>
+            <li><a href="#" data-lang="PRODUCTION">PRODUCTION</a></li>
+            <a href="contact.html" class="cta-button" data-lang="CONTACTEZ-NOUS">CONTACTEZ-NOUS</a>
+        </ul>
+
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <!-- Language Switcher will be inserted here by JavaScript -->
+            <button class="mobile-menu-toggle" id="mobileToggle">☰</button>
+            <div class="mobile-menu-content">
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section class="hero-section">
+        <div class="hero-content">    
+            <div class="breadcrumb">
+                <h1 data-lang="PROJECT">PROJECT</h1>
+                <a href="index.html"><i class="fas fa-home"></i> <span data-lang="Accueil">Accueil</span></a>
+           </div>
+        </div>
+    </section>
+
+
+    <section class="project-section">
+        <div class="project-container">
+            <div class="content-left">
+                <!-- Main Heading -->
+                <div class="text-center mt-16 mb-16">
+                    <h1 class="text-organic-dark font-bold text-3xl leading-tight max-w-4xl mx-auto">
+                        ORGANIC PRODUCTS. <br> EVERYTHING ON
+                        OUR FARM IS GROWN BY RESPECTING
+                        THE CYCLES OF NATURE.
+                    </h1>
+                </div>
+
+                <!-- Feature Icons -->
+                <div class="flex flex-col md-flex-row justify-center items-center space-y-8 md-space-y-0 md-space-x-16 mb-16">
+                    <!-- Direct from Farmers -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                            <svg class="w-12 h-12 text-organic-dark" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 15.5C4 16.3 4.7 17 5.5 17H9.5C10.3 17 11 16.3 11 15.5S10.3 14 9.5 14H8V13C8 12.4 7.6 12 7 12S6 12.4 6 13V14H5.5C4.7 14 4 14.7 4 15.5M18.5 17C19.3 17 20 16.3 20 15.5S19.3 14 18.5 14H18V13C18 12.4 17.6 12 17 12S16 12.4 16 13V14H15.5C14.7 14 14 14.7 14 15.5S14.7 17 15.5 17H18.5M12 3L8 7H11V11H13V7H16L12 3Z"/>
+                            </svg>
+                        </div>
+                        <p class="text-organic-brown font-semibold text-sm tracking-wide">DIRECT FROM FARMERS</p>
+                    </div>
+
+                    <!-- 100% Organic -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                            <svg class="w-12 h-12 text-organic-brown" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2M21 9V7L15 1L13.5 2.5L16.17 5.17L10.5 10.84L11.92 12.25L17.58 6.59L20.17 9.17L21 9M1 15H3L3.94 18.06L2 20L3.5 21.5L5.44 19.56L8.5 20.5V18.5L5.44 17.56L4.5 15H6.5L9.58 18.08L11 16.66L6.34 12H1V15M12.5 11.5C12.5 12.3 13.2 13 14 13S15.5 12.3 15.5 11.5S14.8 10 14 10S12.5 10.7 12.5 11.5M14 15.5C14 16.3 14.7 17 15.5 17S17 16.3 17 15.5S16.3 14 15.5 14S14 14.7 14 15.5Z"/>
+                            </svg>
+                        </div>
+                        <p class="text-organic-brown font-semibold text-sm tracking-wide">100% ORGANIC</p>
+                    </div>
+
+                    <!-- No Artificial Chemicals -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                            <div class="relative">
+                                <svg class="w-12 h-12 text-organic-dark" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M9,2V8H7V10H9C10,10 11,9 11,8V7H12V8C12,9 13,10 14,10H16V8H14V2H9M2,12A2,2 0 0,0 4,14H6L7,22H17L18,14H20A2,2 0 0,0 22,12A2,2 0 0,0 20,10H4A2,2 0 0,0 2,12Z"/>
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="w-16 h-0.5 bg-red-500 rotate-45 transform"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-organic-brown font-semibold text-sm tracking-wide">NO ARTIFICIAL CHEMICALS</p>
+                    </div>
+                </div>
+
+                <!-- Image Cards -->
+                <div class="flex flex-col lg-flex-row gap-6 justify-center">
+                    <!-- Hands-on Cultivation -->
+                    <div class="relative rounded-3xl overflow-hidden w-full lg-w-80 h-64">
+                        <img src="./images/abf/twenty-two.webp" 
+                             alt="Farmer using drone technology in field" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute bottom-6 left-6">
+                            <h3 class="text-white font-bold text-xl leading-tight">
+                                HANDS-ON<br>CULTIVATION
+                            </h3>
+                        </div>
+                    </div>
+
+                    <!-- Nurturing Nature -->
+                    <div class="relative rounded-3xl overflow-hidden w-full lg-w-80 h-64">
+                        <img src="./images/abf/twenty-one.png" 
+                             alt="Green vineyard with mountain landscape" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute bottom-6 left-6">
+                            <h3 class="text-white font-bold text-xl leading-tight">
+                                NURTURING<br>NATURE
+                            </h3>
+                        </div>
+                    </div>
+
+                    <!-- Smart & Sustainable -->
+                    <div class="relative rounded-3xl overflow-hidden w-full lg-w-80 h-64">
+                        <img src="./images/abf/twenty-five.webp" 
+                             alt="Farmer in modern greenhouse" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute bottom-6 left-6">
+                            <h3 class="text-white font-bold text-xl leading-tight">
+                                SMART &<br>SUSTAINABLE
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-organic py-16 px-8 max-w-7xl mx-auto">
+                <!-- Main Content Area -->
+                <div class="relative min-h-96 mb-16 overflow-hidden rounded-xl shadow-lg">
+                <!-- Video Background -->
+                <video autoplay muted loop playsinline class="video-bg">
+                    <source src="./images/video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- Optional overlay (like your watercolor opacity effect) -->
+                <div class="video-overlay"></div>
+            </div>
+
+            <!-- Vertical Chain Timeline -->
+            <div class="timeline-container max-w-4xl mx-auto py-12">
+                <div class="relative">
+                    <!-- Vertical Line -->
+                    <div class="absolute left-1-2 transform neg-translate-x-1-2 h-full w-1 bg-gray-300"></div>
+                    
+                    <!-- Timeline Items -->
+                    <div class="space-y-16">
+                        <!-- Item 1 -->
+                        <div class="timeline-item relative">
+
+                            <div class="timeline-content bg-white p-6 rounded-lg shadow-md relative">
+                                <div class="text-orange-600 text-sm font-medium mb-1">1980</div>
+                                <h3 class="text-lg font-bold text-gray-800">BUILT IN</h3>
+                                <p class="text-gray-600 text-sm mt-2">Our humble beginnings with a small patch of land and big dreams.</p>
+                                <img src="./images/abf/five.JPG" class="w-full h-auto rounded-lg mt-4">
+                            </div>
+                        </div>
+                        
+                        <!-- Item 2 -->
+                        <div class="timeline-item relative">
+       
+                            <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                                <div class="text-gray-600 text-sm font-medium mb-1">1990</div>
+                                <h3 class="text-lg font-bold text-gray-800">STARTED GROWING</h3>
+                                <p class="text-gray-600 text-sm mt-2">Expanded our fields and began sustainable farming practices.</p>
+                                <img src="./images/abf/five.JPG" class="w-full h-auto rounded-lg mt-4"> 
+                            </div>
+                        </div>
+                        
+                        <!-- Item 3 -->
+                        <div class="timeline-item relative">
+    
+                            <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                                <div class="text-gray-600 text-sm font-medium mb-1">2000</div>
+                                <h3 class="text-lg font-bold text-gray-800">FARM MECHANIZATION</h3>
+                                <p class="text-gray-600 text-sm mt-2">Introduced modern farming equipment to increase efficiency.</p>
+                                <img src="./images/abf/five.JPG" class="w-full h-auto rounded-lg mt-4">
+                            </div>
+                        </div>
+                        
+                        <!-- Item 4 -->
+                        <div class="timeline-item relative">
+
+                            <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                                <div class="text-gray-600 text-sm font-medium mb-1">2010</div>
+                                <h3 class="text-lg font-bold text-gray-800">HARVESTING</h3>
+                                <p class="text-gray-600 text-sm mt-2">Established efficient harvesting techniques and distribution.</p>
+                                <img src="./images/abf/five.JPG" class="w-full h-auto rounded-lg mt-4">
+                            </div>
+                        </div>
+                        
+                        <!-- Item 5 -->
+                        <div class="timeline-item relative">
+    
+                            <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                                <div class="text-gray-600 text-sm font-medium mb-1">2015</div>
+                                <h3 class="text-lg font-bold text-gray-800">OUR FIRST GREENHOUSE</h3>
+                                <p class="text-gray-600 text-sm mt-2">Expanded to controlled environment agriculture.</p>
+                                <img src="./images/abf/five.JPG" class="w-full h-auto rounded-lg mt-4">
+                            </div>
+                        </div>
+                        
+                        <!-- Item 6 -->
+                        <div class="timeline-item relative">
+          
+                            <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                                <div class="text-gray-600 text-sm font-medium mb-1">2020</div>
+                                <h3 class="text-lg font-bold text-gray-800">FINEST ORGANIC PRODUCE</h3>
+                                <p class="text-gray-600 text-sm mt-2">Recognized for premium quality organic products.</p>
+                                <img src="./images/abf/five.JPG" class="w-full h-auto rounded-lg mt-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="org-section">
+            <div class="content-side">
+                <h2 class="main-heading">Growing crops and raising livestock. It includes plant and animal products.</h2>
+                <button class="view-more-btn">View More</button>
+            </div>
+            <div class="image-side">
+                <img src="./images/abf/six.JPG" class="w-full h-full object-cover mt-4">
+            </div>
+        </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand Section -->
+                <div class="footer-section footer-brand">
+                    <div>
+                     <a href="#">
+                            <img src="images/logoGM.png" alt="" style="width: 150px; padding-bottom: 20px;" >
+                        </a>
+                    </div>
+                    <p class="footer-description" data-lang="FOOTER_DESCRIPTION">
+                        Une entreprise dynamique et innovante dans le domaine de l'agriculture biologique. Nous nous engageons à fournir des produits de qualité supérieure tout en préservant notre environnement.
+                    </p>
+                    <div class="email-signup">
+                        <input type="email" class="email-input" placeholder="Votre adresse email">
+                        <button class="email-submit">→</button>
+                    </div>
+                </div>
+
+                <!-- Explore Section -->
+                <div class="footer-section">
+                    <h2 data-lang="EXPLORE">EXPLORE</h2>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-lang="ACCUEIL FOOTER">Accueil</a></li>
+                        <li><a href="#about" data-lang="À PROPOS">À propos</a></li>
+                        <li><a href="#blog" data-lang="BLOG">Blog</a></li>
+                        <li><a href="#contact" data-lang="CONTACT">Contact</a></li>
+                        <li><a href="#service" data-lang="SERVICES FOOTER">Services</a></li>
+                        <li><a href="#product" data-lang="PRODUITS FOOTER">Produits</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info Section -->
+                <div class="footer-section">
+                    <h2 data-lang="COORDONNÉES">COORDONNÉES</h2>
+                    <div class="contact-info">
+                        <div>123 Rue de l'Agriculture,<br>75001 Paris, France</div>
+                        <div>contact@abf-france.fr</div>
+                        <div>+33 1 23 45 67 89</div>
+                    </div>
+                </div>
+
+                <!-- Gallery Section -->
+                <div class="footer-section">
+                    <h2 data-lang="NOTRE GALERIE FOOTER">NOTRE GALERIE</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Timeline Script -->
+     <script src="js/navbar.js"></script>
+    <script src="js/timeline.js"></script>
+</body>
+</html>

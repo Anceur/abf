@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ABF Frenda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/navbar.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logoGM1.png" alt="Logo" href="./index.html" class="logo">
+        </a>
+        
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="active" data-lang="ACCUEIL">ACCUEIL</a></li>
+            <li><a href="services.html" data-lang="SERVICES">SERVICES</a></li>
+            <li><a href="produit.html" data-lang="PRODUITS">PRODUITS</a></li>
+            <li><a href="production.html" data-lang="PRODUCTION">PRODUCTION</a></li>
+            <a href="contact.html" class="cta-button" data-lang="CONTACTEZ-NOUS">CONTACTEZ-NOUS</a>
+        </ul>
+
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <!-- Language Switcher will be inserted here by JavaScript -->
+            <button class="mobile-menu-toggle" id="mobileToggle">☰</button>
+            <div class="mobile-menu-content">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="breadcrumb">
+                <h1 data-lang="Contact">CONTACT - ABF Frenda</h1>
+                <a href="index.html"><i class="fas fa-home"></i> <span data-lang="Accueil">Accueil</span></a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Content Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2 data-lang="Informations de Contact">Informations de Contact</h2>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 data-lang="Adresse">Adresse</h3>
+                                <p>Zone Industrielle Frenda,<br>Tiaret - Algérie</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 data-lang="Email">Email</h3>
+                                <p>contact@abf-frenda.dz</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 data-lang="Téléphone">Téléphone</h3>
+                                <p>+213 (0)46 00 00 00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 data-lang="Horaires">Horaires</h3>
+                                <p data-lang="Horaires Text">Dim - Jeu: 8h00 - 17h00<br>Samedi: 9h00 - 12h00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Votre Nom" required data-lang="Nom Placeholder">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Votre Email" required data-lang="Email Placeholder">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Sujet" required data-lang="Sujet Placeholder">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Votre Message" rows="6" required data-lang="Message Placeholder"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" data-lang="Envoyer">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 data-lang="Notre Localisation">Notre Localisation</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.286109777777!2d1.0433!3d35.065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128233b4c3c!2sFrenda%2C%20Tiaret%2C%20Algérie!5e0!3m2!1sfr!2sdz!4v1628765432198!5m2!1sfr!2sdz" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand Section -->
+                <div class="footer-section footer-brand">
+                   <div class="logo">
+                     <a href="index.html" class="logo">
+                            <img src="images/p2.png" alt="ABF Frenda Logo" style="width: 150px;" >
+                        </a>
+                    </div>
+                    <p class="footer-description">
+                        ABF Frenda (GMF) – Fabrication d’aliments pour bétail et produits agricoles. Excellence, durabilité et innovation au service de l’élevage et de l’agriculture.
+                    </p>
+                    <div class="email-signup">
+                        <input type="email" class="email-input" placeholder="Entrez Votre Email" data-lang="Entrez Votre Email">
+                        <button class="email-submit">→</button>
+                    </div>
+                </div>
+
+                <!-- Explore Section -->
+                <div class="footer-section">
+                    <h2>EXPLORER</h2>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="produit.html">Produits</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info Section -->
+                <div class="footer-section">
+                    <h2>INFOS CONTACT</h2>
+                    <div class="contact-info">
+                        <div>Zone Industrielle Frenda,<br>Tiaret - Algérie</div>
+                        <div>contact@abf-frenda.dz</div>
+                        <div>+213 (0)46 00 00 00</div>
+                    </div>
+                </div>
+
+                <!-- Gallery Section -->
+                <div class="footer-section">
+                    <h2>NOTRE GALERIE</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.');
+            this.reset();
+        });
+
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileToggle.classList.toggle('active');
+        });
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+                mobileToggle.classList.remove('active');
+            }
+        });
+
+        // Dropdown functionality
+        const dropdowns = document.querySelectorAll('.dropdown');
+        
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+                dropdown.classList.toggle('active');
+            });
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', () => {
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        });
+    </script>
+
+    <script src="js/color-theme.js"></script>
+    <script src="js/color-change.js"></script>
+    <script src="js/language-switcher.js"></script>   
+</body>
+</html>

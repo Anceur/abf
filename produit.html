@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABF - Produits</title>
+    <link rel="stylesheet" href="style/product.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    
+<nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logoGM1.png" alt="Logo" href="./index.html" class="logo">
+        </a>
+        
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="active" data-lang="ACCUEIL">ACCUEIL</a></li>
+            <li><a href="services.html" data-lang="SERVICES">SERVICES</a></li>
+            <li><a href="#" data-lang="PRODUITS">PRODUITS</a></li>
+            <li><a href="production.html" data-lang="PRODUCTION">PRODUCTION</a></li>
+            <a href="contact.html" class="cta-button" data-lang="CONTACTEZ-NOUS">CONTACTEZ-NOUS</a>
+        </ul>
+
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <!-- Language Switcher will be inserted here by JavaScript -->
+            <button class="mobile-menu-toggle" id="mobileToggle">☰</button>
+            <div class="mobile-menu-content">
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content">    
+            <div class="breadcrumb">
+                <h1 data-lang="PRODUITS">PRODUITS</h1>
+                <a href="index.html"><i class="fas fa-home"></i> <span data-lang="Accueil">Accueil</span></a>
+           </div>
+        </div>
+    </section>
+
+
+    <section class="products-section">
+        <div class="container">
+            <div class="section-title">
+           <h2 data-lang="Découvrez   Produits">Découvrez   Produits</h2>
+            <p data-lang="product-description">Explorez notre gamme de produits biologiques de haute qualité, conçus pour répondre à vos besoins agricoles tout en respectant l'environnement.</p>
+            </div>
+            
+            <div id="productsGrid" class="products-grid">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand Section -->
+                <div class="footer-section footer-brand">
+                    <div>
+                     <a href="#">
+                            <img src="images/logoGM.png" alt="" style="width: 150px; padding-bottom: 20px;" >
+                        </a>
+                    </div>
+                    <p class="footer-description" data-lang="FOOTER_DESCRIPTION">
+                        Une entreprise dynamique et innovante dans le domaine de l'agriculture biologique. Nous nous engageons à fournir des produits de qualité supérieure tout en préservant notre environnement.
+                    </p>
+                    <div class="email-signup">
+                        <input type="email" class="email-input" placeholder="Votre adresse email">
+                        <button class="email-submit">→</button>
+                    </div>
+                </div>
+
+                <!-- Explore Section -->
+                <div class="footer-section">
+                    <h2 data-lang="EXPLORE">EXPLORE</h2>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-lang="ACCUEIL FOOTER">Accueil</a></li>
+                        <li><a href="#about" data-lang="À PROPOS">À propos</a></li>
+                        <li><a href="#blog" data-lang="BLOG">Blog</a></li>
+                        <li><a href="#contact" data-lang="CONTACT">Contact</a></li>
+                        <li><a href="#service" data-lang="SERVICES FOOTER">Services</a></li>
+                        <li><a href="#product" data-lang="PRODUITS FOOTER">Produits</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info Section -->
+                <div class="footer-section">
+                    <h2 data-lang="COORDONNÉES">COORDONNÉES</h2>
+                    <div class="contact-info">
+                        <div>123 Rue de l'Agriculture,<br>75001 Paris, France</div>
+                        <div>contact@abf-france.fr</div>
+                        <div>+33 1 23 45 67 89</div>
+                    </div>
+                </div>
+
+                <!-- Gallery Section -->
+                <div class="footer-section">
+                    <h2 data-lang="NOTRE GALERIE FOOTER">NOTRE GALERIE</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/color-theme.js"></script>
+    <script src="js/language-switcher.js"></script>
+</body>
+</html>

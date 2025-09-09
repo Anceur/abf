@@ -1,0 +1,573 @@
+// Language Switcher with Proper Translations
+const languages = {
+    'fr': {
+        'ACCUEIL': 'ACCUEIL',
+        'PAGES': 'PAGES',
+        'TEAM': 'ÉQUIPE',
+        'SERVICES': 'SERVICES',
+        'BOUTIQUE': 'BOUTIQUE',
+        'PRODUITS': 'PRODUITS',
+        'PROJETS': 'PROJETS',
+        'CONTACTEZ-NOUS': 'CONTACTEZ-NOUS',
+        'Rechercher': 'Rechercher',
+        'INFOS CONTACT': 'INFOS CONTACT',
+        'NOTRE GALERIE': 'NOTRE GALERIE',
+        'EXPLORER': 'EXPLORER',
+        'Accueil': 'Accueil',
+        'Rencontrez Notre Équipe': 'Rencontrez Notre Équipe',
+        'Notre équipe dédiée d\'experts agricoles et d\'innovateurs travaillant ensemble pour révolutionner les pratiques agricoles et les solutions d\'ALIMENTATION  durable.': 'Notre équipe dédiée d\'experts agricoles et d\'innovateurs travaillant ensemble pour révolutionner les pratiques agricoles et les solutions d\'ALIMENTATION  durable.',
+        'Président': 'Président',
+        'Dirigeant notre entreprise avec plus de 15 ans d\'expérience dans l\'innovation agricole et les pratiques agricoles durables.': 'Dirigeant notre entreprise avec plus de 15 ans d\'expérience dans l\'innovation agricole et les pratiques agricoles durables.',
+        'Leadership': 'Leadership',
+        'Stratégie': 'Stratégie',
+        'ALIMENTATION ': 'ALIMENTATION ',
+        'Membre d\'Office': 'Membre d\'Office',
+        'Apportant des perspectives précieuses grâce à son vaste parcours dans la politique agricole et la conformité réglementaire.': 'Apportant des perspectives précieuses grâce à son vaste parcours dans la politique agricole et la conformité réglementaire.',
+        'Politique': 'Politique',
+        'Conformité': 'Conformité',
+        'Conseil': 'Conseil',
+        'Contact': 'Contact',
+        'ALEMENT  BETAILIL FRENDA': 'ALIMENT  BETAILIL FRENDA',
+        'ABOUT ABF FRENDA': 'À PROPOS D\'ABF FRENDA',
+        'AGRICULTURAL & FEED COMPANY': 'ENTREPRISE D\'ALIMENTATION',
+        '  Services': '  Services Agricoles',
+        '  Services - ABF Frenda': '  Services - ABF Frenda',
+        'Services Intro 1': 'Chez ABF Frenda, nous sommes spécialisés dans la production d\'aliments pour bétail de haute qualité, adaptés aux besoins nutritionnels des bovins, ovins et caprins. Notre objectif est de soutenir les éleveurs en garantissant une alimentation équilibrée et performante pour leur cheptel.',
+        'Services Intro 2': 'Grâce à notre expérience et à   procédés modernes, nous assurons une production fiable, respectant les normes de qualité les plus strictes, afin d\'optimiser la santé et la productivité des animaux.',
+        'Services Intro 3': 'Nous proposons également des conseils techniques personnalisés pour aider   clients à choisir les formules les mieux adaptées à leurs objectifs d\'élevage et à leurs ressources.',
+        '  Services Principaux': '  Services Principaux',
+        'Services Slogan': 'Des solutions complètes pour la fabrication et la distribution d\'aliments pour bétail',
+        'Fabrication d\'Aliments': 'Fabrication d\'Aliments',
+        'Service 1 Desc': 'Production d\'aliments complets et concentrés pour bovins, ovins et caprins, avec des formules équilibrées adaptées à chaque étape de croissance.',
+        'Formulation Personnalisée': 'Formulation Personnalisée',
+        'Service 2 Desc': 'Création de mélanges spécifiques selon les besoins nutritionnels de votre élevage, en utilisant des matières premières soigneusement sélectionnées.',
+        'Compléments & Additifs': 'Compléments & Additifs',
+        'Service 3 Desc': 'Fourniture de compléments minéraux et vitaminiques pour optimiser la santé et la productivité de vos animaux.',
+        'Distribution & Livraison': 'Distribution & Livraison',
+        'Service 4 Desc': 'Service de livraison rapide et fiable directement à votre exploitation, garantissant la fraîcheur et la disponibilité des produits.',
+        'Analyse & Contrôle Qualité': 'Analyse & Contrôle Qualité',
+        'Service 5 Desc': 'Analyses régulières pour garantir la conformité nutritionnelle et la qualité sanitaire de tous   produits.',
+        'Stockage & Conditionnement': 'Stockage & Conditionnement',
+        'Service 6 Desc': 'Installations modernes pour le stockage et le conditionnement des aliments, assurant une conservation optimale.',
+        'Services Title': 'Services',
+        'Services Hero Text 1': 'Chez Les Grands Moulins de Frenda – ABF, nous ne nous contentons pas de produire des aliments pour animaux de haute qualité. Nous proposons des solutions agricoles et d\'élevage complètes pour aider les agriculteurs à améliorer leurs performances, réduire leurs coûts et maintenir des troupeaux en bonne santé.',
+        'Services Hero Text 2': 'Notre engagement est de fournir des produits fiables et riches en nutriments, soutenus par des conseils d\'experts et un réseau de distribution solide, garantissant ainsi la réussite de votre exploitation agricole dès le départ.',
+        'Discover More': 'Découvrir Plus',
+        'ABF Frenda, a proud branch of Les Grands Moulins de Frenda, specializes in producing high-quality animal feed and processing locally sourced grains. With decades of experience, we combine tradition and innovation to support Algeria\'s agricultural sector.': 'ABF Frenda, une filière fière des Grands Moulins de Frenda, est spécialisée dans la production d\'aliments pour animaux de haute qualité et la transformation de céréales d\'origine locale. Forte de plusieurs décennies d\'expérience, elle allie tradition et innovation pour soutenir le secteur agricole algérien.',
+        'LEARN MORE': 'EN SAVOIR PLUS',
+        'ALL PRODUCTS': 'TOUS LES PRODUITS',
+        'product-description': 'Explorez notre gamme de produits biologiques de haute qualité, conçus pour répondre à vos besoins agricoles tout en respectant l\'environnement.',
+        'Ensemble, Récoltons l\'Excellence Pour Tous': 'Ensemble, Récoltons l\'Excellence Pour Tous',
+        'Tous': 'Tous',
+        'Poulet': 'Poulet',
+        'Vache': 'Vache',
+        'Mouton': 'Mouton',
+        'VOUS AVEZ ENCORE DES QUESTIONS': 'VOUS AVEZ ENCORE DES QUESTIONS ?',
+        ' QUESTIONS FRÉQUEMMENT POSÉES SUR ABF': ' QUESTIONS FRÉQUEMMENT POSÉES SUR ABF',
+        'QU EST-CE QUE GMF ABF': 'QU\'EST-CE QUE GMF ABF ?',
+        'GMF ABF est une entreprise spécialisée dans la production, la transformation et la distribution de produits agricoles et avicoles de haute qualité. Nous nous engageons à fournir des produits frais, durables et conformes aux normes internationales.': 'GMF ABF est une entreprise spécialisée dans la production, la transformation et la distribution de produits agricoles et avicoles de haute qualité. Nous nous engageons à fournir des produits frais, durables et conformes aux normes internationales.',
+        'QUELS PRODUITS PROPOSEZ-VOUS': 'QUELS PRODUITS PROPOSEZ-VOUS ?',
+        'Nous proposons une large gamme de produits agricoles et avicoles, notamment des poussins, volailles prêtes à consommer, aliments pour bétail, ainsi que des services d\'accompagnement pour les éleveurs partenaires.': 'Nous proposons une large gamme de produits agricoles et avicoles, notamment des poussins, volailles prêtes à consommer, aliments pour bétail, ainsi que des services d\'accompagnement pour les éleveurs partenaires.',
+        'COMMENT PASSER UNE COMMANDE': 'COMMENT PASSER UNE COMMANDE ?',
+        'Les commandes peuvent être effectuées directement via notre service commercial, par téléphone ou en ligne sur notre site officiel. Une fois validée, nous assurons un suivi complet jusqu\'à la livraison.': 'Les commandes peuvent être effectuées directement via notre service commercial, par téléphone ou en ligne sur notre site officiel. Une fois validée, nous assurons un suivi complet jusqu\'à la livraison.',
+        'OÙ LIVREZ-VOUS': 'OÙ LIVREZ-VOUS ?',
+        'QUE FAISONS-NOUS ?': 'QUE FAISONS-NOUS ?',
+        'Expertise' : 'Expertise',
+        'Nutrition Animale' : 'Nutrition Animale',
+        'Qualité' : 'Qualité',
+        'Matières Premières' : 'Matières Premières',
+        'Accompagnement' : 'Accompagnement',
+        'Services & Logistique' : 'Services & Logistique',
+        'Aliment  BETAILIL Frenda (ABF) accompagne les éleveurs et agriculteurs grâce à des solutions nutritionnelles complètes, innovantes et fiables. Notre mission est de fournir une nutrition équilibrée et durable, issue de matières premières soigneusement sélectionnées, afin d’améliorer la productivité et le bien-être animal.' : 'Aliment  BETAILIL Frenda (ABF) supports breeders and farmers with comprehensive, innovative, and reliable nutritional solutions. Our mission is to provide balanced and sustainable nutrition, derived from carefully selected raw materials, to improve productivity and animal welfare.',
+        'DOMAINES D’EXPERTISE': 'DOMAINES D’EXPERTISE',
+        'Aliment  BETAILIL Frenda (ABF) accompagne les éleveurs et agriculteurs grâce à des solutions nutritionnelles complètes, innovantes et fiables. Notre mission est de fournir une nutrition équilibrée et durable, issue de matières premières soigneusement sélectionnées, afin d’améliorer la productivité et le bien-être animal.' : 'Aliment  BETAILIL Frenda (ABF) accompagne les éleveurs et agriculteurs grâce à des solutions nutritionnelles complètes, innovantes et fiables. Notre mission est de fournir une nutrition équilibrée et durable, issue de matières premières soigneusement sélectionnées, afin d’améliorer la productivité et le bien-être animal.',
+        'GMF ABF assure des livraisons dans tout le territoire national, avec des moyens de transport adaptés pour garantir la fraîcheur et la qualité de   produits jusqu\'à destination.': 'GMF ABF assure des livraisons dans tout le territoire national, avec des moyens de transport adaptés pour garantir la fraîcheur et la qualité de   produits jusqu\'à destination.',
+        'ABF Frenda – Faire progresser la production d\'aliments avec innovation et durabilité.': 'ABF Frenda – Faire progresser la production d\'aliments avec innovation et durabilité.',
+        'Présidente': 'Présidente',
+        'Co-dirigeant notre organisation avec une expertise en excellence opérationnelle et développement d\'équipe dans le secteur agricole.': 'Co-dirigeant notre organisation avec une expertise en excellence opérationnelle et développement d\'équipe dans le secteur agricole.',
+        'Opérations': 'Opérations',
+        'Développement': 'Développement',
+        'Gestion': 'Gestion',
+        'Trésorier': 'Trésorier',
+        'Gérant   opérations financières avec précision et assurant une croissance durable grâce à une planification financière stratégique.': 'Gérant   opérations financières avec précision et assurant une croissance durable grâce à une planification financière stratégique.',
+        'Finance': 'Finance',
+        'Planification': 'Planification',
+        'Analyse': 'Analyse',
+        'Entrez Votre Email': 'Entrez Votre Email',
+        'Comté actif se produire. Ambition matinale sinueuse, timidité évidente pour les pauvres. Parce que les personnes âgées sont nouvelles au point principal du succès.': 'Comté actif se produire. Ambition matinale sinueuse, timidité évidente pour les pauvres. Parce que les personnes âgées sont nouvelles au point principal du succès.',
+        'Les Grands Moulins de Frenda':'Les Grands Moulins de Frenda',
+        'Fabrication': 'Fabrication de produit pour l\'alimentation des Animaux. Aliments de bétail de Frenda.',
+        'INNOVATION STARTS HERE': 'L\'INNOVATION COMMENCE ICI',
+        'DISCOVER THE FUTURE': 'Découvrez l\'avenir de la technologie avec   solutions de pointe',
+        'GET STARTED': 'Commencer',
+        'BUILD SOMETHING AMAZING': 'Construisez Quelque Chose d\'Extraordinaire',
+        'TRANSFORM YOUR IDEAS': 'Transformez vos idées en réalité avec notre plateforme puissante',
+        'LEARN MORE SLIDE': 'En Savoir Plus',
+        'JOIN OUR COMMUNITY': 'Rejoignez Notre Communauté',
+        'CONNECT WITH CREATORS': 'Connectez-vous avec des milliers de créateurs et d\'innovateurs du monde entier',
+        'JOIN NOW': 'Rejoindre Maintenant',
+        'ALIMENTATION  TITLE': 'ALIMENTATION ANIMALE',
+        'AGRO PRODUCTS': 'PRODUITS AGRO',
+        'QUE FAISONS-NOUS': 'QUE FAISONS-NOUS',
+        'SERVICES HEADING': 'SERVICES',
+        'VOIR PLUS SERVICES': 'VOIR PLUS',
+        'NUTRITION ANIMALE': 'Nutrition Animale',
+        'NUTRITION ANIMALE 2': 'Nutrition Animale',
+        'SUPPLÉMENTS': 'Suppléments',
+        'ALIMENT  BETAILIL': 'ALIMENT  BETAILIL',
+        'EXPLORE': 'EXPLORER',
+        'ACCUEIL FOOTER': 'Accueil',
+        'À PROPOS': 'À propos',
+        'BLOG': 'Blog',
+        'CONTACT': 'Contact',
+        'SERVICES FOOTER': 'Services',
+        'PRODUITS FOOTER': 'Produits',
+        'COORDONNÉES': 'COORDONNÉES',
+        'NOTRE GALERIE FOOTER': 'NOTRE GALERIE',
+        'INNOVATION AGRONOMIQUE': 'INNOVATION AGRONOMIQUE',
+        'DÉCOUVREZ L\'AVENIR DE L\'AGRONOMIE': 'DÉCOUVREZ L\'AVENIR DE L\'AGRONOMIE',
+        'DÉMARRER': 'DÉMARRER',
+        'ALIMENTATION  DURABLE': 'ALIMENTATION  DURABLE',
+        'TRANSFORMEZ VOS IDÉES EN RÉCOLTES': 'TRANSFORMEZ VOS IDÉES EN RÉCOLTES',
+        'EN SAVOIR PLUS': 'EN SAVOIR PLUS',
+        'COMMUNAUTÉ AGRICOLE': 'COMMUNAUTÉ AGRICOLE',
+        'CONNECTEZ-VOUS AVEC DES AGRONOMES': 'CONNECTEZ-VOUS AVEC DES AGRONOMES',
+        'REJOINDRE MAINTENANT': 'REJOINDRE MAINTENANT',
+        'DESCRIPTION_PARAGRAPH_1': 'Dans le secteur agricole, la qualité et la diversité des produits sont essentielles pour répondre aux besoins des éleveurs et des agriculteurs. Notre gamme comprend des aliments pour volailles, bovins, ovins et caprins, ainsi que des compléments nutritionnels adaptés à chaque étape de la production.',
+        'DESCRIPTION_PARAGRAPH_2': 'Spécialistes dans la fabrication d\'aliments pour bétail, nous proposons des produits de haute qualité adaptés aux besoins nutritionnels de chaque élevage.',
+        'DESCRIPTION_PARAGRAPH_3': 'Notre objectif est de soutenir les agriculteurs et éleveurs en offrant des solutions durables, fiables et respectueuses des standards de qualité.',
+        'ALIMENTS BOVINS': 'ALIMENTS BOVINS',
+        'ALIMENTS OVINS': 'ALIMENTS OVINS',
+        'ABF FRENDRA MAIN HEADING': 'ABF Frenda — Faire progresser la production d\'aliments avec innovation et durabilité.',
+        'FOOTER_DESCRIPTION': 'Une entreprise dynamique et innovante dans le domaine de l\'ALIMENTATION  biologique. Nous nous engageons à fournir des produits de qualité supérieure tout en préservant notre environnement.',
+        'COMMENT PUIS-JE DEVENIR PARTENAIRE': 'COMMENT PUIS-JE DEVENIR PARTENAIRE ?',
+        'Pour devenir partenaire, veuillez nous contacter via notre formulaire en ligne ou par email. Notre équipe se fera un plaisir de vous accompagner dans le processus.': 'Pour devenir partenaire, veuillez nous contacter via notre formulaire en ligne ou par email. Notre équipe se fera un plaisir de vous accompagner dans le processus.',
+        'COMMENT PUIS-JE VOUS CONTACTER': 'COMMENT PUIS-JE VOUS CONTACTER ?',
+        'Vous pouvez nous contacter par téléphone au +33 1 23 45 67 89 ou par email à contact@abf-france.fr.': 'Vous pouvez nous contacter par téléphone au +33 1 23 45 67 89 ou par email à contact@abf-france.fr.'
+    },
+    'en': {
+        'ACCUEIL': 'HOME',
+        'PAGES': 'PAGES',
+        'TEAM': 'TEAM',
+        'SERVICES': 'SERVICES',
+        'BOUTIQUE': 'SHOP',
+        'PRODUITS': 'PRODUCTS',
+        'PROJETS': 'PROJECTS',
+        'CONTACTEZ-NOUS': 'CONTACT US',
+        'Rechercher': 'Search',
+        'INFOS CONTACT': 'CONTACT INFO',
+        'NOTRE GALERIE': 'OUR GALLERY',
+        'GALERIE': 'GALLERY',
+        'Découvrez ici des photos de notre quotidien et de l’atmosphère qui règne au sein de notre société. Plongez-vous dans notre univers de travail !': 'Discover here photos of our daily life and the atmosphere that prevails within our company. Immerse yourself in our work universe!',
+        'EXPLORER': 'EXPLORE',
+        'Accueil': 'Home',
+        'Rencontrez Notre Équipe': 'Meet Our Team',
+        'Notre équipe dédiée d\'experts agricoles et d\'innovateurs travaillant ensemble pour révolutionner les pratiques agricoles et les solutions d\'ALIMENTATION  durable.': 'Our dedicated team of agricultural experts and innovators working together to revolutionize farming practices and sustainable ALIMENTATION  solutions.',
+        'Président': 'President',
+        'Dirigeant notre entreprise avec plus de 15 ans d\'expérience dans l\'innovation agricole et les pratiques agricoles durables.': 'Leading our company with over 15 years of experience in agricultural innovation and sustainable farming practices.',
+        'Leadership': 'Leadership',
+        'Stratégie': 'Strategy',
+        'ALIMENTATION ': 'ALIMENTATION ',
+        'Membre d\'Office': 'Board Member',
+        'Apportant des perspectives précieuses grâce à son vaste parcours dans la politique agricole et la conformité réglementaire.': 'Bringing valuable insights through extensive background in agricultural policy and regulatory compliance.',
+        'Politique': 'Policy',
+        'Conformité': 'Compliance',
+        'Conseil': 'Advisory',
+        'Contact': 'Contact',
+        'ALEMENT  BETAILIL FRENDA': ' BETAILIL FEED FRENDA',
+        'ABOUT ABF FRENDA': 'ABOUT ABF FRENDA',
+        'AGRICULTURAL & FEED COMPANY': 'FEED COMPANY',
+        '  Services': 'Our Agricultural Services',
+        '  Services - ABF Frenda': 'Our Services - ABF Frenda',
+        'Services Intro 1': 'At ABF Frenda, we specialize in producing high-quality livestock feed, tailored to the nutritional needs of cattle, sheep, and goats. Our goal is to support farmers by ensuring balanced and efficient nutrition for their livestock.',
+        'Services Intro 2': 'Thanks to our experience and modern processes, we ensure reliable production that meets the strictest quality standards, optimizing animal health and productivity.',
+        'Services Intro 3': 'We also offer personalized technical advice to help our customers choose the formulas best suited to their breeding objectives and resources.',
+        '  Services Principaux': 'Our Main Services',
+        'Services Slogan': 'Complete solutions for livestock feed manufacturing and distribution',
+        'Fabrication d\'Aliments': 'Feed Manufacturing',
+        'Service 1 Desc': 'Production of complete and concentrated feeds for cattle, sheep and goats, with balanced formulas adapted to each growth stage.',
+        'Formulation Personnalisée': 'Customized Formulation',
+        'Service 2 Desc': 'Creating specific blends according to your livestock\'s nutritional needs, using carefully selected raw materials.',
+        'Compléments & Additifs': 'Supplements & Additives',
+        'Service 3 Desc': 'Supply of mineral and vitamin supplements to optimize the health and productivity of your animals.',
+        'Distribution & Livraison': 'Distribution & Delivery',
+        'Service 4 Desc': 'Fast and reliable delivery service directly to your farm, ensuring freshness and product availability.',
+        'Analyse & Contrôle Qualité': 'Analysis & Quality Control',
+        'Service 5 Desc': 'Regular analyses to guarantee nutritional compliance and sanitary quality of all our products.',
+        'Stockage & Conditionnement': 'Storage & Packaging',
+        'Service 6 Desc': 'Modern facilities for feed storage and packaging, ensuring optimal preservation.',
+        'Services Title': 'Services',
+        'Services Hero Text 1': 'At Les Grands Moulins de Frenda – ABF, we don\'t just produce high-quality animal feed. We offer complete agricultural and livestock solutions to help farmers improve their performance, reduce costs and maintain healthy herds.',
+        'Services Hero Text 2': 'Our commitment is to provide reliable, nutrient-rich products, backed by expert advice and a solid distribution network, ensuring your farm\'s success from the start.',
+        'Discover More': 'Discover More',
+        'ABF Frenda, a proud branch of Les Grands Moulins de Frenda, specializes in producing high-quality animal feed and processing locally sourced grains. With decades of experience, we combine tradition and innovation to support Algeria\'s agricultural sector.': 'ABF Frenda, a proud branch of Les Grands Moulins de Frenda, specializes in producing high-quality animal feed and processing locally sourced grains. With decades of experience, we combine tradition and innovation to support Algeria\'s agricultural sector.',
+        'LEARN MORE': 'LEARN MORE',
+        'ALL PRODUCTS': 'ALL PRODUCTS',
+        'product-description': 'Explorez notre gamme de produits biologiques de haute qualité, conçus pour répondre à vos besoins agricoles tout en respectant l\'environnement.',
+        'Ensemble, Récoltons l\'Excellence Pour Tous': 'Together, Let\'s Harvest Excellence For All',
+        'Tous': 'All',
+        'Poulet': 'Chicken',
+        'Vache': 'Cow',
+        'Mouton': 'Sheep',
+        'VOUS AVEZ ENCORE DES QUESTIONS': 'DO YOU STILL HAVE QUESTIONS?',
+        ' QUESTIONS FRÉQUEMMENT POSÉES SUR ABF': 'FREQUENTLY ASKED QUESTIONS ABOUT GMF ABF',
+        'QU EST-CE QUE GMF ABF': 'WHAT IS GMF ABF?',
+        'GMF ABF est une entreprise spécialisée dans la production, la transformation et la distribution de produits agricoles et avicoles de haute qualité. Nous nous engageons à fournir des produits frais, durables et conformes aux normes internationales.': 'GMF ABF is a company specialized in the production, processing and distribution of high-quality agricultural and poultry products. We are committed to providing fresh, sustainable products that meet international standards.',
+        'QUELS PRODUITS PROPOSEZ-VOUS': 'WHAT PRODUCTS DO YOU OFFER?',
+        'Nous proposons une large gamme de produits agricoles et avicoles, notamment des poussins, volailles prêtes à consommer, aliments pour bétail, ainsi que des services d\'accompagnement pour les éleveurs partenaires.': 'We offer a wide range of agricultural and poultry products, including chicks, ready-to-consume poultry, livestock feed, as well as support services for partner farmers.',
+        'COMMENT PASSER UNE COMMANDE': 'HOW TO PLACE AN ORDER?',
+        'Les commandes peuvent être effectuées directement via notre service commercial, par téléphone ou en ligne sur notre site officiel. Une fois validée, nous assurons un suivi complet jusqu\'à la livraison.': 'Orders can be placed directly through our sales service, by phone or online on our official website. Once validated, we ensure complete follow-up until delivery.',
+        'OÙ LIVREZ-VOUS': 'WHERE DO YOU DELIVER?',
+        'QUE FAISONS-NOUS ?': 'WHAT DO WE DO?',
+        'Expertise' : 'Expertise',
+        'Nutrition Animale' : 'Animal Nutrition',
+        'Qualité' : 'Quality',
+        'Matières Premières' : 'Raw Materials',
+        'Accompagnement' : 'Support',
+        'Services & Logistique' : 'Services & Logistics',
+        'DOMAINES D’EXPERTISE': 'AREAS OF EXPERTISE',
+        'Aliment  BETAILIL Frenda (ABF) accompagne les éleveurs et agriculteurs grâce à des solutions nutritionnelles complètes, innovantes et fiables. Notre mission est de fournir une nutrition équilibrée et durable, issue de matières premières soigneusement sélectionnées, afin d’améliorer la productivité et le bien-être animal.' : 'Aliment  BETAILIL Frenda (ABF) supports breeders and farmers with comprehensive, innovative, and reliable nutritional solutions. Our mission is to provide balanced and sustainable nutrition, derived from carefully selected raw materials, to enhance productivity and animal welfare.',
+        'GMF ABF est un acteur clé dans le secteur agricole, offrant des solutions innovantes et durables pour les éleveurs et agriculteurs.': 'GMF ABF is a key player in the agricultural sector, providing innovative and sustainable solutions for breeders and farmers.',
+        'GMF ABF assure des livraisons dans tout le territoire national, avec des moyens de transport adaptés pour garantir la fraîcheur et la qualité de   produits jusqu\'à destination.': 'GMF ABF provides deliveries throughout the national territory, with suitable transportation means to guarantee the freshness and quality of our products to destination.',
+        'ABF Frenda – Faire progresser la production d\'aliments avec innovation et durabilité.': 'ABF Frenda – Advancing feed production with innovation and sustainability.',
+        'Présidente': 'President',
+        'Co-dirigeant notre organisation avec une expertise en excellence opérationnelle et développement d\'équipe dans le secteur agricole.': 'Co-leading our organization with expertise in operational excellence and team development in the agricultural sector.',
+        'Opérations': 'Operations',
+        'Développement': 'Development',
+        'Gestion': 'Management',
+        'Trésorier': 'Treasurer',
+        'Gérant   opérations financières avec précision et assurant une croissance durable grâce à une planification financière stratégique.': 'Managing our financial operations with precision and ensuring sustainable growth through strategic financial planning.',
+        'Finance': 'Finance',
+        'Planification': 'Planning',
+        'Analyse': 'Analysis',
+        'Entrez Votre Email': 'Enter Your Email',
+        'Comté actif se produire. Ambition matinale sinueuse, timidité évidente pour les pauvres. Parce que les personnes âgées sont nouvelles au point principal du succès.': 'Active county to occur. Winding morning ambition, obvious shyness for the poor. Because elderly people are new to the main point of success.',
+        'Les Grands Moulins de Frenda':'Les Grands Moulins de Frenda',
+        'Fabrication': 'Manufacturing products for animal feed. Frenda livestock feed.',
+        'INNOVATION STARTS HERE': 'INNOVATION STARTS HERE',
+        'DISCOVER THE FUTURE': 'Discover the future of technology with our cutting-edge solutions',
+        'GET STARTED': 'Get Started',
+        'BUILD SOMETHING AMAZING': 'Build Something Amazing',
+        'TRANSFORM YOUR IDEAS': 'Transform your ideas into reality with our powerful platform',
+        'LEARN MORE SLIDE': 'Learn More',
+        'JOIN OUR COMMUNITY': 'Join Our Community',
+        'CONNECT WITH CREATORS': 'Connect with thousands of creators and innovators worldwide',
+        'JOIN NOW': 'Join Now',
+        'ALIMENTATION  TITLE': 'ANIMAL FEED',
+        'AGRO PRODUCTS': 'AGRO PRODUCTS',
+        'QUE FAISONS-NOUS': 'WHAT WE DO',
+        'SERVICES HEADING': 'SERVICES',
+        'VOIR PLUS SERVICES': 'SEE MORE',
+        'NUTRITION ANIMALE': 'Animal Nutrition',
+        'NUTRITION ANIMALE 2': 'Animal Nutrition',
+        'SUPPLÉMENTS': 'Supplements',
+        'ALIMENT  BETAILIL': ' BETAILIL FEED',
+        'EXPLORE': 'EXPLORE',
+        'ACCUEIL FOOTER': 'Home',
+        'À PROPOS': 'About',
+        'BLOG': 'Blog',
+        'CONTACT': 'Contact',
+        'SERVICES FOOTER': 'Services',
+        'PRODUITS FOOTER': 'Products',
+        'COORDONNÉES': 'COORDINATES',
+        'NOTRE GALERIE FOOTER': 'OUR GALLERY',
+        'GALERIE': 'GALLERY',
+        'Découvrez ici des photos de notre quotidien et de l’atmosphère qui règne au sein de notre société. Plongez-vous dans notre univers de travail !': 'Discover here photos of our daily life and the atmosphere that prevails within our company. Immerse yourself in our work universe!',
+        'INNOVATION AGRONOMIQUE': 'AGRONOMIC INNOVATION',
+        'DÉCOUVREZ L\'AVENIR DE L\'AGRONOMIE': 'DISCOVER THE FUTURE OF AGRONOMY',
+        'DÉMARRER': 'GET STARTED',
+        'ALIMENTATION  DURABLE': 'SUSTAINABLE ALIMENTATION ',
+        'TRANSFORMEZ VOS IDÉES EN RÉCOLTES': 'TRANSFORM YOUR IDEAS INTO HARVESTS',
+        'EN SAVOIR PLUS': 'LEARN MORE',
+        'COMMUNAUTÉ AGRICOLE': 'AGRICULTURAL COMMUNITY',
+        'CONNECTEZ-VOUS AVEC DES AGRONOMES': 'CONNECT WITH AGRONOMISTS',
+        'REJOINDRE MAINTENANT': 'JOIN NOW',
+        'DESCRIPTION_PARAGRAPH_1': 'In the agricultural sector, product quality and diversity are essential to meet the needs of livestock farmers and agricultural producers. Our range includes poultry, cattle, sheep and goat feed, as well as nutritional supplements adapted to each stage of production.',
+        'DESCRIPTION_PARAGRAPH_2': 'Specialists in manufacturing livestock feed, we offer high-quality products adapted to the nutritional needs of each livestock operation.',
+        'DESCRIPTION_PARAGRAPH_3': 'Our objective is to support farmers and livestock breeders by offering sustainable, reliable solutions that respect quality standards.',
+        'ALIMENTS BOVINS': 'CATTLE FEED',
+        'ALIMENTS OVINS': 'SHEEP FEED',
+        'ABF FRENDRA MAIN HEADING': 'ABF Frenda — Advancing feed production with innovation and sustainability.',
+        'FOOTER_DESCRIPTION': 'A dynamic and innovative company in the field of organic ALIMENTATION . We are committed to providing superior quality products while preserving our environment.',
+        'COMMENT PUIS-JE DEVENIR PARTENAIRE': 'HOW CAN I BECOME A PARTNER?',
+        'Pour devenir partenaire, veuillez nous contacter via notre formulaire en ligne ou par email. Notre équipe se fera un plaisir de vous accompagner dans le processus.': 'To become a partner, please contact us via our online form or by email. Our team will be happy to assist you through the process.',
+        'COMMENT PUIS-JE VOUS CONTACTER': 'HOW CAN I CONTACT YOU?',
+        'Vous pouvez nous contacter par téléphone au +33 1 23 45 67 89 ou par email à contact@abf-france.fr.': 'You can contact us by phone at +33 1 23 45 67 89 or by email at contact@abf-france.fr.'
+
+    },
+    'ar': {
+        'ACCUEIL': 'الرئيسية',
+        'PAGES': 'الصفحات',
+        'TEAM': 'الفريق',
+        'SERVICES': 'الخدمات',
+        'BOUTIQUE': 'المتجر',
+        'PRODUITS': 'المنتجات',
+        'PROJETS': 'المشاريع',
+        'CONTACTEZ-NOUS': 'اتصل بنا',
+        'Rechercher': 'بحث',
+        'INFOS CONTACT': 'معلومات الاتصال',
+        'NOTRE GALERIE': 'معرض الصور',
+        'GALERIE': 'معرض الصور',
+        'Découvrez ici des photos de notre quotidien et de l’atmosphère qui règne au sein de notre société. Plongez-vous dans notre univers de travail !': 'اكتشف هنا صورًا من حياتنا اليومية والأجواء السائدة داخل شركتنا. اغمر نفسك في عالم عملنا!',
+        'EXPLORER': 'استكشف',
+        'Accueil': 'الرئيسية',
+        'Rencontrez Notre Équipe': 'تعرف على فريقنا',
+        'Notre équipe dédiée d\'experts agricoles et d\'innovateurs travaillant ensemble pour révolutionner les pratiques agricoles et les solutions d\'ALIMENTATION  durable.': 'فريقنا المتفان من الخبراء الزراعيين والمبتكرين يعملون معًا لإحداث ثورة في الممارسات الزراعية وحلول الزراعة المستدامة.',
+        'Président': 'الرئيس',
+        'Dirigeant notre entreprise avec plus de 15 ans d\'expérience dans l\'innovation agricole et les pratiques agricoles durables.': 'يقود شركتنا بأكثر من 15 عامًا من الخبرة في الابتكار الزراعي والممارسات الزراعية المستدامة.',
+        'Leadership': 'القيادة',
+        'Stratégie': 'الاستراتيجية',
+        'ALIMENTATION ': 'الزراعة',
+        'Membre d\'Office': 'عضو مجلس الإدارة',
+        'Apportant des perspectives précieuses grâce à son vaste parcours dans la politique agricole et la conformité réglementaire.': 'يجلب وجهات نظر قيمة من خلال خلفيته الواسعة في السياسة الزراعية والامتثال التنظيمي.',
+        'Politique': 'السياسة',
+        'Conformité': 'الامتثال',
+        'Conseil': 'الاستشارة',
+        'Contact': 'الاتصال',
+        'ALEMENT  BETAILIL FRENDA': 'علف بيتا فرندة',
+        'ABOUT ABF FRENDA': 'حول ABF فرندة',
+        'AGRICULTURAL & FEED COMPANY': 'شركة مختصة للأعلاف الحيوانية ',
+        '  Services': 'خدماتنا الزراعية',
+        '  Services - ABF Frenda': 'خدماتنا - ABF فرندة',
+        'Services Intro 1': 'في ABF فرندة، نحن متخصصون في إنتاج أعلاف الماشية عالية الجودة، والمصممة خصيصًا لتلبية الاحتياجات الغذائية للأبقار والأغنام والماعز. هدفنا هو دعم المربين من خلال ضمان التغذية المتوازنة والفعالة لماشيتهم.',
+        'Services Intro 2': 'بفضل خبرتنا وعملياتنا الحديثة، نضمن إنتاجًا موثوقًا يلتزم بأصرم معايير الجودة، لتحسين صحة الحيوانات وإنتاجيتها.',
+        'Services Intro 3': 'كما نقدم استشارات تقنية شخصية لمساعدة عملائنا على اختيار التركيبات الأنسب لأهداف تربيتهم ومواردهم.',
+        '  Services Principaux': 'خدماتنا الرئيسية',
+        'Services Slogan': 'حلول شاملة لتصنيع وتوزيع أعلاف الماشية',
+        'Fabrication d\'Aliments': 'تصنيع الأعلاف',
+        'Service 1 Desc': 'إنتاج أعلاف كاملة ومركزة للأبقار والأغنام والماعز، مع تركيبات متوازنة تناسب كل مرحلة نمو.',
+        'Formulation Personnalisée': 'تركيبات مخصصة',
+        'Service 2 Desc': 'إنشاء خلطات محددة وفقًا لاحتياجات ماشيتك الغذائية، باستخدام مواد خام مختارة بعناية.',
+        'Compléments & Additifs': 'المكملات والإضافات',
+        'Service 3 Desc': 'توفير المكملات المعدنية والفيتامينية لتحسين صحة وإنتاجية حيواناتك.',
+        'Distribution & Livraison': 'التوزيع والتوصيل',
+        'Service 4 Desc': 'خدمة توصيل سريعة وموثوقة مباشرة إلى مزرعتك، مما يضمن نضارة المنتجات وتوفرها.',
+        'Analyse & Contrôle Qualité': 'التحليل ومراقبة الجودة',
+        'Service 5 Desc': 'تحاليل منتظمة لضمان الامتثال الغذائي والجودة الصحية لجميع منتجاتنا.',
+        'Stockage & Conditionnement': 'التخزين والتعبئة',
+        'Service 6 Desc': 'منشآت حديثة لتخزين وتعبئة الأعلاف، مما يضمن الحفظ الأمثل.',
+        'Services Title': 'الخدمات',
+        'Services Hero Text 1': 'في مطاحن فرندة الكبرى - ABF، لا نكتفي بإنتاج أعلاف الحيوانات عالية الجودة. نقدم حلولاً زراعية وحيوانية شاملة لمساعدة المزارعين على تحسين أدائهم وتقليل تكاليفهم والحفاظ على قطعان صحية.',
+        'Services Hero Text 2': 'التزامنا هو توفير منتجات موثوقة وغنية بالمغذيات، مدعومة بالنصائح المتخصصة وشبكة توزيع قوية، مما يضمن نجاح مزرعتك من البداية.',
+        'Discover More': 'اكتشف المزيد',
+        'ABF Frenda, a proud branch of Les Grands Moulins de Frenda, specializes in producing high-quality animal feed and processing locally sourced grains. With decades of experience, we combine tradition and innovation to support Algeria\'s agricultural sector.': 'ABF فرندة، فرع فخور من مطاحن فرندة الكبرى، متخصص في إنتاج أعلاف الحيوانات عالية الجودة ومعالجة الحبوب المحلية. بعقود من الخبرة، نجمع بين التقليد والابتكار لدعم القطاع الزراعي الجزائري.',
+        'LEARN MORE': 'اعرف المزيد',
+        'ALL PRODUCTS': 'جميع المنتجات',
+        'PRODUCT DESCRIPTION': 'استكشف مجموعتنا من المنتجات العضوية عالية الجودة، المصممة لتلبية احتياجاتك الزراعية مع احترام البيئة.',
+        'Ensemble, Récoltons l\'Excellence Pour Tous': 'معًا، لنحصد التميز للجميع',
+        'Tous': 'الكل',
+        'Poulet': 'دجاج',
+        'Vache': 'بقرة',
+        'Mouton': 'خروف',
+        'VOUS AVEZ ENCORE DES QUESTIONS': 'هل لا تزال لديك أسئلة؟',
+        ' QUESTIONS FRÉQUEMMENT POSÉES SUR ABF': 'الأسئلة الشائعة حول GMF ABF',
+        'QU EST-CE QUE GMF ABF': 'ما هي GMF ABF؟',
+        'GMF ABF est une entreprise spécialisée dans la production, la transformation et la distribution de produits agricoles et avicoles de haute qualité. Nous nous engageons à fournir des produits frais, durables et conformes aux normes internationales.': 'GMF ABF هي شركة متخصصة في إنتاج ومعالجة وتوزيع المنتجات الزراعية والدواجن عالية الجودة. نحن ملتزمون بتوفير منتجات طازجة ومستدامة تلتزم بالمعايير الدولية.',
+        'QUELS PRODUITS PROPOSEZ-VOUS': 'ما المنتجات التي تقدمونها؟',
+        'Nous proposons une large gamme de produits agricoles et avicoles, notamment des poussins, volailles prêtes à consommer, aliments pour bétail, ainsi que des services d\'accompagnement pour les éleveurs partenaires.': 'نقدم مجموعة واسعة من المنتجات الزراعية والدواجن، بما في ذلك الكتاكيت والدواجن الجاهزة للاستهلاك وأعلاف الماشية، بالإضافة إلى خدمات الدعم للمربين الشركاء.',
+        'COMMENT PASSER UNE COMMANDE': 'كيفية تقديم طلب؟',
+        'Les commandes peuvent être effectuées directement via notre service commercial, par téléphone ou en ligne sur notre site officiel. Une fois validée, nous assurons un suivi complet jusqu\'à la livraison.': 'يمكن تقديم الطلبات مباشرة من خلال خدمتنا التجارية، عبر الهاتف أو عبر الإنترنت على موقعنا الرسمي. بمجرد التأكيد، نضمن متابعة كاملة حتى التسليم.',
+        'OÙ LIVREZ-VOUS': 'أين تقومون بالتوصيل؟',
+        'QUE FAISONS-NOUS ?': 'ماذا نفعل؟',
+        'Expertise' : 'الخبرة',
+        'Nutrition Animale' : 'تغذية الحيوانات',
+        'Qualité' : 'الجودة',
+        'Matières Premières' : 'المواد الخام',
+        'Accompagnement' : 'الدعم',
+        'Services & Logistique' : 'الخدمات واللوجستيات',
+        'DOMAINES D’EXPERTISE' : 'مجالات الخبرة',
+        'Aliment  BETAILIL Frenda (ABF) accompagne les éleveurs et agriculteurs grâce à des solutions nutritionnelles complètes, innovantes et fiables. Notre mission est de fournir une nutrition équilibrée et durable, issue de matières premières soigneusement sélectionnées, afin d’améliorer la productivité et le bien-être animal.' : 'يدعم أليمنت بيتا فرندة (ABF) المربين والمزارعين من خلال حلول غذائية شاملة ومبتكرة وموثوقة. تتمثل مهمتنا في توفير تغذية متوازنة ومستدامة، مستمدة من مواد خام مختارة بعناية، من أجل تعزيز الإنتاجية ورفاهية الحيوان.',
+        'GMF ABF livre dans toute l\'Algérie, avec des partenaires de transport fiables pour garantir des livraisons rapides et efficaces.': 'تقوم GMF ABF بالتوصيل في جميع أنحاء الجزائر، مع شركاء نقل موثوقين لضمان تسليم سريع وفعال.',
+        'GMF ABF assure des livraisons dans tout le territoire national, avec des moyens de transport adaptés pour garantir la fraîcheur et la qualité de   produits jusqu\'à destination.': 'تضمن GMF ABF التوصيل في جميع أنحاء الإقليم الوطني، بوسائل نقل مناسبة لضمان نضارة وجودة منتجاتنا حتى الوجهة.',
+        'ABF Frenda – Faire progresser la production d\'aliments avec innovation et durabilité.': 'ABF فرندة - تطوير إنتاج الأعلاف بالابتكار والاستدامة.',
+        'Présidente': 'الرئيسة',
+        'Co-dirigeant notre organisation avec une expertise en excellence opérationnelle et développement d\'équipe dans le secteur agricole.': 'تشارك في قيادة منظمتنا بخبرة في التميز التشغيلي وتطوير الفريق في القطاع الزراعي.',
+        'Opérations': 'العمليات',
+        'Développement': 'التطوير',
+        'Gestion': 'الإدارة',
+        'Trésorier': 'أمين الصندوق',
+        'Gérant   opérations financières avec précision et assurant une croissance durable grâce à une planification financière stratégique.': 'يدير عملياتنا المالية بدقة ويضمن نموًا مستدامًا من خلال التخطيط المالي الاستراتيجي.',
+        'Finance': 'المالية',
+        'Planification': 'التخطيط',
+        'Analyse': 'التحليل',
+        'Entrez Votre Email': 'أدخل بريدك الإلكتروني',
+        'Comté actif se produire. Ambition matinale sinueuse, timidité évidente pour les pauvres. Parce que les personnes âgées sont nouvelles au point principal du succès.': 'مقاطعة نشطة تحدث. طموح صباحي متعرج، خجل واضح للفقراء. لأن كبار السن جدد في النقطة الرئيسية للنجاح.',
+        'Les Grands Moulins de Frenda':'مطاحن فرندة الكبرى',
+        'Fabrication': 'تصنيع منتجات لتغذية الحيوانات. أعلاف الماشية فرندة.',
+        'INNOVATION STARTS HERE': 'الابتكار يبدأ هنا',
+        'DISCOVER THE FUTURE': 'اكتشف مستقبل التكنولوجيا مع حلولنا المتطورة',
+        'GET STARTED': 'ابدأ الآن',
+        'BUILD SOMETHING AMAZING': 'ابن شيئًا مذهلاً',
+        'TRANSFORM YOUR IDEAS': 'حوّل أفكارك إلى واقع مع منصتنا القوية',
+        'LEARN MORE SLIDE': 'اعرف المزيد',
+        'JOIN OUR COMMUNITY': 'انضم إلى مجتمعنا',
+        'CONNECT WITH CREATORS': 'تواصل مع آلاف المبدعين والمبتكرين حول العالم',
+        'JOIN NOW': 'انضم الآن',
+        'ALIMENTATION  TITLE': 'أغذية الحيوانات',
+        'AGRO PRODUCTS': 'المنتجات الزراعية',
+        'QUE FAISONS-NOUS': 'ماذا نفعل',
+        'SERVICES HEADING': 'الخدمات',
+        'VOIR PLUS SERVICES': 'شاهد المزيد',
+        'NUTRITION ANIMALE': 'تغذية الحيوانات',
+        'NUTRITION ANIMALE 2': 'تغذية الحيوانات',
+        'SUPPLÉMENTS': 'المكملات',
+        'ALIMENT  BETAILIL FRENDA': 'علف الماشية فرندة',
+        'EXPLORE': 'استكشف',
+        'ACCUEIL FOOTER': 'الرئيسية',
+        'À PROPOS': 'حولنا',
+        'BLOG': 'المدونة',
+        'CONTACT': 'الاتصال',
+        'SERVICES FOOTER': 'الخدمات',
+        'PRODUITS FOOTER': 'المنتجات',
+        'COORDONNÉES': 'الإحداثيات',
+        'NOTRE GALERIE FOOTER': 'معرض الصور',
+        'Galerie' : 'معرض الصور',
+        'INNOVATION AGRONOMIQUE': 'الابتكار الزراعي',
+        'DÉCOUVREZ L\'AVENIR DE L\'AGRONOMIE': 'اكتشف مستقبل الزراعة مع حلولنا الرائدة',
+        'DÉMARRER': 'ابدأ الآن',
+        'ALIMENTATION  DURABLE': 'الزراعة المستدامة',
+        'TRANSFORMEZ VOS IDÉES EN RÉCOLTES': 'حوّل أفكارك إلى محاصيل بفضل منصتنا المبتكرة',
+        'EN SAVOIR PLUS': 'اعرف المزيد',
+        'COMMUNAUTÉ AGRICOLE': 'المجتمع الزراعي',
+        'CONNECTEZ-VOUS AVEC DES AGRONOMES': 'تواصل مع علماء الزراعة ومنتجي من جميع أنحاء العالم',
+        'REJOINDRE MAINTENANT': 'انضم الآن',
+        'DESCRIPTION_PARAGRAPH_1': 'في القطاع الزراعي، تعد جودة المنتجات وتنوعها أمراً أساسياً لتلبية احتياجات مربي الماشية والمزارعين. تشمل مجموعتنا أعلاف الدواجن والماشية والأغنام والماعز، بالإضافة إلى المكملات الغذائية المتكيفة مع كل مرحلة من مراحل الإنتاج.',
+        'DESCRIPTION_PARAGRAPH_2': 'متخصصون في تصنيع أعلاف الماشية، نحن نقدم منتجات عالية الجودة متكيفة مع الاحتياجات الغذائية لكل عملية تربية.',
+        'DESCRIPTION_PARAGRAPH_3': 'هدفنا هو دعم المزارعين ومربّي الماشية من خلال تقديم حلول مستدامة وموثوقة وتحترم معايير الجودة.',
+        'ALIMENTS BOVINS': 'أعلاف الماشية',
+        'ALIMENTS OVINS': 'أعلاف الأغنام',
+        'ABF FRENDRA MAIN HEADING': 'ABF فرندة - تطوير إنتاج الأعلاف بالابتكار والاستدامة.',
+        'FOOTER_DESCRIPTION': 'شركة ديناميكية ومبتكرة في مجال الزراعة العضوية. نحن ملتزمون بتوفير منتجات ذات جودة فائقة مع الحفاظ على بيئتنا.',
+        'COMMENT PUIS-JE DEVENIR PARTENAIRE': 'كيف يمكنني أن أصبح شريكًا؟',
+        'POUR DEVENIR PARTENAIRE': 'لكي تصبح شريكًا، يرجى الاتصال بنا عبر نموذجنا عبر الإنترنت أو عن طريق البريد الإلكتروني. سيكون فريقنا سعيدًا بمساعدتك في هذه العملية.',
+        'COMMENT PUIS-JE VOUS CONTACTER': 'كيف يمكنني الاتصال بك؟',
+        'POUR NOUS CONTACTER': 'يمكنك الاتصال بنا عبر الهاتف على +33 1 23 45 67 89 أو عبر البريد الإلكتروني على contact@abf-france.fr.'
+    }
+};
+
+let currentLang = localStorage.getItem('lang') || 'fr';
+
+function updateLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('lang', lang);
+    
+    // Update all text elements
+    Object.entries(languages[lang]).forEach(([key, value]) => {
+        const elements = document.querySelectorAll(`[data-lang="${key}"]`);
+        elements.forEach(el => el.textContent = value);
+    });
+    
+    // Update placeholders
+    const searchInput = document.querySelector('.search-input');
+    if (searchInput) {
+        searchInput.placeholder = languages[lang]['Rechercher'];
+    }
+    
+    // Update direction for Arabic
+    if (lang === 'ar') {
+        document.body.setAttribute('dir', 'rtl');
+        document.body.classList.add('arabic');
+    } else {
+        document.body.setAttribute('dir', 'ltr');
+        document.body.classList.remove('arabic');
+    }
+}
+
+function initializeLanguageSwitcher() {
+    // Create language dropdown
+    const languageDropdown = document.createElement('div');
+    languageDropdown.className = 'language-dropdown';
+    languageDropdown.innerHTML = `
+        <div class="custom-select">
+            <div class="select-selected">
+                <img src="images/flags/${currentLang}.jpeg" class="flag-icon" alt="Current Language">
+                <span>${currentLang === 'fr' ? 'Français' : currentLang === 'en' ? 'English' : 'العربية'}</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="select-items">
+                <div class="select-item" data-lang="fr">
+                    <img src="images/flags/fr.jpeg" class="flag-icon" alt="Français">
+                    <span>Français</span>
+                </div>
+                <div class="select-item" data-lang="en">
+                    <img src="images/flags/en.jpeg" class="flag-icon" alt="English">
+                    <span>English</span>
+                </div>
+                <div class="select-item" data-lang="ar">
+                    <img src="images/flags/ar.jpeg" class="flag-icon" alt="العربية">
+                    <span>العربية</span>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    // Add language dropdown to navbar
+    const nav = document.querySelector('.navbar');
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    mobileMenuToggle.parentNode.insertBefore(languageDropdown, mobileMenuToggle);
+    
+    // Add event listener
+    const selectSelected = languageDropdown.querySelector('.select-selected');
+    const selectItems = languageDropdown.querySelector('.select-items');
+    const selectItemsDivs = languageDropdown.querySelectorAll('.select-item');
+
+    // Toggle dropdown
+    selectSelected.addEventListener('click', () => {
+        selectItems.classList.toggle('show');
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!languageDropdown.contains(e.target)) {
+            selectItems.classList.remove('show');
+        }
+    });
+
+    // Handle language selection
+    selectItemsDivs.forEach(item => {
+        item.addEventListener('click', () => {
+            const lang = item.dataset.lang;
+            
+            // Update selected option
+            selectItemsDivs.forEach(opt => opt.classList.remove('selected'));
+            item.classList.add('selected');
+            
+            // Update selected display
+            selectSelected.querySelector('img').src = `images/flags/${lang}.jpeg`;
+            selectSelected.querySelector('span').textContent = 
+                lang === 'fr' ? 'Français' : 
+                lang === 'en' ? 'English' : 
+                'العربية';
+            
+            // Close dropdown and update language
+            selectItems.classList.remove('show');
+            updateLanguage(lang);
+        });
+    });
+    
+    // Initialize with current language
+    updateLanguage(currentLang);
+}
+
+// Add data-lang attributes to translatable elements
+document.addEventListener('DOMContentLoaded', () => {
+    initializeLanguageSwitcher();
+    
+    // Add data-lang attributes to elements
+    const elements = {
+        'ACCUEIL': document.querySelector('.nav-menu li:nth-child(1) a'),
+        'PAGES': document.querySelector('.dropdown:nth-child(2) a'),
+        'TEAM': document.querySelector('.dropdown:nth-child(2) .dropdown-menu li:nth-child(1) a'),
+        'SERVICES': document.querySelector('.nav-menu li:nth-child(4) a'),
+        'BOUTIQUE': document.querySelector('.dropdown:nth-child(5) a'),
+        'PRODUITS': document.querySelector('.dropdown:nth-child(5) .dropdown-menu li:nth-child(1) a'),
+        'PROJETS': document.querySelector('.dropdown:nth-child(5) .dropdown-menu li:nth-child(2) a'),
+        'CONTACTEZ-NOUS': document.querySelector('.cta-button'),
+        'INFOS CONTACT': document.querySelector('.footer-section:nth-child(3) h2'),
+        'NOTRE GALERIE': document.querySelector('.footer-section:nth-child(4) h2')
+    };
+    
+    Object.entries(elements).forEach(([key, el]) => {
+        if (el) el.setAttribute('data-lang', key);
+    });
+});
