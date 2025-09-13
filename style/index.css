@@ -1321,27 +1321,18 @@ body {
             opacity: 1;
         }
 
-        /* Updated responsive breakpoints for new grid structure */
-        /* Tablet Landscape & iPad Pro (up to 1200px but wider than 1024px) */
-        @media (max-width: 1200px) {
-            .products-grid {
-                grid-template-columns: repeat(3, 1fr);
-                grid-auto-rows: 220px;
-                gap: 20px;
-                height: auto;
-            }
-
-            .header-card { grid-column: 1 / 3; grid-row: auto; }
-            .drawing { grid-column: 1 / 4; grid-row: auto; }
-        }
         /* iPad & Medium Tablets (between 768px and 1023px) */
         @media (max-width: 1024px) {
+
+
+            
             .products-grid {
-                grid-template-columns: repeat(2, 1fr);
-                grid-auto-rows: 200px;
-                gap: 20px;
-                height: auto;
-            }
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 200px;
+            grid-template-rows: auto;
+            gap: 20px;
+            height: auto;
+
 
             .header-card { grid-column: 1 / 3; grid-row: auto; padding-bottom: 20%; }
             .millet-card { grid-column: 2; grid-row: auto; }
@@ -1354,6 +1345,7 @@ body {
             .treat-card { grid-column: 2; grid-row: auto; }
             .drawing { display: none;}
         }
+    }
 
         @media (max-width: 768px) {
             .agro-main-title {
@@ -1693,8 +1685,6 @@ body {
             position: relative;
         }
 
-   
-
         .read-more-btn {
             color: #ffffff;
             text-decoration: none;
@@ -1859,7 +1849,11 @@ body {
             color: #555;
             padding-right: 40px;
         }
-
+        @media (min-width: 1600px) {
+            .agro-featured-image{
+                height: 50vh;
+            }
+        }
         /* Responsive Design */
         @media (max-width: 1024px) {
             .faq-container {

@@ -2,19 +2,19 @@ const products = [
     // OVIN Products
     {
         name: "Ovin - Farineux",
-        image: "./images/product/sac/ovin.jpg",
+        image: "./images/product/sac/ovin-gresment.png",
         info: [["Type", "Farineux"], ["Catégorie", "Alimentation Ovin"], ["Format", "Sac"]],
         category: "ovin"
     },
     {
         name: "Ovin - D/C",
-        image: "./images/product/sac/ovin-démarrage-croissance.jpg",
+        image: "./images/product/sac/ovin-démarrage-croissance.png",
         info: [["Type", "D/C"], ["Catégorie", "Alimentation Ovin"], ["Format", "Sac"]],
         category: "ovin"
     },
     {
         name: "Ovin - Finition",
-        image: "./images/product/sac/ovin-f.jpg",
+        image: "./images/product/sac/ovin-finition.png",
         info: [["Type", "Finition"], ["Catégorie", "Alimentation Ovin"], ["Format", "Sac"]],
         category: "ovin"
     },
@@ -22,13 +22,13 @@ const products = [
     // BOVIN Products
     {
         name: "Bovin - D/C",
-        image: "./images/product/sac/bovin-démarrage.jpg",
+        image: "./images/product/sac/bovin-démarrage.png",
         info: [["Type", "D/C"], ["Catégorie", "Alimentation Bovin"], ["Format", "Sac"]],
         category: "bovin"
     },
     {
         name: "Bovin - Finition",
-        image: "./images/product/sac/bovin-finition.jpg",
+        image: "./images/product/sac/bovin-finition.png",
         info: [["Type", "Finition"], ["Catégorie", "Alimentation Bovin"], ["Format", "Sac"]],
         category: "bovin"
     },
@@ -36,13 +36,13 @@ const products = [
     // BREBIS Products
     {
         name: "Brebis - 40 kg",
-        image: "./images/product/sac/brebis-40kg.png",
+        image: "./images/product/sac/brebis-sarha-40kg.png",
         info: [["Poids", "40 kg"], ["Catégorie", "Alimentation Brebis"], ["Format", "Sac"]],
         category: "brebis"
     },
     {
         name: "Brebis - 50 kg",
-        image: "./images/product/sac/brebis-50kg.png",
+        image: "./images/product/sac/brebis-sarha-50kg.png",
         info: [["Poids", "50 kg"], ["Catégorie", "Alimentation Brebis"], ["Format", "Sac"]],
         category: "brebis"
     },
@@ -60,7 +60,7 @@ const products = [
     },
     {
         name: "Brebis - Allaitante",
-        image: "./images/product/sac/brebis-allaitante.png",
+        image: "./images/product/sac/brebis-aliatante.png",
         info: [["Type", "Allaitante"], ["Catégorie", "Alimentation Brebis"], ["Format", "Sac"]],
         category: "brebis"
     },
@@ -68,19 +68,19 @@ const products = [
     // VACHE LAITIÈRE Products
     {
         name: "Vache Laitière - (B20) G",
-        image: "./images/product/sac/vache-laitière-b20g.jpg",
+        image: "./images/product/sac/vache-laitière-b20.png",
         info: [["Type", "(B20) G"], ["Catégorie", "Vache Laitière"], ["Format", "Sac"]],
         category: "vache"
     },
     {
         name: "Vache Laitière - (B22) G",
-        image: "./images/product/sac/vache-laitière-b22g.jpg",
+        image: "./images/product/sac/vache-laitière-b22.png",
         info: [["Type", "(B22) G"], ["Catégorie", "Vache Laitière"], ["Format", "Sac"]],
         category: "vache"
     },
     {
         name: "Vache Laitière - Tarie",
-        image: "./images/product/sac/vache-tarie.jpg",
+        image: "./images/product/sac/vache-tarie.png",
         info: [["Type", "Tarie"], ["Catégorie", "Vache Laitière"], ["Format", "Sac"]],
         category: "vache"
     },
@@ -88,37 +88,37 @@ const products = [
     // POULET DE CHAIR Products
     {
         name: "Poulet de Chair - Démarrage 1",
-        image: "./images/product/sac/poulet-demarrage1.png",
+        image: "./images/product/sac/démarrage-01.png",
         info: [["Phase", "Démarrage 1"], ["Catégorie", "Poulet de Chair"], ["Format", "Sac"]],
         category: "poulet"
     },
     {
         name: "Poulet de Chair - Démarrage 2",
-        image: "./images/product/sac/poulet-demarrage2.png",
+        image: "./images/product/sac/démarrage-02.png",
         info: [["Phase", "Démarrage 2"], ["Catégorie", "Poulet de Chair"], ["Format", "Sac"]],
         category: "poulet"
     },
     {
         name: "Poulet de Chair - Croissance 1",
-        image: "./images/product/sac/poulet-croissance1.png",
+        image: "./images/product/sac/croissance-01.png",
         info: [["Phase", "Croissance 1"], ["Catégorie", "Poulet de Chair"], ["Format", "Sac"]],
         category: "poulet"
     },
     {
         name: "Poulet de Chair - Croissance 2",
-        image: "./images/product/sac/poulet-croissance2.png",
+        image: "./images/product/sac/croissance-02.png",
         info: [["Phase", "Croissance 2"], ["Catégorie", "Poulet de Chair"], ["Format", "Sac"]],
         category: "poulet"
     },
     {
         name: "Poulet de Chair - Croissance 3",
-        image: "./images/product/sac/poulet-croissance3.png",
+        image: "./images/product/sac/croissance-03.png",
         info: [["Phase", "Croissance 3"], ["Catégorie", "Poulet de Chair"], ["Format", "Sac"]],
         category: "poulet"
     },
     {
         name: "Poulet de Chair - Finition G.",
-        image: "./images/product/sac/poulet-finition.png",
+        image: "./images/product/sac/finition.png",
         info: [["Phase", "Finition G."], ["Catégorie", "Poulet de Chair"], ["Format", "Sac"]],
         category: "poulet"
     },
@@ -132,24 +132,24 @@ const products = [
     // PONDEUSE Products
     {
         name: "Pondeuse - Pré Ponte",
-        image: "./images/product/sac/pondeuse-preponte.png",
+        image: "./images/product/sac/poule-pondeuse.png",
         info: [["Phase", "Pré Ponte"], ["Catégorie", "Pondeuse"], ["Format", "Sac"]],
         category: "pondeuse"
     },
     {
         name: "Pondeuse - Ponte 1",
-        image: "./images/product/sac/pondeuse-ponte1.png",
+        image: "./images/product/sac/poule-pondeuse.png",
         info: [["Phase", "Ponte 1"], ["Catégorie", "Pondeuse"], ["Format", "Sac"]],
         category: "pondeuse"
     },
     {
         name: "Pondeuse - Ponte 2",
-        image: "./images/product/sac/pondeuse-ponte2.png",
+        image: "./images/product/sac/poule-pondeuse.png",
         info: [["Phase", "Ponte 2"], ["Catégorie", "Pondeuse"], ["Format", "Sac"]],
         category: "pondeuse"
     }
 ];
-     let currentFilter = 'ovin';
+     let currentFilter = 'ovine';
 
 // Function to render products with animation
 function renderProducts(productsGrid, productsToRender, animate = true) {
@@ -212,7 +212,7 @@ function renderProductsImmediate(productsGrid, productsToRender) {
                         WhatsApp
                     </button>
                 </div>
-            </div>
+            </div>  
         `;
 
         productsGrid.appendChild(productCard);
@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const filterContainer = document.createElement('div');
     filterContainer.className = 'filter-container';
     filterContainer.innerHTML = `
-        <button class="filter-btn" data-filter="ovin" data-count="${products.filter(p => p.category === 'ovin').length}">
+        <button class="filter-btn active" data-filter="ovin" data-count="${products.filter(p => p.category === 'ovin').length}">
             Ovin
         </button>
         <button class="filter-btn" data-filter="bovin" data-count="${products.filter(p => p.category === 'bovin').length}">
