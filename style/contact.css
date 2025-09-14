@@ -5,36 +5,11 @@
     box-sizing: border-box;
 }
 
-:root {
-    /* Colors */
-    --primary-brown: #8B4513;
-    --secondary-brown: #A0522D;
-    --accent-gold: #D4A574;
-    --light-gold: #F5941E;
-    --dark-text: #2c3e50;
-    --light-text: #666;
-    --white: #ffffff;
-    --light-bg: #f8f9fa;
-    --shadow-light: rgba(0, 0, 0, 0.1);
-    --shadow-medium: rgba(0, 0, 0, 0.15);
-    --shadow-dark: rgba(0, 0, 0, 0.3);
-    
-    /* Transitions */
-    --transition-smooth: all 0.3s ease;
-    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    
-    /* Spacing */
-    --section-padding: 100px 0;
-    --container-max-width: 1200px;
-    --border-radius: 20px;
-    --border-radius-small: 8px;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: var(--dark-text);
-    background-color: var(--light-bg);
+    color: #2c3e50;
+    background-color: #f8f9fa;
     overflow-x: hidden;
 }
 
@@ -45,7 +20,7 @@ body {
     position: relative;
     height: 70vh;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/gmf/fifteen.jpg) center / cover;
-    color: var(--white);
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +56,7 @@ body {
 .breadcrumb h1 {
     font-size: 3.5rem;
     font-weight: 800;
-    color: var(--white);
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 0;
@@ -92,12 +67,12 @@ body {
 .breadcrumb a {
     color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
-    transition: var(--transition-smooth);
+    transition: all 0.3s ease;
     font-weight: 500;
 }
 
 .breadcrumb a:hover {
-    color: var(--accent-gold);
+    color: #D4A574;
 }
 
 .breadcrumb span {
@@ -108,12 +83,12 @@ body {
    CONTACT SECTION
    ================================== */
 .contact-section {
-    padding: var(--section-padding);
+    padding: 100px 0;
     background-color: #e8ded2;
 }
 
 .container {
-    max-width: var(--container-max-width);
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -128,7 +103,8 @@ body {
 .contact-info-section h2,
 .contact-form-section h2 {
     font-size: 2.5rem;
-    color: var(--primary-brown);
+    color: #5c3d24;
+    font-weight: 800;
     margin-bottom: 30px;
     position: relative;
     padding-bottom: 15px;
@@ -142,13 +118,13 @@ body {
     left: 0;
     width: 80px;
     height: 4px;
-    background: var(--accent-gold);
+    background: #5b881e;
     border-radius: 2px;
 }
 
 .contact-info-section p {
     font-size: 1.1rem;
-    color: var(--light-text);
+    color: #666;
     margin-bottom: 40px;
     line-height: 1.8;
 }
@@ -167,25 +143,25 @@ body {
 .contact-icon {
     width: 60px;
     height: 60px;
-    background: var(--primary-brown);
+    background: #5c3d24;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    color: var(--white);
+    color: #ffffff;
     flex-shrink: 0;
 }
 
 .contact-text h3 {
     font-size: 1.3rem;
-    color: var(--primary-brown);
+    color: #5c3d24;
     margin-bottom: 8px;
 }
 
 .contact-text p {
     font-size: 1rem;
-    color: var(--light-text);
+    color: #666;
     margin: 0;
     line-height: 1.6;
 }
@@ -194,9 +170,9 @@ body {
    CONTACT FORM
    ================================== */
 .contact-form {
-    background: var(--white);
+    background: #ffffff;
     padding: 40px;
-    border-radius: var(--border-radius);
+    border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -209,16 +185,16 @@ body {
     width: 100%;
     padding: 15px 20px;
     border: 1px solid #ddd;
-    border-radius: var(--border-radius-small);
+    border-radius: 8px;
     font-size: 1rem;
     font-family: inherit;
-    transition: var(--transition-smooth);
+    transition: all 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--accent-gold);
+    border-color: #D4A574;
     box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.2);
 }
 
@@ -228,36 +204,39 @@ body {
 }
 
 .submit-btn {
-    background: linear-gradient(45deg, var(--accent-gold), var(--light-gold));
-    color: var(--white);
+    background: rgb(92 61 36);
+    color: #ffffff;
     border: none;
     padding: 15px 40px;
     font-size: 1.1rem;
     font-weight: 600;
     border-radius: 10px;
     cursor: pointer;
-    transition: var(--transition-smooth);
+    transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
     box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
 }
 
 .submit-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(212, 165, 116, 0.4);
+    background: green;
+    color: #fe933b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
 }
 
 /* ===================================
    MAP SECTION
    ================================== */
 .map-section {
-    padding: var(--section-padding);
-    background-color: var(--white);
+    padding: 100px 0;
+    background-color: #ffffff;
 }
 
 .map-section h2 {
     font-size: 2.5rem;
-    color: var(--primary-brown);
+    color: #5c3d24;
+    font-weight: 800;
     text-align: center;
     margin-bottom: 40px;
     position: relative;
@@ -271,12 +250,12 @@ body {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: var(--accent-gold);
+    background: #5b881e;
     border-radius: 2px;
 }
 
 .map-container {
-    border-radius: var(--border-radius);
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
@@ -286,7 +265,7 @@ body {
    ================================== */
 .footer {
     background: linear-gradient(135deg, #2c1810 0%, #5d4037 100%);
-    color: var(--white);
+    color: #ffffff;
     padding: 80px 0 40px;
 }
 
@@ -294,7 +273,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
-    max-width: var(--container-max-width);
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -315,7 +294,7 @@ body {
     left: 0;
     width: 50px;
     height: 3px;
-    background: var(--accent-gold);
+    background: #D4A574;
     border-radius: 2px;
 }
 
@@ -330,12 +309,12 @@ body {
 .footer-links a {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    transition: var(--transition-smooth);
+    transition: all 0.3s ease;
     font-size: 1rem;
 }
 
 .footer-links a:hover {
-    color: var(--accent-gold);
+    color: #D4A574;
     padding-left: 5px;
 }
 
@@ -356,23 +335,23 @@ body {
     flex: 1;
     padding: 12px 15px;
     border: none;
-    border-radius: var(--border-radius-small) 0 0 var(--border-radius-small);
+    border-radius: 8px 0 0 8px;
     font-size: 0.9rem;
 }
 
 .email-submit {
-    background: var(--accent-gold);
-    color: var(--dark-text);
+    background: #D4A574;
+    color: #2c3e50;
     border: none;
     padding: 0 20px;
-    border-radius: 0 var(--border-radius-small) var(--border-radius-small) 0;
+    border-radius: 0 8px 8px 0;
     cursor: pointer;
     font-weight: bold;
-    transition: var(--transition-smooth);
+    transition: all 0.3s ease;
 }
 
 .email-submit:hover {
-    background: var(--light-gold);
+    background: #F5941E;
 }
 
 .gallery-grid {
@@ -384,8 +363,8 @@ body {
 .gallery-item {
     height: 80px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: var(--border-radius-small);
-    transition: var(--transition-smooth);
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 .gallery-item:hover {
@@ -563,5 +542,3 @@ body {
         padding: 20px 15px;
     }
 }
-
-

@@ -18,10 +18,10 @@
         
         <ul class="nav-menu" id="navMenu">
             <li><a href="index.html" class="active" data-lang="ACCUEIL">ACCUEIL</a></li>
-            <li><a href="services.html" data-lang="SERVICES">SERVICES</a></li>
+            <li><a href="expertice.html" data-lang="EXPERTICES">EXPERTICES</a></li>
             <li><a href="produit.html" data-lang="PRODUITS">PRODUITS</a></li>
-            <li><a href="production.html" data-lang="PRODUCTION">PRODUCTION</a></li>
-            <a href="contact.html" class="cta-button" data-lang="CONTACTEZ-NOUS">CONTACTEZ-NOUS</a>
+            <li><a href="team.html" data-lang="TEAM">TEAM</a></li>
+            <a href="#" class="cta-button" data-lang="CONTACTEZ-NOUS">CONTACTEZ-NOUS</a>
         </ul>
 
         <div style="display: flex; align-items: center; gap: 15px;">
@@ -129,50 +129,51 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <!-- Brand Section -->
                 <div class="footer-section footer-brand">
-                   <div class="logo">
-                     <a href="index.html" class="logo">
-                            <img src="images/p2.png" alt="ABF Frenda Logo" style="width: 150px;" >
+                    <div>
+                     <a href="#">
+                            <img src="images/logoGM.png" alt="" style="width: 150px; padding-bottom: 20px;" >
                         </a>
                     </div>
-                    <p class="footer-description">
-                        ABF Frenda (GMF) – Fabrication d’aliments pour bétail et produits agricoles. Excellence, durabilité et innovation au service de l’élevage et de l’agriculture.
+                    <p class="footer-description" data-lang="FOOTER_DESCRIPTION">
+                        Une entreprise dynamique et innovante dans le domaine de l'ALIMENTATION  biologique. Nous nous engageons à fournir des produits de qualité supérieure tout en préservant notre environnement.
                     </p>
                     <div class="email-signup">
-                        <input type="email" class="email-input" placeholder="Entrez Votre Email" data-lang="Entrez Votre Email">
+                        <input type="email" class="email-input" placeholder="Votre adresse email">
                         <button class="email-submit">→</button>
                     </div>
                 </div>
 
                 <!-- Explore Section -->
                 <div class="footer-section">
-                    <h2>EXPLORER</h2>
+                    <h2 data-lang="EXPLORE">EXPLORE</h2>
                     <ul class="footer-links">
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="produit.html">Produits</a></li>
+                        <li><a href="#home" data-lang="ACCUEIL FOOTER">Accueil</a></li>
+                        <li><a href="#about" data-lang="À PROPOS">À propos</a></li>
+                        <li><a href="#blog" data-lang="BLOG">Blog</a></li>
+                        <li><a href="#contact" data-lang="CONTACT">Contact</a></li>
+                        <li><a href="#service" data-lang="expertice FOOTER">expertice</a></li>
+                        <li><a href="#product" data-lang="PRODUITS FOOTER">Produits</a></li>
                     </ul>
                 </div>
 
                 <!-- Contact Info Section -->
                 <div class="footer-section">
-                    <h2>INFOS CONTACT</h2>
+                    <h2 data-lang="COORDONNÉES">COORDONNÉES</h2>
                     <div class="contact-info">
-                        <div>Zone Industrielle Frenda,<br>Tiaret - Algérie</div>
-                        <div>contact@abf-frenda.dz</div>
-                        <div>+213 (0)46 00 00 00</div>
+                        <div>123 Rue de l'ALIMENTATION ,<br>75001 Paris, France</div>
+                        <div>contact@abf-france.fr</div>
+                        <div>+33 1 23 45 67 89</div>
                     </div>
                 </div>
 
                 <!-- Gallery Section -->
                 <div class="footer-section">
-                    <h2>NOTRE GALERIE</h2>
+                    <h2 data-lang="NOTRE GALERIE FOOTER">NOTRE GALERIE</h2>
                     <div class="gallery-grid">
                         <div class="gallery-item"></div>
                         <div class="gallery-item"></div>
@@ -185,7 +186,7 @@
             </div>
         </div>
     </footer>
-
+   
     <script>
         // Form submission handling
         document.getElementById('contactForm').addEventListener('submit', function(e) {
@@ -227,7 +228,7 @@
             });
         });
     </script>
-
+    <script src="js/navbar.js"></script>
     <script src="js/color-theme.js"></script>
     <script src="js/color-change.js"></script>
     <script src="js/language-switcher.js"></script>   

@@ -1,25 +1,41 @@
-// One unified scroll listener
+// ...existing code...
+
+let lastScrollY = window.scrollY;
+
 window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
     if (!navbar) return;
 
-    navbar.style.transition = 'all 0.3s ease';
-
-    const videoSection = document.querySelector('.video-section');
-    const faqSection = document.querySelector('.faq-section');
-    const sections = document.querySelectorAll('.about-section , .products-section , .project-section , .team-section , .service-section');
-    const logoImg = navbar.querySelector('.logo img');
-
-    // --- 1. Hide Navbar between video-section and faq-section ---
-    if (videoSection && faqSection) {
-        const videoRect = videoSection.getBoundingClientRect();
-        const faqRect = faqSection.getBoundingClientRect();
-        const navbarBottom = navbar.getBoundingClientRect().bottom;
-        if (videoRect.top <= navbarBottom && faqRect.top > navbarBottom) {
-            navbar.style.top = '-100px'; // keep hidden
-            return; // exit early → skip style updates
-        }
+    const aboutSection = document.querySelector('.about-section');
+    let aboutBottom = 0;
+    if (aboutSection) {
+        const rect = aboutSection.getBoundingClientRect();
+        aboutBottom = rect.bottom + window.scrollY;
     }
+
+    const currentScrollY = window.scrollY;
+
+    // --- Hide on scroll down, show on scroll up, but only after about-section ---
+    if (currentScrollY > aboutBottom) {
+        if (currentScrollY > lastScrollY && currentScrollY > 50) {
+            // Scrolling down past about-section
+            navbar.style.top = '-100px';
+        } else {
+            // Scrolling up
+            navbar.style.top = '0';
+        }
+    } else {
+        // Always show navbar before about-section ends
+        navbar.style.top = '0';
+    }
+    lastScrollY = currentScrollY;
+
+    // Prevent other logic from overriding the hide/show logic
+    if (navbar.style.top === '-100px') return;
+
+    navbar.style.transition = 'all 0.1s ease';
+    const sections = document.querySelectorAll('.about-section , .products-section , .project-section , .team-section , .service-section , .EXPERTICE-section , .contact-section');
+    const logoImg = navbar.querySelector('.logo img');
 
     // --- 2. Size/position adjustments ---
     if (window.scrollY === 0) {
@@ -70,3 +86,4 @@ window.addEventListener('scroll', function () {
         }
     });
 });
+// ...existing code...
