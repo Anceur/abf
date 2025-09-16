@@ -5,7 +5,7 @@
                 rgba(0, 0, 0, 0.4), 
                 rgba(0, 0, 0, 0.5)
             ),
-            url('../images/abf/twenty.webp') center/cover;
+            url('../images/abf/twenty-eight.webp') center/cover;
             color: var(--white);
             display: flex;
             flex-direction: column;
@@ -335,7 +335,7 @@
         }
 
         .product-card .product-bottom .product-content .product-details table th {
-            text-align: left;
+            text-align: justify;
             padding: 8px 0;
             font-weight: 600;
             color: #e2d8cc;

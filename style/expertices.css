@@ -51,7 +51,7 @@ body {
                 rgba(0, 0, 0, 0.4), 
                 rgba(0, 0, 0, 0.5)
             ),
-            url('../images/abf/twenty-sex.webp') center/cover;
+            url('../images/abf/twenty-four.webp') center/cover;
             color: var(--white);
             display: flex;
             flex-direction: column;

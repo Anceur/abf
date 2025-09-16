@@ -5,12 +5,12 @@ const products = [
         image: "./images/product/sac/ovin-gresment.png",
         category: "ovin",
         technicalData: {
-            "الرطوبة (Humidité)": "12.67%",
-            "البروتين (Protéine)": "17.39%",
-            "الدهنيات (Matières grasses)": "3.1%",
-            "الاملاح المعدنية (Sels minéraux)": "6.99%",
-            "الالياف (Fibres)": "5.43%",
-            "النشويات (Amidons)": "32.25%"
+            "Humidité": "12.67%",
+            "Protéine": "17.39%",
+            "Matières grasses": "3.1%",
+            "Sels minéraux": "6.99%",
+            "Fibres": "5.43%",
+            "Amidons": "32.25%"
         }
     },
     {
@@ -18,12 +18,12 @@ const products = [
         image: "./images/product/sac/ovin-démarrage-croissance.png",
         category: "ovin",
         technicalData: {
-            "الرطوبة (Humidité)": "12.67%",
-            "البروتين (Protéine)": "17.39%",
-            "الدهنيات (Matières grasses)": "3.1%",
-            "الاملاح المعدنية (Sels minéraux)": "6.99%",
-            "الالياف (Fibres)": "5.43%",
-            "النشويات (Amidons)": "32.25%"
+            "Humidité": "12.67%",
+            "Protéine": "17.39%",
+            "Matières grasses": "3.1%",
+            "Sels minéraux": "6.99%",
+            "Fibres": "5.43%",
+            "Amidons": "32.25%"
         }
     },
     {
@@ -31,12 +31,12 @@ const products = [
         image: "./images/product/sac/ovin-finition.png",
         category: "ovin",
         technicalData: {
-            "الرطوبة (Humidité)": "12.85%",
-            "البروتين (Protéine)": "15.04%",
-            "الدهنيات (Matières grasses)": "3.22%",
-            "الاملاح المعدنية (Sels minéraux)": "6.18%",
-            "الالياف (Fibres)": "4.98%",
-            "النشويات (Amidons)": "37.69%"
+            "Humidité": "12.85%",
+            "Protéine": "15.04%",
+            "Matières grasses": "3.22%",
+            "Sels minéraux": "6.18%",
+            "Fibres": "4.98%",
+            "Amidons": "37.69%"
         }
     },
 
@@ -46,12 +46,12 @@ const products = [
         image: "./images/product/sac/bovin-démarrage.png",
         category: "bovin",
         technicalData: {
-            "الرطوبة (Humidité)": "12.488%",
-            "البروتين (Protéine)": "17.255%",
-            "الدهنيات (Matières grasses)": "3.516%",
-            "الاملاح المعدنية (Sels minéraux)": "7.953%",
-            "الالياف (Fibres)": "4.717%",
-            "النشويات (Amidons)": "34.475%"
+            "Humidité": "12.488%",
+            "Protéine": "17.255%",
+            "Matières grasses": "3.516%",
+            "Sels minéraux": "7.953%",
+            "Fibres": "4.717%",
+            "Amidons": "34.475%"
         }
     },
     {
@@ -59,12 +59,12 @@ const products = [
         image: "./images/product/sac/bovin-finition.png",
         category: "bovin",
         technicalData: {
-            "الرطوبة (Humidité)": "N/A",
-            "البروتين (Protéine)": "15.183%",
-            "الدهنيات (Matières grasses)": "N/A",
-            "الاملاح المعدنية (Sels minéraux)": "N/A",
-            "الالياف (Fibres)": "N/A",
-            "النشويات (Amidons)": "N/A"
+            "Humidité": "N/A",
+            "Protéine": "15.183%",
+            "Matières grasses": "N/A",
+            "Sels minéraux": "N/A",
+            "Fibres": "N/A",
+            "Amidons": "N/A"
         }
     },
 
@@ -74,12 +74,12 @@ const products = [
         image: "./images/product/sac/brebis-sarha-40kg.png",
         category: "brebis",
         technicalData: {
-            "الرطوبة (Humidité)": "12.78%",
-            "البروتين (Protéine)": "12.7%",
-            "الدهنيات (Matières grasses)": "3.32%",
-            "الاملاح المعدنية (Sels minéraux)": "7.12%",
-            "الالياف (Fibres)": "6.37%",
-            "النشويات (Amidons)": "32.39%"
+            "Humidité": "12.78%",
+            "Protéine": "12.7%",
+            "Matières grasses": "3.32%",
+            "Sels minéraux": "7.12%",
+            "Fibres": "6.37%",
+            "Amidons": "32.39%"
         }
     },
     {
@@ -88,11 +88,11 @@ const products = [
         category: "brebis",
         technicalData: {
             "الرطوبة (Humidité)": "12.78%",
-            "البروتين (Protéine)": "12.7%",
-            "الدهنيات (Matières grasses)": "3.32%",
-            "الاملاح المعدنية (Sels minéraux)": "7.12%",
-            "الالياف (Fibres)": "6.37%",
-            "النشويات (Amidons)": "32.39%"
+            "Protéine": "12.7%",
+            "Matières grasses": "3.32%",
+            "Sels minéraux": "7.12%",
+            "Fibres": "6.37%",
+            "Amidons": "32.39%"
         }
     },
     {
@@ -100,12 +100,12 @@ const products = [
         image: "./images/product/sac/brebis-entretien.png",
         category: "brebis",
         technicalData: {
-            "الرطوبة (Humidité)": "12.78%",
-            "البروتين (Protéine)": "12.7%",
-            "الدهنيات (Matières grasses)": "3.32%",
-            "الاملاح المعدنية (Sels minéraux)": "7.12%",
-            "الالياف (Fibres)": "6.37%",
-            "النشويات (Amidons)": "32.39%"
+            "Humidité": "12.78%",
+            "Protéine": "12.7%",
+            "Matières grasses": "3.32%",
+            "Sels minéraux": "7.12%",
+            "Fibres": "6.37%",
+            "Amidons": "32.39%"
         }
     },
     {
@@ -113,12 +113,12 @@ const products = [
         image: "./images/product/sac/brebis-gestante.png",
         category: "brebis",
         technicalData: {
-            "الرطوبة (Humidité)": "12.56%",
-            "البروتين (Protéine)": "16.96%",
-            "الدهنيات (Matières grasses)": "3.08%",
-            "الاملاح المعدنية (Sels minéraux)": "7.88%",
-            "الالياف (Fibres)": "5.56%",
-            "النشويات (Amidons)": "31.28%"
+            "Humidité": "12.56%",
+            "Protéine": "16.96%",
+            "Matières grasses": "3.08%",
+            "Sels minéraux": "7.88%",
+            "Fibres": "5.56%",
+            "Amidons": "31.28%"
         }
     },
     {
@@ -126,12 +126,12 @@ const products = [
         image: "./images/product/sac/brebis-aliatante.png",
         category: "brebis",
         technicalData: {
-            "الرطوبة (Humidité)": "12.58%",
-            "البروتين (Protéine)": "18.45%",
-            "الدهنيات (Matières grasses)": "3.01%",
-            "الاملاح المعدنية (Sels minéraux)": "7.62%",
-            "الالياف (Fibres)": "4.85%",
-            "النشويات (Amidons)": "33.42%"
+            "Humidité": "12.58%",
+            "Protéine": "18.45%",
+            "Matières grasses": "3.01%",
+            "Sels minéraux": "7.62%",
+            "Fibres": "4.85%",
+            "Amidons": "33.42%"
         }
     },
 
@@ -141,12 +141,12 @@ const products = [
         image: "./images/product/sac/vache-laitière-b20.png",
         category: "vache",
         technicalData: {
-            "الرطوبة (Humidité)": "12.45%",
-            "البروتين (Protéine)": "20.275%",
-            "الدهنيات (Matières grasses)": "3.4%",
-            "الاملاح المعدنية (Sels minéraux)": "7.638%",
-            "الالياف (Fibres)": "4.935%",
-            "النشويات (Amidons)": "30.478%"
+            "Humidité": "12.45%",
+            "Protéine": "20.275%",
+            "Matières grasses": "3.4%",
+            "Sels minéraux": "7.638%",
+            "Fibres": "4.935%",
+            "Amidons": "30.478%"
         }
     },
     {
@@ -154,12 +154,12 @@ const products = [
         image: "./images/product/sac/vache-laitière-b22.png",
         category: "vache",
         technicalData: {
-            "الرطوبة (Humidité)": "12.42%",
-            "البروتين (Protéine)": "21.78%",
-            "الدهنيات (Matières grasses)": "3.32%",
-            "الاملاح المعدنية (Sels minéraux)": "7.62%",
-            "الالياف (Fibres)": "4.41%",
-            "النشويات (Amidons)": "31.52%"
+            "Humidité": "12.42%",
+            "Protéine": "21.78%",
+            "Matières grasses": "3.32%",
+            "Sels minéraux": "7.62%",
+            "Fibres": "4.41%",
+            "Amidons": "31.52%"
         }
     },
     {
@@ -167,12 +167,12 @@ const products = [
         image: "./images/product/sac/vache-tarie.png",
         category: "vache",
         technicalData: {
-            "الرطوبة (Humidité)": "12.623%",
-            "البروتين (Protéine)": "16.169%",
-            "الدهنيات (Matières grasses)": "3.12%",
-            "الاملاح المعدنية (Sels minéraux)": "7.817%",
-            "الالياف (Fibres)": "5.75%",
-            "النشويات (Amidons)": "30.95%"
+            "Humidité": "12.623%",
+            "Protéine": "16.169%",
+            "Matières grasses": "3.12%",
+            "Sels minéraux": "7.817%",
+            "Fibres": "5.75%",
+            "Amidons": "30.95%"
         }
     },
 
@@ -182,13 +182,12 @@ const products = [
         image: "./images/product/sac/démarrage-01.png",
         category: "poulet",
         technicalData: {
-            "الرطوبة (Humidité)": "12.61%",
-            "البروتين (Protéine)": "21.53%",
-            "الدهنيات (Matières grasses)": "3.4%",
-            "الاملاح المعدنية (Sels minéraux)": "5.94%",
-            "الالياف (Fibres)": "3.78%",
-            "النشويات (Amidons)": "36.89%",
-            "السعرات الحرارية (Calories)": "2958.2 كيلوجول/كغ"
+            "Humidité": "12.61%",
+            "Protéine": "21.53%",
+            "Matières grasses": "3.4%",
+            "Sels minéraux": "5.94%",
+            "Fibres": "3.78%",
+            "Amidons": "36.89%"
         }
     },
     {
@@ -196,13 +195,12 @@ const products = [
         image: "./images/product/sac/démarrage-02.png",
         category: "poulet",
         technicalData: {
-            "الرطوبة (Humidité)": "12.67%",
-            "البروتين (Protéine)": "20.62%",
-            "الدهنيات (Matières grasses)": "3.45%",
-            "الاملاح المعدنية (Sels minéraux)": "5.65%",
-            "الالياف (Fibres)": "3.72%",
-            "النشويات (Amidons)": "36.89%",
-            "السعرات الحرارية (Calories)": "2958.05 كيلوجول/كغ"
+            "Humidité": "12.67%",
+            "Protéine": "20.62%",
+            "Matières grasses": "3.45%",
+            "Sels minéraux": "5.65%",
+            "Fibres": "3.72%",
+            "Amidons": "36.89%"
         }
     },
     {
@@ -210,13 +208,12 @@ const products = [
         image: "./images/product/sac/croissance-01.png",
         category: "poulet",
         technicalData: {
-            "الرطوبة (Humidité)": "12.81%",
-            "البروتين (Protéine)": "19.41%",
-            "الدهنيات (Matières grasses)": "3.52%",
-            "الاملاح المعدنية (Sels minéraux)": "4.9%",
-            "الالياف (Fibres)": "3.37%",
-            "النشويات (Amidons)": "42.11%",
-            "السعرات الحرارية (Calories)": "3084.99 كيلوجول/كغ"
+            "Humidité": "12.81%",
+            "Protéine": "19.41%",
+            "Matières grasses": "3.52%",
+            "Sels minéraux": "4.9%",
+            "Fibres": "3.37%",
+            "Amidons": "42.11%"
         }
     },
     {
@@ -224,13 +221,12 @@ const products = [
         image: "./images/product/sac/croissance-02.png",
         category: "poulet",
         technicalData: {
-            "الرطوبة (Humidité)": "12.81%",
-            "البروتين (Protéine)": "19.41%",
-            "الدهنيات (Matières grasses)": "3.52%",
-            "الاملاح المعدنية (Sels minéraux)": "4.9%",
-            "الالياف (Fibres)": "3.37%",
-            "النشويات (Amidons)": "42.11%",
-            "السعرات الحرارية (Calories)": "3084.99 كيلوجول/كغ"
+            "Humidité": "12.81%",
+            "Protéine": "19.41%",
+            "Matières grasses": "3.52%",
+            "Sels minéraux": "4.9%",
+            "Fibres": "3.37%",
+            "Amidons": "42.11%"
         }
     },
     {
@@ -238,13 +234,12 @@ const products = [
         image: "./images/product/sac/croissance-03.png",
         category: "poulet",
         technicalData: {
-            "الرطوبة (Humidité)": "12.88%",
-            "البروتين (Protéine)": "18.67%",
-            "الدهنيات (Matières grasses)": "3.57%",
-            "الاملاح المعدنية (Sels minéraux)": "4.53%",
-            "الالياف (Fibres)": "3.3%",
-            "النشويات (Amidons)": "43.58%",
-            "السعرات الحرارية (Calories)": "3111.11 كيلوجول/كغ"
+            "Humidité": "12.88%",
+            "Protéine": "18.67%",
+            "Matières grasses": "3.57%",
+            "Sels minéraux": "4.53%",
+            "Fibres": "3.3%",
+            "Amidons": "43.58%"
         }
     },
     {
@@ -252,27 +247,25 @@ const products = [
         image: "./images/product/sac/finition.png",
         category: "poulet",
         technicalData: {
-            "الرطوبة (Humidité)": "12.91%",
-            "البروتين (Protéine)": "17.78%",
-            "الدهنيات (Matières grasses)": "3.9%",
-            "الاملاح المعدنية (Sels minéraux)": "4.33%",
-            "الالياف (Fibres)": "3.22%",
-            "النشويات (Amidons)": "44.86%",
-            "السعرات الحرارية (Calories)": "3149.08 كيلوجول/كغ"
+            "Humidité": "12.91%",
+            "Protéine": "17.78%",
+            "Matières grasses": "3.9%",
+            "Sels minéraux": "4.33%",
+            "Fibres": "3.22%",
+            "Amidons": "44.86%"
         }
     },
     {
         name: "Poulet de Chair - Turbo",
-        image: "./images/product/sac/poulet-turbo.png",
+        image: "./images/product/sac/finition.png",
         category: "poulet",
         technicalData: {
-            "الرطوبة (Humidité)": "12.91%",
-            "البروتين (Protéine)": "17.78%",
-            "الدهنيات (Matières grasses)": "3.9%",
-            "الاملاح المعدنية (Sels minéraux)": "4.33%",
-            "الالياف (Fibres)": "3.22%",
-            "النشويات (Amidons)": "44.86%",
-            "السعرات الحرارية (Calories)": "3149.08 كيلوجول/كغ"
+            "Humidité": "12.91%",
+            "Protéine": "17.78%",
+            "Matières grasses": "3.9%",
+            "Sels minéraux": "4.33%",
+            "Fibres": "3.22%",
+            "Amidons": "44.86%"
         }
     },
 
@@ -282,13 +275,12 @@ const products = [
         image: "./images/product/sac/poule-pondeuse.png",
         category: "pondeuse",
         technicalData: {
-            "الرطوبة (Humidité)": "12.51%",
-            "البروتين (Protéine)": "16.45%",
-            "الدهنيات (Matières grasses)": "3.15%",
-            "الاملاح المعدنية (Sels minéraux)": "12.78%",
-            "الالياف (Fibres)": "4.83%",
-            "النشويات (Amidons)": "30.52%",
-            "السعرات الحرارية (Calories)": "2729.34 كيلوجول/كغ"
+            "Humidité": "12.51%",
+            "Protéine": "16.45%",
+            "Matières grasses": "3.15%",
+            "Sels minéraux": "12.78%",
+            "Fibres": "4.83%",
+            "Amidons": "30.52%"
         }
     },
     {
@@ -296,13 +288,12 @@ const products = [
         image: "./images/product/sac/poule-pondeuse.png",
         category: "pondeuse",
         technicalData: {
-            "الرطوبة (Humidité)": "12.51%",
-            "البروتين (Protéine)": "16.45%",
-            "الدهنيات (Matières grasses)": "3.15%",
-            "الاملاح المعدنية (Sels minéraux)": "12.78%",
-            "الالياف (Fibres)": "4.83%",
-            "النشويات (Amidons)": "30.52%",
-            "السعرات الحرارية (Calories)": "2729.34 كيلوجول/كغ"
+            "Humidité": "12.51%",
+            "Protéine": "16.45%",
+            "Matières grasses": "3.15%",
+            "Sels minéraux": "12.78%",
+            "Fibres": "4.83%",
+            "Amidons": "30.52%"
         }
     },
     {
@@ -310,13 +301,12 @@ const products = [
         image: "./images/product/sac/poule-pondeuse.png",
         category: "pondeuse",
         technicalData: {
-            "الرطوبة (Humidité)": "12.51%",
-            "البروتين (Protéine)": "16.45%",
-            "الدهنيات (Matières grasses)": "3.15%",
-            "الاملاح المعدنية (Sels minéraux)": "12.78%",
-            "الالياف (Fibres)": "4.83%",
-            "النشويات (Amidons)": "30.52%",
-            "السعرات الحرارية (Calories)": "2729.34 كيلوجول/كغ"
+            "Humidité": "12.51%",
+            "Protéine": "16.45%",
+            "Matières grasses": "3.15%",
+            "Sels minéraux": "12.78%",
+            "Fibres": "4.83%",
+            "Amidons": "30.52%"
         }
     },
 ];
@@ -363,13 +353,13 @@ function renderProductsImmediate(productsGrid, productsToRender) {
                     <span class="product-name">${product.name}</span>
                     <div class="product-details">
                         <table>
-                            ${
-                                product.technicalData
-                                    ? Object.entries(product.technicalData)
-                                        .map(([key, value]) => `<tr><th>${key}</th><td>${value}</td></tr>`)
-                                        .join('')
-                                    : ''
-                            }
+                        ${
+                            product.technicalData
+                                ? Object.entries(product.technicalData)
+                                    .map(([key, value]) => `<tr><th data-lang="${key}">${key}</th><td>${value}</td></tr>`)
+                                    .join('')
+                                : ''
+                        }
                         </table>
                     </div>
                 </div>
@@ -441,22 +431,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const filterContainer = document.createElement('div');
     filterContainer.className = 'filter-container';
     filterContainer.innerHTML = `
-        <button class="filter-btn active" data-filter="ovin" data-count="${products.filter(p => p.category === 'ovin').length}">
+        <button class="filter-btn active" data-lang="ovin" data-filter="ovin" data-count="${products.filter(p => p.category === 'ovin').length}">
             Ovin
         </button>
-        <button class="filter-btn" data-filter="bovin" data-count="${products.filter(p => p.category === 'bovin').length}">
+        <button class="filter-btn" data-lang="bovin" data-filter="bovin" data-count="${products.filter(p => p.category === 'bovin').length}">
             Bovin
         </button>
-        <button class="filter-btn" data-filter="brebis" data-count="${products.filter(p => p.category === 'brebis').length}">
+        <button class="filter-btn" data-lang="brebis" data-filter="brebis" data-count="${products.filter(p => p.category === 'brebis').length}">
             Brebis
         </button>
-        <button class="filter-btn" data-filter="vache" data-count="${products.filter(p => p.category === 'vache').length}">
+        <button class="filter-btn" data-lang="vache" data-filter="vache" data-count="${products.filter(p => p.category === 'vache').length}">
             Vache Laitière
         </button>
-        <button class="filter-btn" data-filter="poulet" data-count="${products.filter(p => p.category === 'poulet').length}">
+        <button class="filter-btn" data-lang="poulet" data-filter="poulet" data-count="${products.filter(p => p.category === 'poulet').length}">
             Poulet de Chair
         </button>
-        <button class="filter-btn" data-filter="pondeuse" data-count="${products.filter(p => p.category === 'pondeuse').length}">
+        <button class="filter-btn" data-lang="pondeuse" data-filter="pondeuse" data-count="${products.filter(p => p.category === 'pondeuse').length}">
             Pondeuse
         </button>
     `;

@@ -1120,6 +1120,12 @@ body {
             margin: 12rem 3rem;
         }
 
+        @media(max-width: 758px){
+            .agriculture-section {
+            margin: 0rem 3rem;
+        }
+        }
+
         /* Modified grid to include header as first grid item */
         .products-grid {
             display: grid;
@@ -1392,8 +1398,7 @@ body {
     }
 
     .products-grid {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 200px; /* cards keep consistent height */
+        grid-auto-rows: 145px; /* cards keep consistent height */
         gap: 20px;
         height: auto;
     }
@@ -1673,7 +1678,7 @@ body {
         }
 
         .card-title {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
