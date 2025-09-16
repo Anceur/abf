@@ -713,7 +713,7 @@ body {
         @media (max-width: 768px) {
             .section-title-special,
             .section-title-products {
-                font-size: clamp(2.5rem, 8vw, 6rem);
+                font-size: clamp(2.5rem, 18vw, 6rem);
                 letter-spacing: 0.02em;
             }
 
