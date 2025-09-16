@@ -888,7 +888,6 @@ body {
 /* Responsive design for mobile */
 @media (max-width: 480px) {
     .agro-section-wrapper {
-        padding: 15px;
         gap: 15px;
     }
     
@@ -905,7 +904,7 @@ body {
     }
     
     .agro-featured-image {
-        height: 200px;
+        height: 250px;
     }
 }
 
@@ -1122,7 +1121,7 @@ body {
 
         @media(max-width: 758px){
             .agriculture-section {
-            margin: 0rem 3rem;
+            margin: 0rem 0rem;
         }
         }
 
@@ -1375,7 +1374,7 @@ body {
 
 
         .farm-section{
-            margin: 12rem 3rem;
+            margin: 12rem 0rem;
         }
         .farm-container{
             display: flex;
@@ -1438,9 +1437,12 @@ body {
 
 
 @media (max-width: 480px) {
-    .agro-main-title { font-size: 1.6rem; }
-    .agro-sub-heading { font-size: 1rem; }
-    .description { font-size: 0.9rem; }
+    .agro-section-wrapper{
+        margin: 0;
+    }
+    .agro-main-title { font-size: 2.6rem; }
+    .agro-sub-heading { font-size: 1.2rem; }
+    .description { font-size: 1.5rem; }
     .agro-action-btn { padding: 10px 20px; font-size: 0.8rem; }
 }
 
@@ -1880,23 +1882,24 @@ body {
 
         @media (max-width: 768px) {
             .faq-content {
-                padding: 40px 20px;
+                padding: 40px 20px 0px 20px;
             }
-            
             .header h1 {
-                font-size: 2.2rem;
+                font-size: 2.6rem;
             }
             
             .header p {
-                font-size: 1.1rem;
+                font-size: 1.5rem;
                 letter-spacing: 2px;
             }
             
             .faq-question h3 {
-                font-size: 1.2rem;
+                font-weight: 800;
+                font-size: 1.3rem;
             }
             
             .faq-answer p {
+                font-size: 1.2rem;
                 padding-right: 20px;
             }
         }

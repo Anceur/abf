@@ -498,7 +498,8 @@
             }
 
             .product-card {
-                height: 550px;
+                width: 320px;
+                height: 470px;
             }
 
             .section-title h2 {
