@@ -374,11 +374,11 @@ function renderProductsImmediate(productsGrid, productsToRender) {
                             <div style="font-size: 0.7rem; opacity: 0.8;">Chat sur WhatsApp</div>
                         </div>
                     </div>
-                    
-                    <button class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i>
-                        WhatsApp
-                    </button>
+                        <button class="whatsapp-btn" onclick="window.open('https://wa.me/213561982991?text=مرحبا%20اريد%20مزيد%20من%20المعلومات', '_blank')">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp
+                        </button>
+
                 </div>
             </div>  
         `;

@@ -1377,6 +1377,7 @@ body {
             margin: 12rem 0rem;
         }
         .farm-container{
+            margin: 0 3rem;
             display: flex;
             gap:50px
         }

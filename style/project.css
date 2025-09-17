@@ -520,7 +520,7 @@ body {
 .image-side {
     flex: 1;
     background-size: cover;
-    background-image: url(../images/gmf/eleven.JPG);
+    background-image: url(../images/gmf/eleven.JPEG);
     background-position: center;
     position: relative;
 }
