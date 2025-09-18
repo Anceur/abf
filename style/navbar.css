@@ -464,20 +464,10 @@
     .nav-menu a {
         display: block;
         padding: 12px 15px;
-        color: var(--dark-text);
         text-decoration: none;
         border-radius: var(--border-radius-small);
         transition: all 0.3s ease;
         font-size: 16px;
-    }
-    
-    .nav-menu a:hover {
-        color: var(--accent-gold);
-    }
-    
-    .nav-menu a.active {
-        /* background: var(--accent-gold); */
-        color: black;
     }
     
     .dropdown {
@@ -590,9 +580,6 @@
     .cta-button {
         display: block;
         width: 100%;
-      
-        background: var(--accent-gold);
-        color: black;
         text-align: center;
         text-decoration: none;
         border-radius: var(--border-radius-small);

@@ -6,6 +6,7 @@
 
         mobileToggle.addEventListener('click', () => {
             navMenu.classList.toggle('active');
+            
         });
 
         // Smooth scrolling for anchor links
