@@ -192,7 +192,13 @@ const languages = {
         'Poulet de Chair - Turbo': 'Poulet de Chair - Turbo',
         'Pondeuse - Pré Ponte': 'Pondeuse - Pré Ponte',
         'Pondeuse - Ponte 1': 'Pondeuse - Ponte 1',
-        'Pondeuse - Ponte 2': 'Pondeuse - Ponte 2'
+        'Pondeuse - Ponte 2': 'Pondeuse - Ponte 2',
+        'POULE PONDEUSE': 'POULE PONDEUSE',
+        'POULET DE CHER': 'POULET DE CHER',
+        'BOVIN': 'BOVIN',
+        'OVIN': 'OVIN',
+        'BREBIS': 'BREBIS',
+        'VACHE': 'VACHE'
     },
     'en': {
         'ACCUEIL': 'HOME',
@@ -386,7 +392,13 @@ const languages = {
         'Poulet de Chair - Turbo': 'Broiler Chicken - Turbo',
         'Pondeuse - Pré Ponte': 'Layer - Pre-Lay',
         'Pondeuse - Ponte 1': 'Layer - Lay 1',
-        'Pondeuse - Ponte 2': 'Layer - Lay 2'
+        'Pondeuse - Ponte 2': 'Layer - Lay 2',
+        'POULE PONDEUSE': 'LAYER HEN',
+        'POULET DE CHER': 'BROILER CHICKEN',
+        'BOVIN': 'CATTLE',
+        'OVIN': 'SHEEP',
+        'BREBIS': 'EWE',
+        'VACHE': 'COW'
     },
     'ar': {
         'ACCUEIL': 'الرئيسية',
@@ -583,7 +595,13 @@ const languages = {
         'Poulet de Chair - Turbo': 'دجاج التسمين - تربو',
         'Pondeuse - Pré Ponte': 'دجاج بياض - قبل وضع البيض',
         'Pondeuse - Ponte 1': 'دجاج بياض - وضع 1',
-        'Pondeuse - Ponte 2': 'دجاج بياض - وضع 2'
+        'Pondeuse - Ponte 2': 'دجاج بياض - وضع 2',
+        'POULE PONDEUSE': 'دجاج بياض',
+        'POULET DE CHER': 'دجاج لاحم',
+        'BOVIN': '',
+        'OVIN': 'أغنام',
+        'BREBIS': 'نعجة',
+        'VACHE': 'بقرة'
     }
 };
 
