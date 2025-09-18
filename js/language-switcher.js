@@ -4,7 +4,7 @@ const languages = {
         'ACCUEIL': 'ACCUEIL',
         'PAGES': 'PAGES',
         'TEAM': 'ÉQUIPE',
-        'EXPERTICES': 'EXPERTICES',
+        'EXPERTICES': 'EXPERTISES',
         'BOUTIQUE': 'BOUTIQUE',
         'PRODUITS': 'PRODUITS',
         'PRODUCTION': 'PRODUCTION',
@@ -29,6 +29,7 @@ const languages = {
         'Contact': 'Contact',
         'ALEMENT  BETAILIL FRENDA': 'ALIMENT  BETAILIL FRENDA',
         'ABOUT ABF FRENDA': 'À PROPOS D\'ABF FRENDA',
+        'Découvrez ici des photos de notre quotidien et de l’atmosphère qui règne au sein de notre société. Plongez-vous dans notre univers de travail !':'Découvrez ici des photos de notre quotidien et de l’atmosphère qui règne au sein de notre société. Plongez-vous dans notre univers de travail !',
         'AGRICULTURAL & FEED COMPANY': 'ENTREPRISE D\'ALIMENTATION',
         'EXPERTICES': 'EXPERTICES',
         'OUR EXPERTICES': 'NOS EXPERTICES',
@@ -53,7 +54,7 @@ const languages = {
         'EXPERTICES Hero Text 1': 'Chez Les Grands Moulins de Frenda – ABF, nous ne nous contentons pas de produire des aliments pour animaux de haute qualité. Nous proposons des solutions agricoles et d\'élevage complètes pour aider les agriculteurs à améliorer leurs performances, réduire leurs coûts et maintenir des troupeaux en bonne santé.',
         'EXPERTICES Hero Text 2': 'Notre engagement est de fournir des produits fiables et riches en nutriments, soutenus par des conseils d\'experts et un réseau de distribution solide, garantissant ainsi la réussite de votre exploitation agricole dès le départ.',
         'Discover More': 'Découvrir Plus',
-        ' L’usine ALIMENT DE BETAIL DE FRENDA (ABF) est une filiale de la société mère, LES GRANDS MOULINS DE FRENDA (GMF). Elle a été inaugurée en 2018 dans le but de renforcer le système de production animale et de fournir des aliments de haute qualité, conformes aux normes scientifiques modernes.': ' L’usine ALIMENT DE BETAIL DE FRENDA (ABF) est une filiale de la société mère, LES GRANDS MOULINS DE FRENDA (GMF). Elle a été inaugurée en 2018 dans le but de renforcer le système de production animale et de fournir des aliments de haute qualité, conformes aux normes scientifiques modernes.',
+        'ALIMENT DE BETAIL DE FRENDA (ABF) est une filiale de la société mère': ' L’usine ALIMENT DE BETAIL DE FRENDA (ABF) est une filiale de la société mère, LES GRANDS MOULINS DE FRENDA (GMF). Elle a été inaugurée en 2018 dans le but de renforcer le système de production animale et de fournir des aliments de haute qualité, conformes aux normes scientifiques modernes.',
         'LEARN MORE': 'EN SAVOIR PLUS',
         'ALL PRODUCTS': 'TOUS LES PRODUITS',
         'product-description': 'Explorez notre gamme de produits biologiques de haute qualité, conçus pour répondre à vos besoins agricoles tout en respectant l\'environnement.',
@@ -67,6 +68,7 @@ const languages = {
         'QU EST-CE QUE GMF ABF': 'QU\'EST-CE QUE GMF ABF ?',
         'GMF ABF est une entreprise spécialisée dans la production, la transformation et la distribution de produits agricoles et avicoles de haute qualité. Nous nous engageons à fournir des produits frais, durables et conformes aux normes internationales.': 'GMF ABF est une entreprise spécialisée dans la production, la transformation et la distribution de produits agricoles et avicoles de haute qualité. Nous nous engageons à fournir des produits frais, durables et conformes aux normes internationales.',
         'QUELS PRODUITS PROPOSEZ-VOUS': 'QUELS PRODUITS PROPOSEZ-VOUS ?',
+        'Nous proposons une large gamme de produits':'Nous proposons une large gamme de produits agricoles et avicoles, notamment des poussins, volailles prêtes à consommer, aliments pour bétail, ainsi que des expertice d\'accompagnement pour les éleveurs partenaires.',
         'Nous proposons une large gamme de produits agricoles et avicoles, notamment des poussins, volailles prêtes à consommer, aliments pour bétail, ainsi que des EXPERTICES d\'accompagnement pour les éleveurs partenaires.': 'Nous proposons une large gamme de produits agricoles et avicoles, notamment des poussins, volailles prêtes à consommer, aliments pour bétail, ainsi que des EXPERTICES d\'accompagnement pour les éleveurs partenaires.',
         'COMMENT PASSER UNE COMMANDE': 'COMMENT PASSER UNE COMMANDE ?',
         'Les commandes peuvent être effectuées directement via notre EXPERTICE commercial, par téléphone ou en ligne sur notre site officiel. Une fois validée, nous assurons un suivi complet jusqu\'à la livraison.': 'Les commandes peuvent être effectuées directement via notre EXPERTICE commercial, par téléphone ou en ligne sur notre site officiel. Une fois validée, nous assurons un suivi complet jusqu\'à la livraison.',
@@ -129,13 +131,14 @@ const languages = {
         'PRODUITS FOOTER': 'Produits',
         'COORDONNÉES': 'COORDONNÉES',
         'NOTRE GALERIE FOOTER': 'NOTRE GALERIE',
+        'GALERIE':'GALERIE',
         'INNOVATION AGRONOMIQUE': 'INNOVATION NUTRITIONNELLE',
-        'DÉCOUVREZ L\'AVENIR DE L\'NUTRITIONNELLE': 'DÉCOUVREZ L\'AVENIR DE LA NUTRITION ANIMALE AVEC NOS SOLUTIONS DE POINTE',
+        'DÉCOUVREZ LA NUTRITION ANIMALE': 'DÉCOUVREZ L\'AVENIR DE LA NUTRITION ANIMALE AVEC NOS SOLUTIONS DE POINTE',
         'ALIMENTS À VALEUR AJOUTÉE': 'ALIMENTS À VALEUR AJOUTÉE',
-        'L\'EXCELLENCE NUTRITIONNELLE, ISSUE DE LA RECHERCHE': 'L\'EXCELLENCE NUTRITIONNELLE, ISSUE DE LA RECHERCHE',
+        'LEXCELLENCE NUTRITIONNELLE': 'L\'EXCELLENCE NUTRITIONNELLE, ISSUE DE LA RECHERCHE',
         'EN SAVOIR PLUS': 'EN SAVOIR PLUS',
         'COMMUNAUTÉ DES ÉLEVEURS': 'COMMUNAUTÉ DES ÉLEVEURS',
-        'CONNECTEZ-VOUS AVEC DES PROFESSIONNELS': 'Connectez-vous avec des professionnels',
+        'CONNECTEZ PROFESSIONNELS': 'Connectez-vous avec des professionnels',
         'REJOINDRE MAINTENANT': 'REJOINDRE MAINTENANT',
         'DESCRIPTION_PARAGRAPH_1': 'Dans le secteur agricole, la qualité et la diversité des produits sont essentielles pour répondre aux besoins des éleveurs et des agriculteurs. Notre gamme comprend des aliments pour volailles, bovins, ovins, ainsi que des compléments nutritionnels adaptés à chaque étape de la production.',
         'DESCRIPTION_PARAGRAPH_2': 'Spécialistes dans la fabrication d\'aliments pour bétail, nous proposons des produits de haute qualité adaptés aux besoins nutritionnels de chaque élevage.',
@@ -145,9 +148,9 @@ const languages = {
         'ABF FRENDRA MAIN HEADING': 'ABF Frenda — Faire progresser la production d\'aliments avec innovation et durabilité.',
         'FOOTER_DESCRIPTION': 'Une entreprise dynamique et innovante dans le domaine de l\'ALIMENTATION  biologique. Nous nous engageons à fournir des produits de qualité supérieure tout en préservant notre environnement.',
         'COMMENT PUIS-JE DEVENIR PARTENAIRE': 'COMMENT PUIS-JE DEVENIR PARTENAIRE ?',
-        'Pour devenir partenaire, veuillez nous contacter via notre formulaire en ligne ou par email. Notre équipe se fera un plaisir de vous accompagner dans le processus.': 'Pour devenir partenaire, veuillez nous contacter via notre formulaire en ligne ou par email. Notre équipe se fera un plaisir de vous accompagner dans le processus.',
+        'Pour devenir partenaire email': 'Pour devenir partenaire, veuillez nous contacter via notre formulaire en ligne ou par email. Notre équipe se fera un plaisir de vous accompagner dans le processus.',
         'COMMENT PUIS-JE VOUS CONTACTER': 'COMMENT PUIS-JE VOUS CONTACTER ?',
-        'Vous pouvez nous contacter par téléphone au +33 1 23 45 67 89 ou par email à contact@abf-france.fr.': 'Vous pouvez nous contacter par téléphone au +33 1 23 45 67 89 ou par email à contact@abf-france.fr.',
+        'Vous pouvez nous contacter par téléphone': 'Vous pouvez nous contacter par téléphone au +33 1 23 45 67 89 ou par email à contact@abf-france.fr.',
         'Humidité': 'Humidité',
         'Protéine': 'Protéine',
         'Matières grasses': 'Matières grasses',
@@ -181,7 +184,6 @@ const languages = {
         'INFOS CONTACT': 'CONTACT INFO',
         'NOTRE GALERIE': 'OUR GALLERY',
         'GALERIE': 'GALLERY',
-        'Découvrez ici des photos de notre quotidien et de l’atmosphère qui règne au sein de notre société. Plongez-vous dans notre univers de travail !': 'Discover here photos of our daily life and the atmosphere that prevails within our company. Immerse yourself in our work universe!',
         'EXPLORER': 'EXPLORE',
         'Accueil': 'Home',
         'Rencontrez Notre Équipe': 'Meet Our Team',
@@ -227,7 +229,7 @@ const languages = {
         'EXPERTICES Hero Text 1': 'At Les Grands Moulins de Frenda – ABF, we don\'t just produce high-quality animal feed. We offer complete agricultural and livestock solutions to help farmers improve their performance, reduce costs and maintain healthy herds.',
         'EXPERTICES Hero Text 2': 'Our commitment is to provide reliable, nutrient-rich products, backed by expert advice and a solid distribution network, ensuring your farm\'s success from the start.',
         'Discover More': 'Discover More',
-        'L’usine ALIMENT DE BETAIL DE FRENDA (ABF) est une filiale de la société mère, LES GRANDS MOULINS DE FRENDA (GMF). Elle a été inaugurée en 2018 dans le but de renforcer le système de production animale et de fournir des aliments de haute qualité, conformes aux normes scientifiques modernes.': 'ALIMENT DE BETAIL DE FRENDA (ABF) factory is a Branch of the parent company, Les Grands Moulins de Frenda (GMF). It was established in 2018 with the aim of strengthening the animal production system and providing high-quality feed that meets modern scientific standards.',
+        'ALIMENT DE BETAIL DE FRENDA (ABF) est une filiale de la société mère': 'ALIMENT DE BETAIL DE FRENDA (ABF) factory is a Branch of the parent company, Les Grands Moulins de Frenda (GMF). It was established in 2018 with the aim of strengthening the animal production system and providing high-quality feed that meets modern scientific standards.',
         'LEARN MORE': 'LEARN MORE',
         'ALL PRODUCTS': 'ALL PRODUCTS',
         'product-description': 'Explorez notre gamme de produits biologiques de haute qualité, conçus pour répondre à vos besoins agricoles tout en respectant l\'environnement.',
@@ -267,6 +269,7 @@ const languages = {
         'Finance': 'Finance',
         'Planification': 'Planning',
         'Analyse': 'Analysis',
+        'Nous proposons une large gamme de produits':'We offer a wide range of agricultural and poultry products, including chicks, ready-to-eat poultry, livestock feed, as well as support expertise for partner breeders.',
         'Entrez Votre Email': 'Enter Your Email',
         'Comté actif se produire. Ambition matinale sinueuse, timidité évidente pour les pauvres. Parce que les personnes âgées sont nouvelles au point principal du succès.': 'Active county to occur. Winding morning ambition, obvious shyness for the poor. Because elderly people are new to the main point of success.',
         'Les Grands Moulins de Frenda':'Les Grands Moulins de Frenda',
@@ -301,12 +304,12 @@ const languages = {
         'GALERIE': 'GALLERY',
         'Découvrez ici des photos de notre quotidien et de l’atmosphère qui règne au sein de notre société. Plongez-vous dans notre univers de travail !': 'Discover here photos of our daily life and the atmosphere that prevails within our company. Immerse yourself in our work universe!',
         'INNOVATION AGRONOMIQUE': 'NUTRITIONAL INNOVATION',
-        'DÉCOUVREZ L\'AVENIR DE L\'NUTRITIONNELLE': 'DISCOVER THE FUTURE OF ANIMAL NUTRITION WITH OUR CUTTING-EDGE SOLUTIONS',
+        'DÉCOUVREZ LA NUTRITION ANIMALE': 'DISCOVER THE FUTURE OF ANIMAL NUTRITION WITH OUR CUTTING-EDGE SOLUTIONS',
         'ALIMENTS À VALEUR AJOUTÉE': 'VALUE-ADDED FEEDS',
-        'L\'EXCELLENCE NUTRITIONNELLE, ISSUE DE LA RECHERCHE': 'THE NUTRITIONAL EXCELLENCE, RESULTING FROM RESEARCH',
+        'LEXCELLENCE NUTRITIONNELLE': 'THE NUTRITIONAL EXCELLENCE, RESULTING FROM RESEARCH',
         'EN SAVOIR PLUS': 'LEARN MORE',
         'COMMUNAUTÉ DES ÉLEVEURS': 'COMMUNITY OF BREEDERS',
-        'CONNECTEZ-VOUS AVEC DES PROFESSIONNELS': 'Connect with professionals',
+        'CONNECTEZ PROFESSIONNELS': 'Connect with professionals',
         'REJOINDRE MAINTENANT': 'JOIN NOW',
         'DESCRIPTION_PARAGRAPH_1': 'In the agricultural sector, product quality and diversity are essential to meet the needs of livestock farmers and agricultural producers. Our range includes poultry, cattle, sheep and goat feed, as well as nutritional supplements adapted to each stage of production.',
         'DESCRIPTION_PARAGRAPH_2': 'Specialists in manufacturing livestock feed, we offer high-quality products adapted to the nutritional needs of each livestock operation.',
@@ -316,9 +319,9 @@ const languages = {
         'ABF FRENDRA MAIN HEADING': 'ABF Frenda — Advancing feed production with innovation and sustainability.',
         'FOOTER_DESCRIPTION': 'A dynamic and innovative company in the field of organic ALIMENTATION . We are committed to providing superior quality products while preserving our environment.',
         'COMMENT PUIS-JE DEVENIR PARTENAIRE': 'HOW CAN I BECOME A PARTNER?',
-        'Pour devenir partenaire, veuillez nous contacter via notre formulaire en ligne ou par email. Notre équipe se fera un plaisir de vous accompagner dans le processus.': 'To become a partner, please contact us via our online form or by email. Our team will be happy to assist you through the process.',
+        'Pour devenir partenaire email': 'To become a partner, please contact us via our online form or by email. Our team will be happy to assist you through the process.',
         'COMMENT PUIS-JE VOUS CONTACTER': 'HOW CAN I CONTACT YOU?',
-        'Vous pouvez nous contacter par téléphone au +33 1 23 45 67 89 ou par email à contact@abf-france.fr.': 'You can contact us by phone at +33 1 23 45 67 89 or by email at contact@abf-france.fr.',
+        'Vous pouvez nous contacter par téléphone': 'You can contact us by phone at +33 1 23 45 67 89 or by email at contact@abf-france.fr.',
         'Humidité': 'Moisture',
         'Protéine': 'Protein',
         'Matières grasses': 'Fat',
@@ -393,7 +396,7 @@ const languages = {
         'EXPERTICES Hero Text 1': 'في مطاحن فرندة الكبرى - ABF، لا نكتفي بإنتاج أعلاف الحيوانات عالية الجودة. نقدم حلولاً زراعية وحيوانية شاملة لمساعدة المزارعين على تحسين أدائهم وتقليل تكاليفهم والحفاظ على قطعان صحية.',
         'EXPERTICES Hero Text 2': 'التزامنا هو توفير منتجات موثوقة وغنية بالمغذيات، مدعومة بالنصائح المتخصصة وشبكة توزيع قوية، مما يضمن نجاح مزرعتك من البداية.',
         'Discover More': 'اكتشف المزيد',
-        'L’usine ALIMENT DE BETAIL DE FRENDA (ABF) est une filiale de la société mère, LES GRANDS MOULINS DE FRENDA (GMF). Elle a été inaugurée en 2018 dans le but de renforcer le système de production animale et de fournir des aliments de haute qualité, conformes aux normes scientifiques modernes.': 'مصنع تغذية الأنعام والدواجن لفرندة هو فرع تابع للمؤسسة الأم المطاحن الكبرى لفرندة، تم افتتاحه سنة 2018، بهدف تعزيز منظومة الإنتاج الحيواني وتوفير أعلاف عالية الجودة بمقاييس علمية حديثة',
+        'ALIMENT DE BETAIL DE FRENDA (ABF) est une filiale de la société mère': 'مصنع تغذية الأنعام والدواجن لفرندة هو فرع تابع للمؤسسة الأم المطاحن الكبرى لفرندة، تم افتتاحه سنة 2018، بهدف تعزيز منظومة الإنتاج الحيواني وتوفير أعلاف عالية الجودة بمقاييس علمية حديثة',
         'LEARN MORE': 'اعرف المزيد',
         'ALL PRODUCTS': 'جميع المنتجات',
         'PRODUCT DESCRIPTION': 'استكشف مجموعتنا من المنتجات العضوية عالية الجودة، المصممة لتلبية احتياجاتك الزراعية مع احترام البيئة.',
@@ -404,6 +407,7 @@ const languages = {
         'Mouton': 'خروف',
         'VOUS AVEZ ENCORE DES QUESTIONS': 'هل لا تزال لديك أسئلة؟',
         ' QUESTIONS FRÉQUEMMENT POSÉES SUR ABF': 'الأسئلة الشائعة حول GMF ABF',
+    
         'QU EST-CE QUE GMF ABF': 'ما هي GMF ABF؟',
         'GMF ABF est une entreprise spécialisée dans la production, la transformation et la distribution de produits agricoles et avicoles de haute qualité. Nous nous engageons à fournir des produits frais, durables et conformes aux normes internationales.': 'GMF ABF هي شركة متخصصة في إنتاج ومعالجة وتوزيع المنتجات الزراعية والدواجن عالية الجودة. نحن ملتزمون بتوفير منتجات طازجة ومستدامة تلتزم بالمعايير الدولية.',
         'QUELS PRODUITS PROPOSEZ-VOUS': 'ما المنتجات التي تقدمونها؟',
@@ -472,12 +476,12 @@ const languages = {
         'NOTRE GALERIE FOOTER': 'معرض الصور',
         'Galerie' : 'معرض الصور',
         'INNOVATION AGRONOMIQUE': 'الابتكار الغذائي',
-        'DÉCOUVREZ L\'AVENIR DE L\'NUTRITIONNELLE': 'اكتشف مستقبل التغذية الحيوانية مع حلولنا المتطورة',
+        'DÉCOUVREZ LA NUTRITION ANIMALE': 'اكتشف مستقبل التغذية الحيوانية مع حلولنا المتطورة',
         'ALIMENTS À VALEUR AJOUTÉE': 'الأطعمة ذات القيمة المضافة',
-        'L\'EXCELLENCE NUTRITIONNELLE, ISSUE DE LA RECHERCHE': 'التميز الغذائي، الناتج عن بحوث علمية ',
+        'LEXCELLENCE NUTRITIONNELLE': 'التميز الغذائي، الناتج عن بحوث علمية ',
         'EN SAVOIR PLUS': 'اعرف المزيد',
         'COMMUNAUTÉ DES ÉLEVEURS': 'مجتمع من مربي المواشي ',
-        'CONNECTEZ-VOUS AVEC DES PROFESSIONNELS': 'تواصل مع محترفين في المجال ',
+        'CONNECTEZ PROFESSIONNELS': 'تواصل مع محترفين في المجال ',
         'REJOINDRE MAINTENANT': 'انضم الآن',
         'DESCRIPTION_PARAGRAPH_1': 'في القطاع الزراعي، تعد جودة المنتجات وتنوعها أمراً أساسياً لتلبية احتياجات مربي الماشية والمزارعين. تشمل مجموعتنا أعلاف الدواجن والماشية والأغنام والماعز، بالإضافة إلى المكملات الغذائية المتكيفة مع كل مرحلة من مراحل الإنتاج.',
         'DESCRIPTION_PARAGRAPH_2': 'متخصصون في تصنيع أعلاف الماشية، نحن نقدم منتجات عالية الجودة متكيفة مع الاحتياجات الغذائية لكل عملية تربية.',
@@ -485,9 +489,11 @@ const languages = {
         'ALIMENTS BOVINS': 'أعلاف الماشية',
         'ALIMENTS OVINS': 'أعلاف الأغنام',
         'ABF FRENDRA MAIN HEADING': 'ABF فرندة - تطوير إنتاج الأعلاف بالابتكار والاستدامة.',
+        'Nous proposons une large gamme de produits':'نحن نقدم مجموعة واسعة من المنتجات الزراعية والدواجن، بما في ذلك الكتاكيت والدواجن الجاهزة للاستهلاك وأعلاف الماشية، فضلاً عن الخبرة الداعمة للمربين الشركاء.',
+        'Vous pouvez nous contacter par téléphone':'يمكنكم التواصل معنا عبر الهاتف على الرقم (+213) 05 61 98 29 91 أو عبر البريد الإلكتروني على contact@abf-frenda.dz.',
         'FOOTER_DESCRIPTION': 'شركة ديناميكية ومبتكرة في مجال الزراعة العضوية. نحن ملتزمون بتوفير منتجات ذات جودة فائقة مع الحفاظ على بيئتنا.',
         'COMMENT PUIS-JE DEVENIR PARTENAIRE': 'كيف يمكنني أن أصبح شريكًا؟',
-        'POUR DEVENIR PARTENAIRE': 'لكي تصبح شريكًا، يرجى الاتصال بنا عبر نموذجنا عبر الإنترنت أو عن طريق البريد الإلكتروني. سيكون فريقنا سعيدًا بمساعدتك في هذه العملية.',
+        'Pour devenir partenaire email': 'لكي تصبح شريكًا، يرجى الاتصال بنا عبر نموذجنا عبر الإنترنت أو عن طريق البريد الإلكتروني. سيكون فريقنا سعيدًا بمساعدتك في هذه العملية.',
         'COMMENT PUIS-JE VOUS CONTACTER': 'كيف يمكنني الاتصال بك؟',
         'POUR NOUS CONTACTER': 'يمكنك الاتصال بنا عبر الهاتف على +33 1 23 45 67 89 أو عبر البريد الإلكتروني على contact@abf-france.fr.',
         'Humidité': 'الرطوبة',
@@ -520,14 +526,19 @@ function updateLanguage(lang) {
     
     // Update all text elements
     Object.entries(languages[lang]).forEach(([key, value]) => {
+        // Update text content for elements with data-lang
         const elements = document.querySelectorAll(`[data-lang="${key}"]`);
         elements.forEach(el => el.textContent = value);
+        
+        // Update placeholder for input elements with data-placeholder
+        const inputElements = document.querySelectorAll(`[data-placeholder="${key}"]`);
+        inputElements.forEach(el => el.placeholder = value);
     });
     
-    // Updates
+    // Update search input
     const searchInput = document.querySelector('.search-input');
     if (searchInput) {
-        searchInput = languages[lang]['Rechercher'];
+        searchInput.placeholder = languages[lang]['Rechercher'] || '';
     }
     
     // Update direction for Arabic
