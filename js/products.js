@@ -350,7 +350,7 @@ function renderProductsImmediate(productsGrid, productsToRender) {
 
             <div class="product-bottom">
                 <div class="product-content">
-                    <span class="product-name">${product.name}</span>
+                    <span class="product-name" data-lang="${product.name}">${product.name}</span>
                     <div class="product-details">
                         <table>
                         ${
