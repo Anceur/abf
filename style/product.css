@@ -235,7 +235,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
-            padding: 0 20px;
+            justify-content: space-around;
         }
 
         /* Product Card Styling - Matching Team Cards */
