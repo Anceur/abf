@@ -426,7 +426,7 @@ const languages = {
         'Conformité': 'الامتثال',
         'Conseil': 'الاستشارة',
         'Contact': 'الاتصال',
-        'ALEMENT DE BETAIL FRENDA': 'علف الأنام و المواشي بفرندة ',
+        'ALEMENT DE BETAIL FRENDA': 'تغذية الدواجن و الأنام بفرندة ',
         'ABOUT ABF FRENDA': 'حول ABF فرندة',
         'AGRICULTURAL & FEED COMPANY': 'شركة مختصة للأعلاف الحيوانية ',
         'OUR EXPERTICES': 'خبرتنا',
