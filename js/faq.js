@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Array of images corresponding to each question
     const images = [
-        "../images/abf/twenty-one.png",   // For first question
+        "../images/abf/twenty-sex.webp",   // For first question
         "../images/abf/twenty.webp",   // For second question
         "../images/abf/twenty-nine.webp", // For third question
-        "../images/abf/twenty-sex.webp"   // For fourth question
+        "../images/abf/seventeen.webp"   // For fourth question
     ];
 
     faqItems.forEach((item, index) => {
