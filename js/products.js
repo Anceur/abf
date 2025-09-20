@@ -395,6 +395,11 @@ function renderProductsImmediate(productsGrid, productsToRender) {
     // Update product count in section
     updateProductCount(productsToRender.length);
     console.log('Products rendered successfully');
+
+    // Re-apply translations to new product cards
+    if (typeof updateLanguage === 'function') {
+        updateLanguage(getCurrentLang());
+    }
 }
 
 // Function to update product count
@@ -409,8 +414,12 @@ function updateProductCount(count) {
                 'poulet': 'produits pour poulets de chair',
                 'pondeuse': 'produits pour pondeuses'
             };
-            sectionTitle.textContent = `Découvrez nos ${count} ${filterName[currentFilter]} de haute qualité.`;
     }
+}
+
+// Get current language from localStorage or default to 'fr'
+function getCurrentLang() {
+    return localStorage.getItem('lang') || 'fr';
 }
 
 // Initialize the page when DOM is loaded
@@ -487,6 +496,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 800);
         });
     });
+
 
     // Initial render of all products
     renderProducts(productsGrid, products.filter(product => product.category === 'ovin'), false);

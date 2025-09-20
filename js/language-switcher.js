@@ -57,7 +57,6 @@ const languages = {
         'ALIMENT DE BETAIL DE FRENDA (ABF) est une filiale de la société mère': ' L’usine ALIMENT DE BETAIL DE FRENDA (ABF) est une filiale de la société mère, LES GRANDS MOULINS DE FRENDA (GMF). Elle a été inaugurée en 2018 dans le but de renforcer le système de production animale et de fournir des aliments de haute qualité, conformes aux normes scientifiques modernes.',
         'LEARN MORE': 'EN SAVOIR PLUS',
         'ALL PRODUCTS': 'TOUS LES PRODUITS',
-        'product-description': 'Explorez notre gamme de produits biologiques de haute qualité, conçus pour répondre à vos besoins agricoles tout en respectant l\'environnement.',
         'Ensemble, Récoltons l\'Excellence Pour Tous': 'Ensemble, Récoltons l\'Excellence Pour Tous',
         'Tous': 'Tous',
         'Poulet': 'Poulet',
@@ -163,8 +162,8 @@ const languages = {
         'vache': 'Vache Laitière',
         'poulet': 'Poulet de Chair',
         'pondeuse': 'Pondeuse',
-        'Découvrez Produits': 'Découvrez Produits',
-        'product-description': 'Explorez notre gamme de produits biologiques de haute qualité, conçus pour répondre à vos besoins agricoles tout en respectant l\'environnement.',
+        'Découvrez Produits': 'Nos Produits',
+        'product-description': 'Explorez notre gamme de produits biologiques de haute qualité, conçus pour répondre aux besoins de vos animaux',
         'Nom': 'Votre Nom',
         'Email': 'Votre Email',
         'Sujet': 'Sujet',
@@ -261,8 +260,6 @@ const languages = {
         'ALIMENT DE BETAIL DE FRENDA (ABF) est une filiale de la société mère': 'ALIMENT DE BETAIL DE FRENDA (ABF) factory is a Branch of the parent company, Les Grands Moulins de Frenda (GMF). It was established in 2018 with the aim of strengthening the animal production system and providing high-quality feed that meets modern scientific standards.',
         'LEARN MORE': 'LEARN MORE',
         'ALL PRODUCTS': 'ALL PRODUCTS',
-        'product-description': 'Explorez notre gamme de produits biologiques de haute qualité, conçus pour répondre à vos besoins agricoles tout en respectant l\'environnement.',
-        'Ensemble, Récoltons l\'Excellence Pour Tous': 'Together, Let\'s Harvest Excellence For All',
         'Tous': 'All',
         'Poulet': 'Chicken',
         'Vache': 'Cow',
@@ -363,8 +360,8 @@ const languages = {
         'vache': 'Dairy Cow',
         'poulet': 'Broiler Chicken',
         'pondeuse': 'Layer Hen',
-        'Découvrez Produits': 'Discover Products',
-        'product-description': 'Explore our range of high-quality organic products, designed to meet your agricultural needs while respecting the environment.',
+        'Découvrez Produits': 'Our Products',
+        'product-description': 'Explore our range of high-quality organic products, designed to meet the needs of your animals.',
         'Nom': 'Your Name',
         'Email': 'Your Email',
         'Sujet': 'Subject',
@@ -561,13 +558,13 @@ const languages = {
         'Fibres': 'الألياف',
         'Amidons': 'النشويات',
         'ovin': 'غنم',
-        'bovin': 'أبقار',
+        'bovin': 'عجل',
         'brebis': 'أغلام',
         'vache': 'بقرة حلوب',
         'poulet': 'دجاج لاحم',
         'pondeuse': 'دجاج بيوض',
-        'Découvrez Produits': 'اكتشف المنتجات',
-        'product-description': 'استكشف مجموعتنا من المنتجات العضوية عالية الجودة، المصممة لتلبية احتياجاتك الزراعية مع احترام البيئة.',
+        'Découvrez Produits': 'منتجاتنا',
+        'product-description': 'استكشف مجموعتنا من المنتجات العضوية عالية الجودة، المصممة لتلبية احتياجات حيواناتك.',
         'Nom': 'اسمك',
         'Email': 'بريدك الإلكتروني',
         'Sujet': 'الموضوع',
@@ -576,8 +573,8 @@ const languages = {
         'Ovin - Farineux': 'علف الأغنام - دقيق',
         'Ovin - D/C': 'علف الأغنام - بداية/نمو',
         'Ovin - Finition': 'علف الأغنام - تسمين',
-        'Bovin - D/C': 'علف الأبقار - بداية/نمو',
-        'Bovin - Finition': 'علف الأبقار - تسمين',
+        'Bovin - D/C': 'علف العجل - بداية/نمو',
+        'Bovin - Finition': 'علف العجل - تسمين',
         'Brebis - 40 kg': 'نعجة - 40 كغ',
         'Brebis - 50 kg': 'نعجة - 50 كغ',
         'Brebis - Entretien': 'نعجة - صيانة',
@@ -593,12 +590,12 @@ const languages = {
         'Poulet de Chair - Croissance 3': 'دجاج التسمين - نمو 3',
         'Poulet de Chair - Finition G.': 'دجاج التسمين - تسمين G',
         'Poulet de Chair - Turbo': 'دجاج التسمين - تربو',
-        'Pondeuse - Pré Ponte': 'دجاج بياض - قبل وضع البيض',
-        'Pondeuse - Ponte 1': 'دجاج بياض - وضع 1',
-        'Pondeuse - Ponte 2': 'دجاج بياض - وضع 2',
-        'POULE PONDEUSE': 'دجاج بياض',
+        'Pondeuse - Pré Ponte': 'دجاج بيوض - قبل وضع البيض',
+        'Pondeuse - Ponte 1': 'دجاج بيوض - وضع 1',
+        'Pondeuse - Ponte 2': 'دجاج بيوض - وضع 2',
+        'POULE PONDEUSE': 'دجاج بيوض',
         'POULET DE CHER': 'دجاج لاحم',
-        'BOVIN': '',
+        'BOVIN': 'عجل',
         'OVIN': 'أغنام',
         'BREBIS': 'نعجة',
         'VACHE': 'بقرة'
@@ -707,12 +704,17 @@ function initializeLanguageSwitcher() {
             // Close dropdown and update language
             selectItems.classList.remove('show');
             updateLanguage(lang);
+
+            // Dispatch custom event for language change
+            document.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
         });
     });
     
     // Initialize with current language
     updateLanguage(currentLang);
 }
+
+
 
 // Add data-lang attributes to translatable elements
 document.addEventListener('DOMContentLoaded', () => {
