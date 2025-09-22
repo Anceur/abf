@@ -1419,10 +1419,6 @@ body {
         display: none;
     }
 
-    .header-card {
-        padding: 30px;
-    }
-
     .farm-container{
     flex-direction: column;
     text-align: center;
